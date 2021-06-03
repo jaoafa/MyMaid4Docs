@@ -320,7 +320,7 @@ hideコマンドに関する処理を行います。
 
 ### Event_History
 
-historyコマンドに関する処理を行います。
+historyコマンド(jaoHistory)に関する処理を行います。
 
 | メソッド名 | イベント |
 | - | - |
