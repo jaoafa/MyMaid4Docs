@@ -16,6 +16,15 @@ wireコマンドで出現させたコウモリのキルを無効化します。
 | EntityDamageByEntity | EntityDeathEvent |
 > ソースコード: [com.jaoafa.mymaid4.event.Event_AntiKillWireUnit](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_AntiKillWireUnit.java)
 
+### Event_AntiNetherPortal
+
+ネザーポータルの作成を制限します。
+
+| メソッド名 | イベント |
+| - | - |
+| onEntityCreatePortalEvent | PortalCreateEvent |
+> ソースコード: [com.jaoafa.mymaid4.event.Event_AntiNetherPortal](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_AntiNetherPortal.java)
+
 ### Event_AntiProblemCommand
 
 迷惑コマンドの制限を行います。
