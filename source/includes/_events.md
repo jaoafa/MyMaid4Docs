@@ -7,14 +7,14 @@
 | onInteract | PlayerInteractEvent |
 > ソースコード: [com.jaoafa.mymaid4.event.Event_AntiEndPortal](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_AntiEndPortal.java)
 
-### Event_AntiKillWireUnit
+### Event_AntiKillWire
 
 wireコマンドで出現させたコウモリのキルを無効化します。
 
 | メソッド名 | イベント |
 | - | - |
 | EntityDamageByEntity | EntityDeathEvent |
-> ソースコード: [com.jaoafa.mymaid4.event.Event_AntiKillWireUnit](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_AntiKillWireUnit.java)
+> ソースコード: [com.jaoafa.mymaid4.event.Event_AntiKillWire](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_AntiKillWire.java)
 
 ### Event_AntiNetherPortal
 
@@ -335,6 +335,15 @@ historyコマンド(jaoHistory)に関する処理を行います。
 | - | - |
 | OnEvent_JoinHistory | PlayerJoinEvent |
 > ソースコード: [com.jaoafa.mymaid4.event.Event_History](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_History.java)
+
+### Event_InvisibilityWireContinuation
+
+wireコマンドで出現させたコウモリの透明化エフェクトが切れた際、再度透明化エフェクトを付与します。
+
+| メソッド名 | イベント |
+| - | - |
+| InvisibilityWireContinuation | EntityPotionEffectEvent |
+> ソースコード: [com.jaoafa.mymaid4.event.Event_InvisibilityWireContinuation](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_InvisibilityWireContinuation.java)
 
 ### Event_Jail
 
