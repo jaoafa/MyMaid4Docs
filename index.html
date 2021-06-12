@@ -642,6 +642,9 @@
                     <a href="#events-wt-event_sign" class="toc-h2 toc-link" data-title="Event_Sign">Event_Sign</a>
                   </li>
                   <li>
+                    <a href="#events-wt-event_spectatordynmaphide" class="toc-h2 toc-link" data-title="Event_SpectatorDynmapHide">Event_SpectatorDynmapHide</a>
+                  </li>
+                  <li>
                     <a href="#events-wt-event_tablist" class="toc-h2 toc-link" data-title="Event_TabList">Event_TabList</a>
                   </li>
                   <li>
@@ -681,7 +684,7 @@
 
 <p>Minecraft サーバ内での MyMaid4 のコマンドヘルプは <code>/mymaidhelp</code> から利用できます。</p>
 <ul>
-<li>Version: <code>2021.06.06_14.51_8c98c08</code></li>
+<li>Version: <code>2021.06.12_09.48_a0092ef</code></li>
 </ul>
 <h1 id='commands'>Commands</h1>
 <p>MyMaid4 で実装されているコマンドの一覧です。</p>
@@ -4245,6 +4248,24 @@
 
 <blockquote>
 <p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_Sign.java">com.jaoafa.mymaid4.event.Event_Sign</a></p>
+</blockquote>
+<h3 id='events-wt-event_spectatordynmaphide'>Event_SpectatorDynmapHide</h3>
+<p>スペクテイターモードの際、Dynmapから姿を隠します。</p>
+
+<table><thead>
+<tr>
+<th>メソッド名</th>
+<th>イベント</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>onChangedGameMode</td>
+<td>PlayerGameModeChangeEvent</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_SpectatorDynmapHide.java">com.jaoafa.mymaid4.event.Event_SpectatorDynmapHide</a></p>
 </blockquote>
 <h3 id='events-wt-event_tablist'>Event_TabList</h3>
 <p>Tabで表示されるヘッダー・フッターに関する処理を行います。</p>
