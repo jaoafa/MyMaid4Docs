@@ -567,6 +567,15 @@ signコマンドに関する処理を行います。
 | onInteract | PlayerInteractEvent |
 > ソースコード: [com.jaoafa.mymaid4.event.Event_Sign](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_Sign.java)
 
+### Event_SpectatorDynmapHide
+
+スペクテイターモードの際、Dynmapから姿を隠します。
+
+| メソッド名 | イベント |
+| - | - |
+| onChangedGameMode | PlayerGameModeChangeEvent |
+> ソースコード: [com.jaoafa.mymaid4.event.Event_SpectatorDynmapHide](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_SpectatorDynmapHide.java)
+
 ### Event_TabList
 
 Tabで表示されるヘッダー・フッターに関する処理を行います。
