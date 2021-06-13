@@ -817,6 +817,45 @@ jaoHistoryに関する操作を行います。
 | - | - | - | - |
 | `name` | StringArgument | いいえ | 説明なし |
 
+## invload
+
+```plaintext
+/invload <target> [saveName] [player]
+```
+
+> ソースコード: [com.jaoafa.mymaid4.command.Cmd_InvLoad](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/command/Cmd_InvLoad.java)
+
+プレイヤーのインベントリを復元します。
+
+### `/invload <target> [saveName] [player]`
+
+指定したプレイヤーにおける指定した名前のインベントリを復元します。
+
+| 引数名 | 種類 | 必須か | 説明 |
+| - | - | - | - |
+| `target` | SinglePlayerSelectorArgument | はい | 説明なし |
+| `saveName` | StringArgument | いいえ | 説明なし |
+| `player` | SinglePlayerSelectorArgument | いいえ | 説明なし |
+
+## invsave
+
+```plaintext
+/invsave <target> [saveName]
+```
+
+> ソースコード: [com.jaoafa.mymaid4.command.Cmd_InvSave](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/command/Cmd_InvSave.java)
+
+プレイヤーのインベントリを保存します。
+
+### `/invsave <target> [saveName]`
+
+指定したプレイヤーのインベントリを指定した名前で保存します。
+
+| 引数名 | 種類 | 必須か | 説明 |
+| - | - | - | - |
+| `target` | SinglePlayerSelectorArgument | はい | 説明なし |
+| `saveName` | StringArgument | いいえ | 説明なし |
+
 ## jail
 
 ```plaintext
