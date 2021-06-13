@@ -394,6 +394,12 @@
                     <a href="#commands-home" class="toc-h2 toc-link" data-title="home">home</a>
                   </li>
                   <li>
+                    <a href="#commands-invload" class="toc-h2 toc-link" data-title="invload">invload</a>
+                  </li>
+                  <li>
+                    <a href="#commands-invsave" class="toc-h2 toc-link" data-title="invsave">invsave</a>
+                  </li>
+                  <li>
                     <a href="#commands-jail" class="toc-h2 toc-link" data-title="jail">jail</a>
                   </li>
                   <li>
@@ -684,7 +690,7 @@
 
 <p>Minecraft サーバ内での MyMaid4 のコマンドヘルプは <code>/mymaidhelp</code> から利用できます。</p>
 <ul>
-<li>Version: <code>2021.06.12_22.13_12f26b1</code></li>
+<li>Version: <code>2021.06.13_08.54_ce2f542</code></li>
 </ul>
 <h1 id='commands'>Commands</h1>
 <p>MyMaid4 で実装されているコマンドの一覧です。</p>
@@ -1781,6 +1787,74 @@
 </thead><tbody>
 <tr>
 <td><code>name</code></td>
+<td>StringArgument</td>
+<td>いいえ</td>
+<td>説明なし</td>
+</tr>
+</tbody></table>
+<h2 id='commands-invload'>invload</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/invload &lt;target&gt; [saveName] [player]
+</code></pre></div>
+<blockquote>
+<p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/command/Cmd_InvLoad.java">com.jaoafa.mymaid4.command.Cmd_InvLoad</a></p>
+</blockquote>
+
+<p>プレイヤーのインベントリを復元します。</p>
+<h3 id='commands-invload-invload-lt-target-gt-savename-player'><code>/invload &lt;target&gt; [saveName] [player]</code></h3>
+<p>指定したプレイヤーにおける指定した名前のインベントリを復元します。</p>
+
+<table><thead>
+<tr>
+<th>引数名</th>
+<th>種類</th>
+<th>必須か</th>
+<th>説明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>target</code></td>
+<td>SinglePlayerSelectorArgument</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+<tr>
+<td><code>saveName</code></td>
+<td>StringArgument</td>
+<td>いいえ</td>
+<td>説明なし</td>
+</tr>
+<tr>
+<td><code>player</code></td>
+<td>SinglePlayerSelectorArgument</td>
+<td>いいえ</td>
+<td>説明なし</td>
+</tr>
+</tbody></table>
+<h2 id='commands-invsave'>invsave</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/invsave &lt;target&gt; [saveName]
+</code></pre></div>
+<blockquote>
+<p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/command/Cmd_InvSave.java">com.jaoafa.mymaid4.command.Cmd_InvSave</a></p>
+</blockquote>
+
+<p>プレイヤーのインベントリを保存します。</p>
+<h3 id='commands-invsave-invsave-lt-target-gt-savename'><code>/invsave &lt;target&gt; [saveName]</code></h3>
+<p>指定したプレイヤーのインベントリを指定した名前で保存します。</p>
+
+<table><thead>
+<tr>
+<th>引数名</th>
+<th>種類</th>
+<th>必須か</th>
+<th>説明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>target</code></td>
+<td>SinglePlayerSelectorArgument</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+<tr>
+<td><code>saveName</code></td>
 <td>StringArgument</td>
 <td>いいえ</td>
 <td>説明なし</td>
