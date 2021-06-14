@@ -109,8 +109,7 @@ foreach ($commands as $command) {
             if (substr($argType, -strlen("Argument")) == "Argument") {
                 $argType = substr($argType, 0, strpos($argType, "Argument"));
             }
-            echo $argType . "\n";
-            $argsTable[] = $argType;
+            $argTable[] = $argType;
 
             if ($argument["class"] == "cloud.commandframework.arguments.StaticArgument") {
                 continue;
