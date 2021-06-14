@@ -466,6 +466,12 @@
                     <a href="#commands-tpdeny" class="toc-h2 toc-link" data-title="tpdeny">tpdeny</a>
                   </li>
                   <li>
+                    <a href="#commands-var" class="toc-h2 toc-link" data-title="var">var</a>
+                  </li>
+                  <li>
+                    <a href="#commands-varcmd" class="toc-h2 toc-link" data-title="varcmd">varcmd</a>
+                  </li>
+                  <li>
                     <a href="#commands-walkspeed" class="toc-h2 toc-link" data-title="walkspeed">walkspeed</a>
                   </li>
                   <li>
@@ -690,7 +696,7 @@
 
 <p>Minecraft サーバ内での MyMaid4 のコマンドヘルプは <code>/mymaidhelp</code> から利用できます。</p>
 <ul>
-<li>Version: <code>2021.06.13_13.44_93315b8</code></li>
+<li>Version: <code>2021.06.14_13.08_36bf27d</code></li>
 </ul>
 <h1 id='commands'>Commands</h1>
 <p>MyMaid4 で実装されているコマンドの一覧です。</p>
@@ -2822,6 +2828,280 @@
 </aside>
 
 <p>現在TpDenyに追加されている(テレポートを拒否されている)プレイヤーの一覧を表示します。</p>
+<h2 id='commands-var'>var</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/var text &lt;key&gt; &lt;value&gt;
+/var plus &lt;setToKey&gt; &lt;keyOrValue1&gt; &lt;keyOrValue2&gt;
+/var minus &lt;setToKey&gt; &lt;keyOrValue1&gt; &lt;keyOrValue2&gt;
+/var multiply &lt;setToKey&gt; &lt;keyOrValue1&gt; &lt;keyOrValue2&gt;
+/var division &lt;setToKey&gt; &lt;keyOrValue1&gt; &lt;keyOrValue2&gt;
+/var calc &lt;setToKey&gt; &lt;keyOrValue1&gt; &lt;unit&gt; &lt;keyOrValue2&gt;
+/var output &lt;key&gt;
+/var list [page]
+/var clear &lt;key&gt;
+</code></pre></div>
+<blockquote>
+<p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/command/Cmd_Var.java">com.jaoafa.mymaid4.command.Cmd_Var</a></p>
+</blockquote>
+
+<p>変数に関することを利用できます。</p>
+<h3 id='commands-var-var-text-lt-key-gt-lt-value-gt'><code>/var text &lt;key&gt; &lt;value&gt;</code></h3>
+<p>変数を設定(代入)します。</p>
+
+<table><thead>
+<tr>
+<th>引数名</th>
+<th>種類</th>
+<th>必須か</th>
+<th>説明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>key</code></td>
+<td>StringArgument</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+<tr>
+<td><code>value</code></td>
+<td>StringArgument</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+</tbody></table>
+<h3 id='commands-var-var-plus-lt-settokey-gt-lt-keyorvalue1-gt-lt-keyorvalue2-gt'><code>/var plus &lt;setToKey&gt; &lt;keyOrValue1&gt; &lt;keyOrValue2&gt;</code></h3>
+<p>加算し、結果を変数に代入します。</p>
+
+<table><thead>
+<tr>
+<th>引数名</th>
+<th>種類</th>
+<th>必須か</th>
+<th>説明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>setToKey</code></td>
+<td>StringArgument</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+<tr>
+<td><code>keyOrValue1</code></td>
+<td>StringArgument</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+<tr>
+<td><code>keyOrValue2</code></td>
+<td>StringArgument</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+</tbody></table>
+<h3 id='commands-var-var-minus-lt-settokey-gt-lt-keyorvalue1-gt-lt-keyorvalue2-gt'><code>/var minus &lt;setToKey&gt; &lt;keyOrValue1&gt; &lt;keyOrValue2&gt;</code></h3>
+<p>減算し、結果を変数に代入します。</p>
+
+<table><thead>
+<tr>
+<th>引数名</th>
+<th>種類</th>
+<th>必須か</th>
+<th>説明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>setToKey</code></td>
+<td>StringArgument</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+<tr>
+<td><code>keyOrValue1</code></td>
+<td>StringArgument</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+<tr>
+<td><code>keyOrValue2</code></td>
+<td>StringArgument</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+</tbody></table>
+<h3 id='commands-var-var-multiply-lt-settokey-gt-lt-keyorvalue1-gt-lt-keyorvalue2-gt'><code>/var multiply &lt;setToKey&gt; &lt;keyOrValue1&gt; &lt;keyOrValue2&gt;</code></h3>
+<p>乗算し、結果を変数に代入します。</p>
+
+<table><thead>
+<tr>
+<th>引数名</th>
+<th>種類</th>
+<th>必須か</th>
+<th>説明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>setToKey</code></td>
+<td>StringArgument</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+<tr>
+<td><code>keyOrValue1</code></td>
+<td>StringArgument</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+<tr>
+<td><code>keyOrValue2</code></td>
+<td>StringArgument</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+</tbody></table>
+<h3 id='commands-var-var-division-lt-settokey-gt-lt-keyorvalue1-gt-lt-keyorvalue2-gt'><code>/var division &lt;setToKey&gt; &lt;keyOrValue1&gt; &lt;keyOrValue2&gt;</code></h3>
+<p>除算し、結果を変数に代入します。</p>
+
+<table><thead>
+<tr>
+<th>引数名</th>
+<th>種類</th>
+<th>必須か</th>
+<th>説明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>setToKey</code></td>
+<td>StringArgument</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+<tr>
+<td><code>keyOrValue1</code></td>
+<td>StringArgument</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+<tr>
+<td><code>keyOrValue2</code></td>
+<td>StringArgument</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+</tbody></table>
+<h3 id='commands-var-var-calc-lt-settokey-gt-lt-keyorvalue1-gt-lt-unit-gt-lt-keyorvalue2-gt'><code>/var calc &lt;setToKey&gt; &lt;keyOrValue1&gt; &lt;unit&gt; &lt;keyOrValue2&gt;</code></h3>
+<p>計算し、結果を変数に代入します。</p>
+
+<table><thead>
+<tr>
+<th>引数名</th>
+<th>種類</th>
+<th>必須か</th>
+<th>説明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>setToKey</code></td>
+<td>StringArgument</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+<tr>
+<td><code>keyOrValue1</code></td>
+<td>StringArgument</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+<tr>
+<td><code>unit</code></td>
+<td>StringArgument</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+<tr>
+<td><code>keyOrValue2</code></td>
+<td>StringArgument</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+</tbody></table>
+<h3 id='commands-var-var-output-lt-key-gt'><code>/var output &lt;key&gt;</code></h3>
+<p>指定されたキーの値を出力します。</p>
+
+<table><thead>
+<tr>
+<th>引数名</th>
+<th>種類</th>
+<th>必須か</th>
+<th>説明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>key</code></td>
+<td>StringArgument</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+</tbody></table>
+<h3 id='commands-var-var-list-page'><code>/var list [page]</code></h3>
+<p>キーの一覧を表示します。</p>
+
+<table><thead>
+<tr>
+<th>引数名</th>
+<th>種類</th>
+<th>必須か</th>
+<th>説明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>page</code></td>
+<td>IntegerArgument</td>
+<td>いいえ</td>
+<td>説明なし</td>
+</tr>
+</tbody></table>
+<h3 id='commands-var-var-clear-lt-key-gt'><code>/var clear &lt;key&gt;</code></h3>
+<p>キーを削除します。</p>
+
+<table><thead>
+<tr>
+<th>引数名</th>
+<th>種類</th>
+<th>必須か</th>
+<th>説明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>key</code></td>
+<td>StringArgument</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+</tbody></table>
+<h2 id='commands-varcmd'>varcmd</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/varcmd &lt;command&gt;
+</code></pre></div>
+<blockquote>
+<p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/command/Cmd_VarCmd.java">com.jaoafa.mymaid4.command.Cmd_VarCmd</a></p>
+</blockquote>
+
+<p>変数を含むコマンドの変数を置き換え、実行します。</p>
+<h3 id='commands-varcmd-varcmd-lt-command-gt'><code>/varcmd &lt;command&gt;</code></h3>
+<p>変数を含むコマンドの変数を置き換え、実行します。</p>
+
+<table><thead>
+<tr>
+<th>引数名</th>
+<th>種類</th>
+<th>必須か</th>
+<th>説明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>command</code></td>
+<td>StringArgument</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+</tbody></table>
 <h2 id='commands-walkspeed'>walkspeed</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/walkspeed [target]
 /walkspeed set &lt;percent&gt;
 </code></pre></div>
