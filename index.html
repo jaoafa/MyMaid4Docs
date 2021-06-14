@@ -732,10 +732,13 @@
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>player</code></td>
+<td>Player</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>Player
-| <code>player</code> | はい | 説明なし |</p>
 <h2 id='commands-bug'>bug</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/bug
 /bug true
 /bug false
@@ -757,36 +760,12 @@
 </aside>
 
 <p>本によりIssue作成処理を行います。</p>
-
-<table><thead>
-<tr>
-<th>引数名</th>
-<th>種類</th>
-<th>必須か</th>
-<th>説明</th>
-</tr>
-</thead><tbody>
-</tbody></table>
-
-<p>Static</p>
 <h3 id='commands-bug-bug-false'><code>/bug false</code></h3>
 <aside class="notice">
 このコマンドはプレイヤーからの実行のみに制限されています。
 </aside>
 
 <p>記入済みの本を記入可能な本に戻します。</p>
-
-<table><thead>
-<tr>
-<th>引数名</th>
-<th>種類</th>
-<th>必須か</th>
-<th>説明</th>
-</tr>
-</thead><tbody>
-</tbody></table>
-
-<p>Static</p>
 <h2 id='commands-calctree'>calctree</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/calctree [placeEdgeTree]
 </code></pre></div>
 <blockquote>
@@ -809,10 +788,13 @@
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>placeEdgeTree</code></td>
+<td>Boolean</td>
+<td>いいえ</td>
+<td>両端に木を置くかどうか。</td>
+</tr>
 </tbody></table>
-
-<p>Boolean
-| <code>placeEdgeTree</code> | いいえ | 両端に木を置くかどうか。 |</p>
 <h2 id='commands-chat'>chat</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/chat &lt;player&gt; &lt;message&gt;
 </code></pre></div>
 <blockquote>
@@ -831,12 +813,19 @@
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>player</code></td>
+<td>String</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+<tr>
+<td><code>message</code></td>
+<td>String</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>String
-| <code>player</code> | はい | 説明なし |
-String
-| <code>message</code> | はい | 説明なし |</p>
 <h2 id='commands-chatban'>chatban</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/chatban add &lt;player&gt; &lt;reason&gt;
 /chatban remove &lt;player&gt;
 /chatban status [player]
@@ -857,13 +846,19 @@ String
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>player</code></td>
+<td>OfflinePlayer</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+<tr>
+<td><code>reason</code></td>
+<td>String</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>Static
-OfflinePlayer
-| <code>player</code> | はい | 説明なし |
-String
-| <code>reason</code> | はい | 説明なし |</p>
 <h3 id='commands-chatban-chatban-remove-lt-player-gt'><code>/chatban remove &lt;player&gt;</code></h3>
 <p>ターゲットのChatBanを解除します。</p>
 
@@ -875,11 +870,13 @@ String
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>player</code></td>
+<td>OfflinePlayer</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>Static
-OfflinePlayer
-| <code>player</code> | はい | 説明なし |</p>
 <h3 id='commands-chatban-chatban-status-player'><code>/chatban status [player]</code></h3>
 <p>ChatBan一覧を表示します。</p>
 
@@ -891,11 +888,13 @@ OfflinePlayer
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>player</code></td>
+<td>OfflinePlayer</td>
+<td>いいえ</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>Static
-OfflinePlayer
-| <code>player</code> | いいえ | 説明なし |</p>
 <h2 id='commands-cmdb'>cmdb</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/cmdb
 /cmdb &lt;player&gt;
 </code></pre></div>
@@ -921,10 +920,13 @@ OfflinePlayer
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>player</code></td>
+<td>Player</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>Player
-| <code>player</code> | はい | 説明なし |</p>
 <h2 id='commands-debstick'>debstick</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/debstick
 /debstick &lt;player&gt;
 </code></pre></div>
@@ -950,10 +952,13 @@ OfflinePlayer
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>player</code></td>
+<td>Player</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>Player
-| <code>player</code> | はい | 説明なし |</p>
 <h2 id='commands-ded'>ded</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/ded
 </code></pre></div>
 <blockquote>
@@ -1012,29 +1017,19 @@ OfflinePlayer
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>message</code></td>
+<td>String</td>
+<td>はい</td>
+<td>カスタム死亡メッセージ（%player% はプレイヤー名、%killer% はキルした人の名前に置き換わります）</td>
+</tr>
 </tbody></table>
-
-<p>Static
-String
-| <code>message</code> | はい | カスタム死亡メッセージ（%player% はプレイヤー名、%killer% はキルした人の名前に置き換わります） |</p>
 <h3 id='commands-dedmessage-dedmessage-disable'><code>/dedmessage disable</code></h3>
 <aside class="notice">
 このコマンドはプレイヤーからの実行のみに制限されています。
 </aside>
 
 <p>死亡メッセージ表示を無効化します。</p>
-
-<table><thead>
-<tr>
-<th>引数名</th>
-<th>種類</th>
-<th>必須か</th>
-<th>説明</th>
-</tr>
-</thead><tbody>
-</tbody></table>
-
-<p>Static</p>
 <h3 id='commands-dedmessage-dedmessage-remove-lt-id-gt'><code>/dedmessage remove &lt;id&gt;</code></h3>
 <aside class="notice">
 このコマンドはプレイヤーからの実行のみに制限されています。
@@ -1050,11 +1045,13 @@ String
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>id</code></td>
+<td>Integer</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>Static
-Integer
-| <code>id</code> | はい | 説明なし |</p>
 <h3 id='commands-dedmessage-dedmessage-list-page'><code>/dedmessage list [page]</code></h3>
 <aside class="notice">
 このコマンドはプレイヤーからの実行のみに制限されています。
@@ -1070,11 +1067,13 @@ Integer
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>page</code></td>
+<td>Integer</td>
+<td>いいえ</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>Static
-Integer
-| <code>page</code> | いいえ | 説明なし |</p>
 <h2 id='commands-delhome'>delhome</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/delhome
 /delhome [name]
 </code></pre></div>
@@ -1108,10 +1107,13 @@ Integer
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>name</code></td>
+<td>String</td>
+<td>いいえ</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>String
-| <code>name</code> | いいえ | 説明なし |</p>
 <h2 id='commands-discordlink'>discordlink</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/discordlink &lt;authKey&gt;
 </code></pre></div>
 <blockquote>
@@ -1134,10 +1136,13 @@ Integer
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>authKey</code></td>
+<td>String</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>String
-| <code>authKey</code> | はい | 説明なし |</p>
 <h2 id='commands-dt'>dt</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/dt &lt;markerName&gt;
 /dt add &lt;markerName&gt; &lt;markerType&gt; [markerIcon]
 /dt del &lt;markerName&gt;
@@ -1166,10 +1171,13 @@ Integer
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>markerName</code></td>
+<td>String</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>String
-| <code>markerName</code> | はい | 説明なし |</p>
 <h3 id='commands-dt-dt-add-lt-markername-gt-lt-markertype-gt-markericon'><code>/dt add &lt;markerName&gt; &lt;markerType&gt; [markerIcon]</code></h3>
 <aside class="notice">
 このコマンドはプレイヤーからの実行のみに制限されています。
@@ -1185,15 +1193,25 @@ Integer
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>markerName</code></td>
+<td>String</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+<tr>
+<td><code>markerType</code></td>
+<td>String</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+<tr>
+<td><code>markerIcon</code></td>
+<td>String</td>
+<td>いいえ</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>Static
-String
-| <code>markerName</code> | はい | 説明なし |
-String
-| <code>markerType</code> | はい | 説明なし |
-String
-| <code>markerIcon</code> | いいえ | 説明なし |</p>
 <h3 id='commands-dt-dt-del-lt-markername-gt'><code>/dt del &lt;markerName&gt;</code></h3>
 <aside class="notice">
 このコマンドはプレイヤーからの実行のみに制限されています。
@@ -1209,65 +1227,31 @@ String
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>markerName</code></td>
+<td>String</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>Static
-String
-| <code>markerName</code> | はい | 説明なし |</p>
 <h3 id='commands-dt-dt-random'><code>/dt random</code></h3>
 <aside class="notice">
 このコマンドはプレイヤーからの実行のみに制限されています。
 </aside>
 
 <p>ランダムに選ばれたマーカーにテレポートします。</p>
-
-<table><thead>
-<tr>
-<th>引数名</th>
-<th>種類</th>
-<th>必須か</th>
-<th>説明</th>
-</tr>
-</thead><tbody>
-</tbody></table>
-
-<p>Static</p>
 <h3 id='commands-dt-dt-near'><code>/dt near</code></h3>
 <aside class="notice">
 このコマンドはプレイヤーからの実行のみに制限されています。
 </aside>
 
 <p>近くのマーカーを表示します。</p>
-
-<table><thead>
-<tr>
-<th>引数名</th>
-<th>種類</th>
-<th>必須か</th>
-<th>説明</th>
-</tr>
-</thead><tbody>
-</tbody></table>
-
-<p>Static</p>
 <h3 id='commands-dt-dt-neartp'><code>/dt neartp</code></h3>
 <aside class="notice">
 このコマンドはプレイヤーからの実行のみに制限されています。
 </aside>
 
 <p>近くのマーカーにテレポートします。</p>
-
-<table><thead>
-<tr>
-<th>引数名</th>
-<th>種類</th>
-<th>必須か</th>
-<th>説明</th>
-</tr>
-</thead><tbody>
-</tbody></table>
-
-<p>Static</p>
 <h3 id='commands-dt-dt-list-page'><code>/dt list [page]</code></h3>
 <aside class="notice">
 このコマンドはプレイヤーからの実行のみに制限されています。
@@ -1283,11 +1267,13 @@ String
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>page</code></td>
+<td>Integer</td>
+<td>いいえ</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>Static
-Integer
-| <code>page</code> | いいえ | 説明なし |</p>
 <h2 id='commands-eban'>eban</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/eban add &lt;player&gt; &lt;reason&gt;
 /eban remove &lt;player&gt;
 /eban status [player]
@@ -1308,13 +1294,19 @@ Integer
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>player</code></td>
+<td>OfflinePlayer</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+<tr>
+<td><code>reason</code></td>
+<td>String</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>Static
-OfflinePlayer
-| <code>player</code> | はい | 説明なし |
-String
-| <code>reason</code> | はい | 説明なし |</p>
 <h3 id='commands-eban-eban-remove-lt-player-gt'><code>/eban remove &lt;player&gt;</code></h3>
 <p>ターゲットのEBanを解除します。</p>
 
@@ -1326,11 +1318,13 @@ String
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>player</code></td>
+<td>OfflinePlayer</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>Static
-OfflinePlayer
-| <code>player</code> | はい | 説明なし |</p>
 <h3 id='commands-eban-eban-status-player'><code>/eban status [player]</code></h3>
 <p>EBan一覧を表示します。</p>
 
@@ -1342,11 +1336,13 @@ OfflinePlayer
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>player</code></td>
+<td>OfflinePlayer</td>
+<td>いいえ</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>Static
-OfflinePlayer
-| <code>player</code> | いいえ | 説明なし |</p>
 <h2 id='commands-elytra'>elytra</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/elytra
 </code></pre></div>
 <blockquote>
@@ -1379,10 +1375,13 @@ OfflinePlayer
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>target</code></td>
+<td>Player</td>
+<td>いいえ</td>
+<td>ターゲットプレイヤー</td>
+</tr>
 </tbody></table>
-
-<p>Player
-| <code>target</code> | いいえ | ターゲットプレイヤー |</p>
 <h3 id='commands-flyspeed-flyspeed-set-lt-percent-gt'><code>/flyspeed set &lt;percent&gt;</code></h3>
 <aside class="notice">
 このコマンドはプレイヤーからの実行のみに制限されています。
@@ -1398,11 +1397,13 @@ OfflinePlayer
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>percent</code></td>
+<td>Float</td>
+<td>はい</td>
+<td>クリエイティブ飛行速度(通常100%)</td>
+</tr>
 </tbody></table>
-
-<p>Static
-Float
-| <code>percent</code> | はい | クリエイティブ飛行速度(通常100%) |</p>
 <h2 id='commands-g'>g</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/g
 /g &lt;gamemode&gt;
 /g &lt;gamemode&gt; &lt;player&gt;
@@ -1437,10 +1438,13 @@ Float
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>gamemode</code></td>
+<td>String</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>String
-| <code>gamemode</code> | はい | 説明なし |</p>
 <h3 id='commands-g-g-lt-gamemode-gt-lt-player-gt'><code>/g &lt;gamemode&gt; &lt;player&gt;</code></h3>
 <p>指定されたプレイヤーのゲームモードを切り替えます。</p>
 
@@ -1452,12 +1456,19 @@ Float
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>gamemode</code></td>
+<td>String</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+<tr>
+<td><code>player</code></td>
+<td>Player</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>String
-| <code>gamemode</code> | はい | 説明なし |
-Player
-| <code>player</code> | はい | 説明なし |</p>
 <h2 id='commands-getlookloc'>getlookloc</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/getlookloc
 </code></pre></div>
 <blockquote>
@@ -1502,10 +1513,13 @@ Player
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>player</code></td>
+<td>Player</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>Player
-| <code>player</code> | はい | 説明なし |</p>
 <h2 id='commands-hat'>hat</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/hat
 </code></pre></div>
 <blockquote>
@@ -1540,10 +1554,13 @@ Player
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>player</code></td>
+<td>String</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>String
-| <code>player</code> | はい | 説明なし |</p>
 <h2 id='commands-help'>help</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/help [params]
 /help register
 </code></pre></div>
@@ -1571,24 +1588,15 @@ Player
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>params</code></td>
+<td>String</td>
+<td>いいえ</td>
+<td>ヘルプパラメーター</td>
+</tr>
 </tbody></table>
-
-<p>String
-| <code>params</code> | いいえ | ヘルプパラメーター |</p>
 <h3 id='commands-help-help-register'><code>/help register</code></h3>
 <p>ヘルプブックを登録します。</p>
-
-<table><thead>
-<tr>
-<th>引数名</th>
-<th>種類</th>
-<th>必須か</th>
-<th>説明</th>
-</tr>
-</thead><tbody>
-</tbody></table>
-
-<p>Static</p>
 <h2 id='commands-hide'>hide</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/hide
 </code></pre></div>
 <blockquote>
@@ -1623,13 +1631,19 @@ Player
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>target</code></td>
+<td>OfflinePlayer</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+<tr>
+<td><code>message</code></td>
+<td>String</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>Static
-OfflinePlayer
-| <code>target</code> | はい | 説明なし |
-String
-| <code>message</code> | はい | 説明なし |</p>
 <h3 id='commands-history-history-disable-lt-target-gt-lt-item-gt'><code>/history disable &lt;target&gt; &lt;item&gt;</code></h3>
 <p>指定したプレイヤーのjaoHistory項目を無効化します。</p>
 
@@ -1641,13 +1655,19 @@ String
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>target</code></td>
+<td>OfflinePlayer</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+<tr>
+<td><code>item</code></td>
+<td>Integer</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>Static
-OfflinePlayer
-| <code>target</code> | はい | 説明なし |
-Integer
-| <code>item</code> | はい | 説明なし |</p>
 <h3 id='commands-history-history-notify-lt-target-gt-lt-item-gt-lt-changeto-gt'><code>/history notify &lt;target&gt; &lt;item&gt; &lt;changeTo&gt;</code></h3>
 <p>指定したプレイヤーのjaoHistory項目の通知設定を行います。</p>
 
@@ -1659,15 +1679,25 @@ Integer
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>target</code></td>
+<td>OfflinePlayer</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+<tr>
+<td><code>item</code></td>
+<td>Integer</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+<tr>
+<td><code>changeTo</code></td>
+<td>Boolean</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>Static
-OfflinePlayer
-| <code>target</code> | はい | 説明なし |
-Integer
-| <code>item</code> | はい | 説明なし |
-Boolean
-| <code>changeTo</code> | はい | 説明なし |</p>
 <h3 id='commands-history-history-status-lt-target-gt'><code>/history status &lt;target&gt;</code></h3>
 <p>指定したプレイヤーのjaoHistory情報を表示します。</p>
 
@@ -1679,11 +1709,13 @@ Boolean
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>target</code></td>
+<td>OfflinePlayer</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>Static
-OfflinePlayer
-| <code>target</code> | はい | 説明なし |</p>
 <h2 id='commands-home'>home</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/home
 /home [name]
 /home list [Page]
@@ -1715,10 +1747,13 @@ OfflinePlayer
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>name</code></td>
+<td>String</td>
+<td>いいえ</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>String
-| <code>name</code> | いいえ | 説明なし |</p>
 <h3 id='commands-home-home-list-page'><code>/home list [Page]</code></h3>
 <aside class="notice">
 このコマンドはプレイヤーからの実行のみに制限されています。
@@ -1734,11 +1769,13 @@ OfflinePlayer
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>Page</code></td>
+<td>Integer</td>
+<td>いいえ</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>Static
-Integer
-| <code>Page</code> | いいえ | 説明なし |</p>
 <h3 id='commands-home-home-view-name'><code>/home view [name]</code></h3>
 <aside class="notice">
 このコマンドはプレイヤーからの実行のみに制限されています。
@@ -1754,11 +1791,13 @@ Integer
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>name</code></td>
+<td>String</td>
+<td>いいえ</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>Static
-String
-| <code>name</code> | いいえ | 説明なし |</p>
 <h2 id='commands-invload'>invload</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/invload &lt;target&gt; [saveName] [player]
 </code></pre></div>
 <blockquote>
@@ -1777,14 +1816,25 @@ String
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>target</code></td>
+<td>SinglePlayerSelector</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+<tr>
+<td><code>saveName</code></td>
+<td>String</td>
+<td>いいえ</td>
+<td>説明なし</td>
+</tr>
+<tr>
+<td><code>player</code></td>
+<td>SinglePlayerSelector</td>
+<td>いいえ</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>SinglePlayerSelector
-| <code>target</code> | はい | 説明なし |
-String
-| <code>saveName</code> | いいえ | 説明なし |
-SinglePlayerSelector
-| <code>player</code> | いいえ | 説明なし |</p>
 <h2 id='commands-invsave'>invsave</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/invsave &lt;target&gt; [saveName]
 </code></pre></div>
 <blockquote>
@@ -1803,12 +1853,19 @@ SinglePlayerSelector
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>target</code></td>
+<td>SinglePlayerSelector</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+<tr>
+<td><code>saveName</code></td>
+<td>String</td>
+<td>いいえ</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>SinglePlayerSelector
-| <code>target</code> | はい | 説明なし |
-String
-| <code>saveName</code> | いいえ | 説明なし |</p>
 <h2 id='commands-jail'>jail</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/jail add &lt;player&gt; &lt;reason&gt;
 /jail remove &lt;player&gt;
 /jail status [player]
@@ -1830,13 +1887,19 @@ String
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>player</code></td>
+<td>OfflinePlayer</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+<tr>
+<td><code>reason</code></td>
+<td>String</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>Static
-OfflinePlayer
-| <code>player</code> | はい | 説明なし |
-String
-| <code>reason</code> | はい | 説明なし |</p>
 <h3 id='commands-jail-jail-remove-lt-player-gt'><code>/jail remove &lt;player&gt;</code></h3>
 <p>ターゲットのJailを解除します。</p>
 
@@ -1848,11 +1911,13 @@ String
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>player</code></td>
+<td>OfflinePlayer</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>Static
-OfflinePlayer
-| <code>player</code> | はい | 説明なし |</p>
 <h3 id='commands-jail-jail-status-player'><code>/jail status [player]</code></h3>
 <p>Jail一覧を表示します。</p>
 
@@ -1864,11 +1929,13 @@ OfflinePlayer
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>player</code></td>
+<td>OfflinePlayer</td>
+<td>いいえ</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>Static
-OfflinePlayer
-| <code>player</code> | いいえ | 説明なし |</p>
 <h3 id='commands-jail-jail-testment-lt-message-gt'><code>/jail testment &lt;message&gt;</code></h3>
 <aside class="notice">
 このコマンドはプレイヤーからの実行のみに制限されています。
@@ -1884,11 +1951,13 @@ OfflinePlayer
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>message</code></td>
+<td>String</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>Static
-String
-| <code>message</code> | はい | 説明なし |</p>
 <h2 id='commands-lead'>lead</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/lead set [target]
 /lead connect &lt;from&gt; &lt;to&gt;
 /lead leave [target]
@@ -1909,11 +1978,13 @@ String
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>target</code></td>
+<td>SingleEntitySelector</td>
+<td>いいえ</td>
+<td>対象のMob。指定しない場合見ているMob</td>
+</tr>
 </tbody></table>
-
-<p>Static
-SingleEntitySelector
-| <code>target</code> | いいえ | 対象のMob。指定しない場合見ているMob |</p>
 <h3 id='commands-lead-lead-connect-lt-from-gt-lt-to-gt'><code>/lead connect &lt;from&gt; &lt;to&gt;</code></h3>
 <p>[Mob（またはプレイヤー）]から、[Mob]にリードを付けます。</p>
 
@@ -1925,13 +1996,19 @@ SingleEntitySelector
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>from</code></td>
+<td>SingleEntitySelector</td>
+<td>はい</td>
+<td>リードを持っている側のMob（またはプレイヤー）</td>
+</tr>
+<tr>
+<td><code>to</code></td>
+<td>SingleEntitySelector</td>
+<td>はい</td>
+<td>リードを付けられる側のMob</td>
+</tr>
 </tbody></table>
-
-<p>Static
-SingleEntitySelector
-| <code>from</code> | はい | リードを持っている側のMob（またはプレイヤー） |
-SingleEntitySelector
-| <code>to</code> | はい | リードを付けられる側のMob |</p>
 <h3 id='commands-lead-lead-leave-target'><code>/lead leave [target]</code></h3>
 <aside class="notice">
 このコマンドはプレイヤーからの実行のみに制限されています。
@@ -1947,11 +2024,13 @@ SingleEntitySelector
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>target</code></td>
+<td>SingleEntitySelector</td>
+<td>いいえ</td>
+<td>対象のMob（または実行者）。対象を指定しない場合見ているMob、何も見ていない場合実行者</td>
+</tr>
 </tbody></table>
-
-<p>Static
-SingleEntitySelector
-| <code>target</code> | いいえ | 対象のMob（または実行者）。対象を指定しない場合見ているMob、何も見ていない場合実行者 |</p>
 <h2 id='commands-link'>link</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/link
 </code></pre></div>
 <blockquote>
@@ -1994,10 +2073,13 @@ SingleEntitySelector
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>loginText</code></td>
+<td>String</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>String
-| <code>loginText</code> | はい | 説明なし |</p>
 <h2 id='commands-looking'>looking</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/looking
 /looking on &lt;target&gt;
 /looking off
@@ -2032,29 +2114,19 @@ SingleEntitySelector
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>target</code></td>
+<td>Player</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>Static
-Player
-| <code>target</code> | はい | 説明なし |</p>
 <h3 id='commands-looking-looking-off'><code>/looking off</code></h3>
 <aside class="notice">
 このコマンドはプレイヤーからの実行のみに制限されています。
 </aside>
 
 <p>プレイヤーを見続けるのをやめます。</p>
-
-<table><thead>
-<tr>
-<th>引数名</th>
-<th>種類</th>
-<th>必須か</th>
-<th>説明</th>
-</tr>
-</thead><tbody>
-</tbody></table>
-
-<p>Static</p>
 <h2 id='commands-makecmd'>makecmd</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/makecmd
 </code></pre></div>
 <blockquote>
@@ -2081,18 +2153,6 @@ Player
 <p>MyMaid4基本コマンド</p>
 <h3 id='commands-mymaid4-mymaid4-reload-blacklist'><code>/mymaid4 reload-blacklist</code></h3>
 <p>MyMaid4基本コマンド</p>
-
-<table><thead>
-<tr>
-<th>引数名</th>
-<th>種類</th>
-<th>必須か</th>
-<th>説明</th>
-</tr>
-</thead><tbody>
-</tbody></table>
-
-<p>Static</p>
 <h2 id='commands-pigeon'>pigeon</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/pigeon speaker add &lt;speaker&gt;
 /pigeon messages add &lt;message&gt;
 /pigeon speaker remove [speaker]
@@ -2121,12 +2181,13 @@ Player
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>speaker</code></td>
+<td>String</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>Static
-Static
-String
-| <code>speaker</code> | はい | 説明なし |</p>
 <h3 id='commands-pigeon-pigeon-messages-add-lt-message-gt'><code>/pigeon messages add &lt;message&gt;</code></h3>
 <p>伝書鳩ちゃんにメッセージを追加してもらいます。</p>
 
@@ -2138,12 +2199,13 @@ String
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>message</code></td>
+<td>String</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>Static
-Static
-String
-| <code>message</code> | はい | 説明なし |</p>
 <h3 id='commands-pigeon-pigeon-speaker-remove-speaker'><code>/pigeon speaker remove [speaker]</code></h3>
 <p>伝書鳩ちゃんにスピーカーを削除してもらいます。</p>
 
@@ -2155,12 +2217,13 @@ String
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>speaker</code></td>
+<td>String</td>
+<td>いいえ</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>Static
-Static
-String
-| <code>speaker</code> | いいえ | 説明なし |</p>
 <h3 id='commands-pigeon-pigeon-messages-remove-message'><code>/pigeon messages remove [message]</code></h3>
 <p>伝書鳩ちゃんにメッセージを削除してもらいます。</p>
 
@@ -2172,42 +2235,17 @@ String
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>message</code></td>
+<td>String</td>
+<td>いいえ</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>Static
-Static
-String
-| <code>message</code> | いいえ | 説明なし |</p>
 <h3 id='commands-pigeon-pigeon-speaker-list'><code>/pigeon speaker list</code></h3>
 <p>伝書鳩ちゃんにスピーカーが誰がいるか聞きます。</p>
-
-<table><thead>
-<tr>
-<th>引数名</th>
-<th>種類</th>
-<th>必須か</th>
-<th>説明</th>
-</tr>
-</thead><tbody>
-</tbody></table>
-
-<p>Static
-Static</p>
 <h3 id='commands-pigeon-pigeon-messages-list'><code>/pigeon messages list</code></h3>
 <p>伝書鳩ちゃんにメッセージが何があるか聞きます。</p>
-
-<table><thead>
-<tr>
-<th>引数名</th>
-<th>種類</th>
-<th>必須か</th>
-<th>説明</th>
-</tr>
-</thead><tbody>
-</tbody></table>
-
-<p>Static
-Static</p>
 <h3 id='commands-pigeon-pigeon-broadcast-messageid'><code>/pigeon broadcast [messageId]</code></h3>
 <p>伝書鳩ちゃんにメッセージを配信してもらいます。</p>
 
@@ -2219,11 +2257,13 @@ Static</p>
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>messageId</code></td>
+<td>Integer</td>
+<td>いいえ</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>Static
-Integer
-| <code>messageId</code> | いいえ | 説明なし |</p>
 <h2 id='commands-player'>player</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/player
 /player &lt;player&gt;
 </code></pre></div>
@@ -2253,10 +2293,13 @@ Integer
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>player</code></td>
+<td>String</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>String
-| <code>player</code> | はい | 説明なし |</p>
 <h2 id='commands-respawn'>respawn</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/respawn &lt;player&gt;
 /respawn &lt;player&gt; &lt;delay&gt;
 </code></pre></div>
@@ -2276,10 +2319,13 @@ Integer
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>player</code></td>
+<td>Player</td>
+<td>はい</td>
+<td>リスポーンさせるプレイヤー</td>
+</tr>
 </tbody></table>
-
-<p>Player
-| <code>player</code> | はい | リスポーンさせるプレイヤー |</p>
 <h3 id='commands-respawn-respawn-lt-player-gt-lt-delay-gt'><code>/respawn &lt;player&gt; &lt;delay&gt;</code></h3>
 <p>指定した秒数後にプレイヤーをリスポーンします。</p>
 
@@ -2291,12 +2337,19 @@ Integer
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>player</code></td>
+<td>Player</td>
+<td>はい</td>
+<td>リスポーンさせるプレイヤー</td>
+</tr>
+<tr>
+<td><code>delay</code></td>
+<td>Long</td>
+<td>はい</td>
+<td>遅延させる秒数</td>
+</tr>
 </tbody></table>
-
-<p>Player
-| <code>player</code> | はい | リスポーンさせるプレイヤー |
-Long
-| <code>delay</code> | はい | 遅延させる秒数 |</p>
 <h2 id='commands-rider'>rider</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/rider [target]
 /rider ride &lt;from&gt; &lt;to&gt;
 /rider leave [target]
@@ -2321,10 +2374,13 @@ Long
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>target</code></td>
+<td>SingleEntitySelector</td>
+<td>いいえ</td>
+<td>対象のプレイヤー・エンティティ。指定しない場合見ているプレイヤー</td>
+</tr>
 </tbody></table>
-
-<p>SingleEntitySelector
-| <code>target</code> | いいえ | 対象のプレイヤー・エンティティ。指定しない場合見ているプレイヤー |</p>
 <h3 id='commands-rider-rider-ride-lt-from-gt-lt-to-gt'><code>/rider ride &lt;from&gt; &lt;to&gt;</code></h3>
 <p>プレイヤー・エンティティをプレイヤー・エンティティに乗せます。</p>
 
@@ -2336,13 +2392,19 @@ Long
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>from</code></td>
+<td>SingleEntitySelector</td>
+<td>はい</td>
+<td>乗せるプレイヤー・エンティティ</td>
+</tr>
+<tr>
+<td><code>to</code></td>
+<td>SingleEntitySelector</td>
+<td>はい</td>
+<td>乗せられるプレイヤー・エンティティ</td>
+</tr>
 </tbody></table>
-
-<p>Static
-SingleEntitySelector
-| <code>from</code> | はい | 乗せるプレイヤー・エンティティ |
-SingleEntitySelector
-| <code>to</code> | はい | 乗せられるプレイヤー・エンティティ |</p>
 <h3 id='commands-rider-rider-leave-target'><code>/rider leave [target]</code></h3>
 <p>乗っているプレイヤー・エンティティを下ろします。</p>
 
@@ -2354,11 +2416,13 @@ SingleEntitySelector
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>target</code></td>
+<td>SingleEntitySelector</td>
+<td>いいえ</td>
+<td>対象のプレイヤー・エンティティ。指定しない場合実行者</td>
+</tr>
 </tbody></table>
-
-<p>Static
-SingleEntitySelector
-| <code>target</code> | いいえ | 対象のプレイヤー・エンティティ。指定しない場合実行者 |</p>
 <h2 id='commands-selclick'>selclick</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/selclick
 </code></pre></div>
 <blockquote>
@@ -2405,10 +2469,13 @@ SingleEntitySelector
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>name</code></td>
+<td>String</td>
+<td>いいえ</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>String
-| <code>name</code> | いいえ | 説明なし |</p>
 <h2 id='commands-show'>show</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/show
 </code></pre></div>
 <blockquote>
@@ -2445,11 +2512,13 @@ SingleEntitySelector
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>changeTo</code></td>
+<td>Boolean</td>
+<td>いいえ</td>
+<td>オン・オフのいずれか (未指定の場合トグル)</td>
+</tr>
 </tbody></table>
-
-<p>Static
-Boolean
-| <code>changeTo</code> | いいえ | オン・オフのいずれか (未指定の場合トグル) |</p>
 <h3 id='commands-sign-sign-set-lt-line-gt-lt-text-gt'><code>/sign set &lt;line&gt; &lt;text&gt;</code></h3>
 <aside class="notice">
 このコマンドはプレイヤーからの実行のみに制限されています。
@@ -2465,13 +2534,19 @@ Boolean
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>line</code></td>
+<td>Integer</td>
+<td>はい</td>
+<td>編集する行</td>
+</tr>
+<tr>
+<td><code>text</code></td>
+<td>String</td>
+<td>はい</td>
+<td>置き換えるテキスト</td>
+</tr>
 </tbody></table>
-
-<p>Static
-Integer
-| <code>line</code> | はい | 編集する行 |
-String
-| <code>text</code> | はい | 置き換えるテキスト |</p>
 <h2 id='commands-skkcolor'>skkcolor</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/skkcolor
 /skkcolor &lt;color&gt;
 </code></pre></div>
@@ -2501,10 +2576,13 @@ String
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>color</code></td>
+<td>String</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>String
-| <code>color</code> | はい | 説明なし |</p>
 <h2 id='commands-spawn'>spawn</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/spawn
 /spawn true
 </code></pre></div>
@@ -2525,18 +2603,6 @@ String
 </aside>
 
 <p>あなたのスポーン地点にテレポートします。</p>
-
-<table><thead>
-<tr>
-<th>引数名</th>
-<th>種類</th>
-<th>必須か</th>
-<th>説明</th>
-</tr>
-</thead><tbody>
-</tbody></table>
-
-<p>Static</p>
 <h2 id='commands-tempmute'>tempmute</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/tempmute [changeTo]
 </code></pre></div>
 <blockquote>
@@ -2559,10 +2625,13 @@ String
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>changeTo</code></td>
+<td>Boolean</td>
+<td>いいえ</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>Boolean
-| <code>changeTo</code> | いいえ | 説明なし |</p>
 <h2 id='commands-test'>test</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/test version
 /test database
 /test nbt
@@ -2574,46 +2643,10 @@ String
 <p>MyMaidテストコマンド</p>
 <h3 id='commands-test-test-version'><code>/test version</code></h3>
 <p>MyMaidテストコマンド</p>
-
-<table><thead>
-<tr>
-<th>引数名</th>
-<th>種類</th>
-<th>必須か</th>
-<th>説明</th>
-</tr>
-</thead><tbody>
-</tbody></table>
-
-<p>Static</p>
 <h3 id='commands-test-test-database'><code>/test database</code></h3>
 <p>MyMaidテストコマンド</p>
-
-<table><thead>
-<tr>
-<th>引数名</th>
-<th>種類</th>
-<th>必須か</th>
-<th>説明</th>
-</tr>
-</thead><tbody>
-</tbody></table>
-
-<p>Static</p>
 <h3 id='commands-test-test-nbt'><code>/test nbt</code></h3>
 <p>MyMaidテストコマンド</p>
-
-<table><thead>
-<tr>
-<th>引数名</th>
-<th>種類</th>
-<th>必須か</th>
-<th>説明</th>
-</tr>
-</thead><tbody>
-</tbody></table>
-
-<p>Static</p>
 <h2 id='commands-testment'>testment</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/testment &lt;message&gt;
 </code></pre></div>
 <blockquote>
@@ -2636,10 +2669,13 @@ String
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>message</code></td>
+<td>String</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>String
-| <code>message</code> | はい | 説明なし |</p>
 <h2 id='commands-time'>time</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/time set &lt;timeName&gt; [isRelative]
 /time add &lt;timeInt&gt; [isRelative]
 </code></pre></div>
@@ -2663,13 +2699,19 @@ String
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>timeName</code></td>
+<td>String</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+<tr>
+<td><code>isRelative</code></td>
+<td>Boolean</td>
+<td>いいえ</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>Static
-String
-| <code>timeName</code> | はい | 説明なし |
-Boolean
-| <code>isRelative</code> | いいえ | 説明なし |</p>
 <h3 id='commands-time-time-add-lt-timeint-gt-isrelative'><code>/time add &lt;timeInt&gt; [isRelative]</code></h3>
 <aside class="notice">
 このコマンドはプレイヤーからの実行のみに制限されています。
@@ -2685,13 +2727,19 @@ Boolean
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>timeInt</code></td>
+<td>Integer</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+<tr>
+<td><code>isRelative</code></td>
+<td>Boolean</td>
+<td>いいえ</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>Static
-Integer
-| <code>timeInt</code> | はい | 説明なし |
-Boolean
-| <code>isRelative</code> | いいえ | 説明なし |</p>
 <h2 id='commands-tpdeny'>tpdeny</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/tpdeny add &lt;target&gt;
 /tpdeny remove &lt;target&gt;
 /tpdeny notify &lt;target&gt; &lt;changeTo&gt;
@@ -2717,11 +2765,13 @@ Boolean
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>target</code></td>
+<td>OfflinePlayer</td>
+<td>はい</td>
+<td>拒否する対象プレイヤー</td>
+</tr>
 </tbody></table>
-
-<p>Static
-OfflinePlayer
-| <code>target</code> | はい | 拒否する対象プレイヤー |</p>
 <h3 id='commands-tpdeny-tpdeny-remove-lt-target-gt'><code>/tpdeny remove &lt;target&gt;</code></h3>
 <aside class="notice">
 このコマンドはプレイヤーからの実行のみに制限されています。
@@ -2737,11 +2787,13 @@ OfflinePlayer
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>target</code></td>
+<td>OfflinePlayer</td>
+<td>はい</td>
+<td>解除する対象プレイヤー</td>
+</tr>
 </tbody></table>
-
-<p>Static
-OfflinePlayer
-| <code>target</code> | はい | 解除する対象プレイヤー |</p>
 <h3 id='commands-tpdeny-tpdeny-notify-lt-target-gt-lt-changeto-gt'><code>/tpdeny notify &lt;target&gt; &lt;changeTo&gt;</code></h3>
 <aside class="notice">
 このコマンドはプレイヤーからの実行のみに制限されています。
@@ -2757,31 +2809,25 @@ OfflinePlayer
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>target</code></td>
+<td>OfflinePlayer</td>
+<td>はい</td>
+<td>通知設定する対象プレイヤー</td>
+</tr>
+<tr>
+<td><code>changeTo</code></td>
+<td>Enum</td>
+<td>はい</td>
+<td>通知をするか</td>
+</tr>
 </tbody></table>
-
-<p>Static
-OfflinePlayer
-| <code>target</code> | はい | 通知設定する対象プレイヤー |
-Enum
-| <code>changeTo</code> | はい | 通知をするか |</p>
 <h3 id='commands-tpdeny-tpdeny-list'><code>/tpdeny list</code></h3>
 <aside class="notice">
 このコマンドはプレイヤーからの実行のみに制限されています。
 </aside>
 
 <p>現在TpDenyに追加されている(テレポートを拒否されている)プレイヤーの一覧を表示します。</p>
-
-<table><thead>
-<tr>
-<th>引数名</th>
-<th>種類</th>
-<th>必須か</th>
-<th>説明</th>
-</tr>
-</thead><tbody>
-</tbody></table>
-
-<p>Static</p>
 <h2 id='commands-var'>var</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/var text &lt;key&gt; &lt;value&gt;
 /var plus &lt;setToKey&gt; &lt;keyOrValue1&gt; &lt;keyOrValue2&gt;
 /var minus &lt;setToKey&gt; &lt;keyOrValue1&gt; &lt;keyOrValue2&gt;
@@ -2808,13 +2854,19 @@ Enum
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>key</code></td>
+<td>String</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+<tr>
+<td><code>value</code></td>
+<td>String</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>Static
-String
-| <code>key</code> | はい | 説明なし |
-String
-| <code>value</code> | はい | 説明なし |</p>
 <h3 id='commands-var-var-plus-lt-settokey-gt-lt-keyorvalue1-gt-lt-keyorvalue2-gt'><code>/var plus &lt;setToKey&gt; &lt;keyOrValue1&gt; &lt;keyOrValue2&gt;</code></h3>
 <p>加算し、結果を変数に代入します。</p>
 
@@ -2826,15 +2878,25 @@ String
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>setToKey</code></td>
+<td>String</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+<tr>
+<td><code>keyOrValue1</code></td>
+<td>String</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+<tr>
+<td><code>keyOrValue2</code></td>
+<td>String</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>Static
-String
-| <code>setToKey</code> | はい | 説明なし |
-String
-| <code>keyOrValue1</code> | はい | 説明なし |
-String
-| <code>keyOrValue2</code> | はい | 説明なし |</p>
 <h3 id='commands-var-var-minus-lt-settokey-gt-lt-keyorvalue1-gt-lt-keyorvalue2-gt'><code>/var minus &lt;setToKey&gt; &lt;keyOrValue1&gt; &lt;keyOrValue2&gt;</code></h3>
 <p>減算し、結果を変数に代入します。</p>
 
@@ -2846,15 +2908,25 @@ String
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>setToKey</code></td>
+<td>String</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+<tr>
+<td><code>keyOrValue1</code></td>
+<td>String</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+<tr>
+<td><code>keyOrValue2</code></td>
+<td>String</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>Static
-String
-| <code>setToKey</code> | はい | 説明なし |
-String
-| <code>keyOrValue1</code> | はい | 説明なし |
-String
-| <code>keyOrValue2</code> | はい | 説明なし |</p>
 <h3 id='commands-var-var-multiply-lt-settokey-gt-lt-keyorvalue1-gt-lt-keyorvalue2-gt'><code>/var multiply &lt;setToKey&gt; &lt;keyOrValue1&gt; &lt;keyOrValue2&gt;</code></h3>
 <p>乗算し、結果を変数に代入します。</p>
 
@@ -2866,15 +2938,25 @@ String
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>setToKey</code></td>
+<td>String</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+<tr>
+<td><code>keyOrValue1</code></td>
+<td>String</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+<tr>
+<td><code>keyOrValue2</code></td>
+<td>String</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>Static
-String
-| <code>setToKey</code> | はい | 説明なし |
-String
-| <code>keyOrValue1</code> | はい | 説明なし |
-String
-| <code>keyOrValue2</code> | はい | 説明なし |</p>
 <h3 id='commands-var-var-division-lt-settokey-gt-lt-keyorvalue1-gt-lt-keyorvalue2-gt'><code>/var division &lt;setToKey&gt; &lt;keyOrValue1&gt; &lt;keyOrValue2&gt;</code></h3>
 <p>除算し、結果を変数に代入します。</p>
 
@@ -2886,15 +2968,25 @@ String
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>setToKey</code></td>
+<td>String</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+<tr>
+<td><code>keyOrValue1</code></td>
+<td>String</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+<tr>
+<td><code>keyOrValue2</code></td>
+<td>String</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>Static
-String
-| <code>setToKey</code> | はい | 説明なし |
-String
-| <code>keyOrValue1</code> | はい | 説明なし |
-String
-| <code>keyOrValue2</code> | はい | 説明なし |</p>
 <h3 id='commands-var-var-calc-lt-settokey-gt-lt-keyorvalue1-gt-lt-unit-gt-lt-keyorvalue2-gt'><code>/var calc &lt;setToKey&gt; &lt;keyOrValue1&gt; &lt;unit&gt; &lt;keyOrValue2&gt;</code></h3>
 <p>計算し、結果を変数に代入します。</p>
 
@@ -2906,17 +2998,31 @@ String
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>setToKey</code></td>
+<td>String</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+<tr>
+<td><code>keyOrValue1</code></td>
+<td>String</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+<tr>
+<td><code>unit</code></td>
+<td>String</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+<tr>
+<td><code>keyOrValue2</code></td>
+<td>String</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>Static
-String
-| <code>setToKey</code> | はい | 説明なし |
-String
-| <code>keyOrValue1</code> | はい | 説明なし |
-String
-| <code>unit</code> | はい | 説明なし |
-String
-| <code>keyOrValue2</code> | はい | 説明なし |</p>
 <h3 id='commands-var-var-output-lt-key-gt'><code>/var output &lt;key&gt;</code></h3>
 <p>指定されたキーの値を出力します。</p>
 
@@ -2928,11 +3034,13 @@ String
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>key</code></td>
+<td>String</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>Static
-String
-| <code>key</code> | はい | 説明なし |</p>
 <h3 id='commands-var-var-list-page'><code>/var list [page]</code></h3>
 <p>キーの一覧を表示します。</p>
 
@@ -2944,11 +3052,13 @@ String
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>page</code></td>
+<td>Integer</td>
+<td>いいえ</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>Static
-Integer
-| <code>page</code> | いいえ | 説明なし |</p>
 <h3 id='commands-var-var-clear-lt-key-gt'><code>/var clear &lt;key&gt;</code></h3>
 <p>キーを削除します。</p>
 
@@ -2960,11 +3070,13 @@ Integer
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>key</code></td>
+<td>String</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>Static
-String
-| <code>key</code> | はい | 説明なし |</p>
 <h2 id='commands-varcmd'>varcmd</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/varcmd &lt;command&gt;
 </code></pre></div>
 <blockquote>
@@ -2983,10 +3095,13 @@ String
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>command</code></td>
+<td>String</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>String
-| <code>command</code> | はい | 説明なし |</p>
 <h2 id='commands-walkspeed'>walkspeed</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/walkspeed [target]
 /walkspeed set &lt;percent&gt;
 </code></pre></div>
@@ -3006,10 +3121,13 @@ String
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>target</code></td>
+<td>Player</td>
+<td>いいえ</td>
+<td>ターゲットプレイヤー</td>
+</tr>
 </tbody></table>
-
-<p>Player
-| <code>target</code> | いいえ | ターゲットプレイヤー |</p>
 <h3 id='commands-walkspeed-walkspeed-set-lt-percent-gt'><code>/walkspeed set &lt;percent&gt;</code></h3>
 <aside class="notice">
 このコマンドはプレイヤーからの実行のみに制限されています。
@@ -3025,11 +3143,13 @@ String
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>percent</code></td>
+<td>Float</td>
+<td>はい</td>
+<td>移動速度(通常100%)</td>
+</tr>
 </tbody></table>
-
-<p>Static
-Float
-| <code>percent</code> | はい | 移動速度(通常100%) |</p>
 <h2 id='commands-weather'>weather</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/weather set &lt;weatherName&gt;
 </code></pre></div>
 <blockquote>
@@ -3052,11 +3172,13 @@ Float
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>weatherName</code></td>
+<td>String</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>Static
-String
-| <code>weatherName</code> | はい | 説明なし |</p>
 <h2 id='commands-wire'>wire</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/wire set &lt;pos1&gt; &lt;pos2&gt;
 /wire setwe
 /wire del &lt;pos1&gt; &lt;pos2&gt;
@@ -3086,31 +3208,25 @@ String
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>pos1</code></td>
+<td>ArgumentTriplet</td>
+<td>はい</td>
+<td>1つ目のx・y・z座標。リードを付けられている側。</td>
+</tr>
+<tr>
+<td><code>pos2</code></td>
+<td>ArgumentTriplet</td>
+<td>はい</td>
+<td>2つ目のx・y・z座標。リードを持っている側。</td>
+</tr>
 </tbody></table>
-
-<p>Static
-ArgumentTriplet
-| <code>pos1</code> | はい | 1つ目のx・y・z座標。リードを付けられている側。 |
-ArgumentTriplet
-| <code>pos2</code> | はい | 2つ目のx・y・z座標。リードを持っている側。 |</p>
 <h3 id='commands-wire-wire-setwe'><code>/wire setwe</code></h3>
 <aside class="notice">
 このコマンドはプレイヤーからの実行のみに制限されています。
 </aside>
 
 <p>WorldEditで選択した地点間にリードを張ります。3地点以上を選択した場合、1-2,2-3,3-4地点間のようにリードが張られますが、選択した地点は全て同じ高さである必要があります。</p>
-
-<table><thead>
-<tr>
-<th>引数名</th>
-<th>種類</th>
-<th>必須か</th>
-<th>説明</th>
-</tr>
-</thead><tbody>
-</tbody></table>
-
-<p>Static</p>
 <h3 id='commands-wire-wire-del-lt-pos1-gt-lt-pos2-gt'><code>/wire del &lt;pos1&gt; &lt;pos2&gt;</code></h3>
 <aside class="notice">
 このコマンドはプレイヤーからの実行のみに制限されています。
@@ -3126,31 +3242,25 @@ ArgumentTriplet
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>pos1</code></td>
+<td>ArgumentTriplet</td>
+<td>はい</td>
+<td>1つ目のx・y・z座標。どちら側でも良いです。</td>
+</tr>
+<tr>
+<td><code>pos2</code></td>
+<td>ArgumentTriplet</td>
+<td>はい</td>
+<td>2つ目のx・y・z座標。どちら側でも良いです。</td>
+</tr>
 </tbody></table>
-
-<p>Static
-ArgumentTriplet
-| <code>pos1</code> | はい | 1つ目のx・y・z座標。どちら側でも良いです。 |
-ArgumentTriplet
-| <code>pos2</code> | はい | 2つ目のx・y・z座標。どちら側でも良いです。 |</p>
 <h3 id='commands-wire-wire-delwe'><code>/wire delwe</code></h3>
 <aside class="notice">
 このコマンドはプレイヤーからの実行のみに制限されています。
 </aside>
 
 <p>WorldEditで選択した地点間のリードを撤去します。3地点以上を選択した場合、1-2,2-3,3-4地点間のようにリードが撤去されますが、選択した地点は全て同じ高さである必要があります。</p>
-
-<table><thead>
-<tr>
-<th>引数名</th>
-<th>種類</th>
-<th>必須か</th>
-<th>説明</th>
-</tr>
-</thead><tbody>
-</tbody></table>
-
-<p>Static</p>
 <h2 id='commands-wt'>wt</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/wt &lt;worldName&gt;
 /wt &lt;worldName&gt; &lt;player&gt;
 </code></pre></div>
@@ -3174,10 +3284,13 @@ ArgumentTriplet
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>worldName</code></td>
+<td>String</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>String
-| <code>worldName</code> | はい | 説明なし |</p>
 <h3 id='commands-wt-wt-lt-worldname-gt-lt-player-gt'><code>/wt &lt;worldName&gt; &lt;player&gt;</code></h3>
 <p>指定したプレイヤーを指定したワールドにテレポートさせます。</p>
 
@@ -3189,12 +3302,19 @@ ArgumentTriplet
 <th>説明</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><code>worldName</code></td>
+<td>String</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
+<tr>
+<td><code>player</code></td>
+<td>Player</td>
+<td>はい</td>
+<td>説明なし</td>
+</tr>
 </tbody></table>
-
-<p>String
-| <code>worldName</code> | はい | 説明なし |
-Player
-| <code>player</code> | はい | 説明なし |</p>
 <h1 id='events'>Events</h1>
 <p>MyMaid4 で実装されている機能（イベント）の一覧です。</p>
 <h3 id='events-wt-event_antiendportal'>Event_AntiEndPortal</h3>
