@@ -23,7 +23,8 @@
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `player` | PlayerArgument | はい | 説明なし |
+Player
+| `player` | はい | 説明なし |
 
 ## bug
 
@@ -53,6 +54,10 @@
 
 本によりIssue作成処理を行います。
 
+| 引数名 | 種類 | 必須か | 説明 |
+| - | - | - | - |
+Static
+
 ### `/bug false`
 
 <aside class="notice">
@@ -60,6 +65,10 @@
 </aside>
 
 記入済みの本を記入可能な本に戻します。
+
+| 引数名 | 種類 | 必須か | 説明 |
+| - | - | - | - |
+Static
 
 ## calctree
 
@@ -81,7 +90,8 @@ WorldEditの選択範囲で植木算を行います。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `placeEdgeTree` | BooleanArgument | いいえ | 両端に木を置くかどうか。 |
+Boolean
+| `placeEdgeTree` | いいえ | 両端に木を置くかどうか。 |
 
 ## chat
 
@@ -99,8 +109,10 @@ WorldEditの選択範囲で植木算を行います。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `player` | StringArgument | はい | 説明なし |
-| `message` | StringArgument | はい | 説明なし |
+String
+| `player` | はい | 説明なし |
+String
+| `message` | はい | 説明なし |
 
 ## chatban
 
@@ -120,8 +132,11 @@ ChatBanに関する処理を行います。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `player` | OfflinePlayerArgument | はい | 説明なし |
-| `reason` | StringArgument | はい | 説明なし |
+Static
+OfflinePlayer
+| `player` | はい | 説明なし |
+String
+| `reason` | はい | 説明なし |
 
 ### `/chatban remove <player>`
 
@@ -129,7 +144,9 @@ ChatBanに関する処理を行います。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `player` | OfflinePlayerArgument | はい | 説明なし |
+Static
+OfflinePlayer
+| `player` | はい | 説明なし |
 
 ### `/chatban status [player]`
 
@@ -137,7 +154,9 @@ ChatBan一覧を表示します。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `player` | OfflinePlayerArgument | いいえ | 説明なし |
+Static
+OfflinePlayer
+| `player` | いいえ | 説明なし |
 
 ## cmdb
 
@@ -164,7 +183,8 @@ ChatBan一覧を表示します。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `player` | PlayerArgument | はい | 説明なし |
+Player
+| `player` | はい | 説明なし |
 
 ## debstick
 
@@ -191,7 +211,8 @@ ChatBan一覧を表示します。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `player` | PlayerArgument | はい | 説明なし |
+Player
+| `player` | はい | 説明なし |
 
 ## ded
 
@@ -261,7 +282,9 @@ ChatBan一覧を表示します。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `message` | StringArgument | はい | カスタム死亡メッセージ（%player% はプレイヤー名、%killer% はキルした人の名前に置き換わります） |
+Static
+String
+| `message` | はい | カスタム死亡メッセージ（%player% はプレイヤー名、%killer% はキルした人の名前に置き換わります） |
 
 ### `/dedmessage disable`
 
@@ -270,6 +293,10 @@ ChatBan一覧を表示します。
 </aside>
 
 死亡メッセージ表示を無効化します。
+
+| 引数名 | 種類 | 必須か | 説明 |
+| - | - | - | - |
+Static
 
 ### `/dedmessage remove <id>`
 
@@ -281,7 +308,9 @@ ChatBan一覧を表示します。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `id` | IntegerArgument | はい | 説明なし |
+Static
+Integer
+| `id` | はい | 説明なし |
 
 ### `/dedmessage list [page]`
 
@@ -293,7 +322,9 @@ ChatBan一覧を表示します。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `page` | IntegerArgument | いいえ | 説明なし |
+Static
+Integer
+| `page` | いいえ | 説明なし |
 
 ## delhome
 
@@ -326,7 +357,8 @@ ChatBan一覧を表示します。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `name` | StringArgument | いいえ | 説明なし |
+String
+| `name` | いいえ | 説明なし |
 
 ## discordlink
 
@@ -348,7 +380,8 @@ DiscordアカウントとMinecraftアカウントを紐づけます。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `authKey` | StringArgument | はい | 説明なし |
+String
+| `authKey` | はい | 説明なし |
 
 ## dt
 
@@ -376,7 +409,8 @@ DynmapのMarkerを編集・テレポートします。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `markerName` | StringArgument | はい | 説明なし |
+String
+| `markerName` | はい | 説明なし |
 
 ### `/dt add <markerName> <markerType> [markerIcon]`
 
@@ -388,9 +422,13 @@ DynmapのMarkerを編集・テレポートします。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `markerName` | StringArgument | はい | 説明なし |
-| `markerType` | StringArgument | はい | 説明なし |
-| `markerIcon` | StringArgument | いいえ | 説明なし |
+Static
+String
+| `markerName` | はい | 説明なし |
+String
+| `markerType` | はい | 説明なし |
+String
+| `markerIcon` | いいえ | 説明なし |
 
 ### `/dt del <markerName>`
 
@@ -402,7 +440,9 @@ DynmapのMarkerを編集・テレポートします。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `markerName` | StringArgument | はい | 説明なし |
+Static
+String
+| `markerName` | はい | 説明なし |
 
 ### `/dt random`
 
@@ -412,6 +452,10 @@ DynmapのMarkerを編集・テレポートします。
 
 ランダムに選ばれたマーカーにテレポートします。
 
+| 引数名 | 種類 | 必須か | 説明 |
+| - | - | - | - |
+Static
+
 ### `/dt near`
 
 <aside class="notice">
@@ -420,6 +464,10 @@ DynmapのMarkerを編集・テレポートします。
 
 近くのマーカーを表示します。
 
+| 引数名 | 種類 | 必須か | 説明 |
+| - | - | - | - |
+Static
+
 ### `/dt neartp`
 
 <aside class="notice">
@@ -427,6 +475,10 @@ DynmapのMarkerを編集・テレポートします。
 </aside>
 
 近くのマーカーにテレポートします。
+
+| 引数名 | 種類 | 必須か | 説明 |
+| - | - | - | - |
+Static
 
 ### `/dt list [page]`
 
@@ -438,7 +490,9 @@ DynmapのMarkerを編集・テレポートします。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `page` | IntegerArgument | いいえ | 説明なし |
+Static
+Integer
+| `page` | いいえ | 説明なし |
 
 ## eban
 
@@ -458,8 +512,11 @@ EBanに関する処理を行います。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `player` | OfflinePlayerArgument | はい | 説明なし |
-| `reason` | StringArgument | はい | 説明なし |
+Static
+OfflinePlayer
+| `player` | はい | 説明なし |
+String
+| `reason` | はい | 説明なし |
 
 ### `/eban remove <player>`
 
@@ -467,7 +524,9 @@ EBanに関する処理を行います。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `player` | OfflinePlayerArgument | はい | 説明なし |
+Static
+OfflinePlayer
+| `player` | はい | 説明なし |
 
 ### `/eban status [player]`
 
@@ -475,7 +534,9 @@ EBan一覧を表示します。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `player` | OfflinePlayerArgument | いいえ | 説明なし |
+Static
+OfflinePlayer
+| `player` | いいえ | 説明なし |
 
 ## elytra
 
@@ -512,7 +573,8 @@ EBan一覧を表示します。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `target` | PlayerArgument | いいえ | ターゲットプレイヤー |
+Player
+| `target` | いいえ | ターゲットプレイヤー |
 
 ### `/flyspeed set <percent>`
 
@@ -524,7 +586,9 @@ EBan一覧を表示します。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `percent` | FloatArgument | はい | クリエイティブ飛行速度(通常100%) |
+Static
+Float
+| `percent` | はい | クリエイティブ飛行速度(通常100%) |
 
 ## g
 
@@ -558,7 +622,8 @@ EBan一覧を表示します。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `gamemode` | StringArgument | はい | 説明なし |
+String
+| `gamemode` | はい | 説明なし |
 
 ### `/g <gamemode> <player>`
 
@@ -566,8 +631,10 @@ EBan一覧を表示します。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `gamemode` | StringArgument | はい | 説明なし |
-| `player` | PlayerArgument | はい | 説明なし |
+String
+| `gamemode` | はい | 説明なし |
+Player
+| `player` | はい | 説明なし |
 
 ## getlookloc
 
@@ -621,7 +688,8 @@ EBan一覧を表示します。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `player` | PlayerArgument | はい | 説明なし |
+Player
+| `player` | はい | 説明なし |
 
 ## hat
 
@@ -662,7 +730,8 @@ EBan一覧を表示します。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `player` | StringArgument | はい | 説明なし |
+String
+| `player` | はい | 説明なし |
 
 ## help
 
@@ -687,11 +756,16 @@ EBan一覧を表示します。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `params` | StringArgument | いいえ | ヘルプパラメーター |
+String
+| `params` | いいえ | ヘルプパラメーター |
 
 ### `/help register`
 
 ヘルプブックを登録します。
+
+| 引数名 | 種類 | 必須か | 説明 |
+| - | - | - | - |
+Static
 
 ## hide
 
@@ -730,8 +804,11 @@ jaoHistoryに関する操作を行います。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `target` | OfflinePlayerArgument | はい | 説明なし |
-| `message` | StringArgument | はい | 説明なし |
+Static
+OfflinePlayer
+| `target` | はい | 説明なし |
+String
+| `message` | はい | 説明なし |
 
 ### `/history disable <target> <item>`
 
@@ -739,8 +816,11 @@ jaoHistoryに関する操作を行います。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `target` | OfflinePlayerArgument | はい | 説明なし |
-| `item` | IntegerArgument | はい | 説明なし |
+Static
+OfflinePlayer
+| `target` | はい | 説明なし |
+Integer
+| `item` | はい | 説明なし |
 
 ### `/history notify <target> <item> <changeTo>`
 
@@ -748,9 +828,13 @@ jaoHistoryに関する操作を行います。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `target` | OfflinePlayerArgument | はい | 説明なし |
-| `item` | IntegerArgument | はい | 説明なし |
-| `changeTo` | BooleanArgument | はい | 説明なし |
+Static
+OfflinePlayer
+| `target` | はい | 説明なし |
+Integer
+| `item` | はい | 説明なし |
+Boolean
+| `changeTo` | はい | 説明なし |
 
 ### `/history status <target>`
 
@@ -758,7 +842,9 @@ jaoHistoryに関する操作を行います。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `target` | OfflinePlayerArgument | はい | 説明なし |
+Static
+OfflinePlayer
+| `target` | はい | 説明なし |
 
 ## home
 
@@ -791,7 +877,8 @@ jaoHistoryに関する操作を行います。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `name` | StringArgument | いいえ | 説明なし |
+String
+| `name` | いいえ | 説明なし |
 
 ### `/home list [Page]`
 
@@ -803,7 +890,9 @@ jaoHistoryに関する操作を行います。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `Page` | IntegerArgument | いいえ | 説明なし |
+Static
+Integer
+| `Page` | いいえ | 説明なし |
 
 ### `/home view [name]`
 
@@ -815,7 +904,9 @@ jaoHistoryに関する操作を行います。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `name` | StringArgument | いいえ | 説明なし |
+Static
+String
+| `name` | いいえ | 説明なし |
 
 ## invload
 
@@ -833,9 +924,12 @@ jaoHistoryに関する操作を行います。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `target` | SinglePlayerSelectorArgument | はい | 説明なし |
-| `saveName` | StringArgument | いいえ | 説明なし |
-| `player` | SinglePlayerSelectorArgument | いいえ | 説明なし |
+SinglePlayerSelector
+| `target` | はい | 説明なし |
+String
+| `saveName` | いいえ | 説明なし |
+SinglePlayerSelector
+| `player` | いいえ | 説明なし |
 
 ## invsave
 
@@ -853,8 +947,10 @@ jaoHistoryに関する操作を行います。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `target` | SinglePlayerSelectorArgument | はい | 説明なし |
-| `saveName` | StringArgument | いいえ | 説明なし |
+SinglePlayerSelector
+| `target` | はい | 説明なし |
+String
+| `saveName` | いいえ | 説明なし |
 
 ## jail
 
@@ -875,8 +971,11 @@ Jailに関する処理を行います。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `player` | OfflinePlayerArgument | はい | 説明なし |
-| `reason` | StringArgument | はい | 説明なし |
+Static
+OfflinePlayer
+| `player` | はい | 説明なし |
+String
+| `reason` | はい | 説明なし |
 
 ### `/jail remove <player>`
 
@@ -884,7 +983,9 @@ Jailに関する処理を行います。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `player` | OfflinePlayerArgument | はい | 説明なし |
+Static
+OfflinePlayer
+| `player` | はい | 説明なし |
 
 ### `/jail status [player]`
 
@@ -892,7 +993,9 @@ Jail一覧を表示します。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `player` | OfflinePlayerArgument | いいえ | 説明なし |
+Static
+OfflinePlayer
+| `player` | いいえ | 説明なし |
 
 ### `/jail testment <message>`
 
@@ -904,7 +1007,9 @@ Jail一覧を表示します。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `message` | StringArgument | はい | 説明なし |
+Static
+String
+| `message` | はい | 説明なし |
 
 ## lead
 
@@ -924,7 +1029,9 @@ Mob（またはプレイヤー）にリードを付けます。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `target` | SingleEntitySelectorArgument | いいえ | 対象のMob。指定しない場合見ているMob |
+Static
+SingleEntitySelector
+| `target` | いいえ | 対象のMob。指定しない場合見ているMob |
 
 ### `/lead connect <from> <to>`
 
@@ -932,8 +1039,11 @@ Mob（またはプレイヤー）にリードを付けます。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `from` | SingleEntitySelectorArgument | はい | リードを持っている側のMob（またはプレイヤー） |
-| `to` | SingleEntitySelectorArgument | はい | リードを付けられる側のMob |
+Static
+SingleEntitySelector
+| `from` | はい | リードを持っている側のMob（またはプレイヤー） |
+SingleEntitySelector
+| `to` | はい | リードを付けられる側のMob |
 
 ### `/lead leave [target]`
 
@@ -945,7 +1055,9 @@ Mob（またはプレイヤー）にリードを付けます。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `target` | SingleEntitySelectorArgument | いいえ | 対象のMob（または実行者）。対象を指定しない場合見ているMob、何も見ていない場合実行者 |
+Static
+SingleEntitySelector
+| `target` | いいえ | 対象のMob（または実行者）。対象を指定しない場合見ているMob、何も見ていない場合実行者 |
 
 ## link
 
@@ -994,7 +1106,8 @@ linkコマンドはjMS Gamers Clubで実行するのだ。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `loginText` | StringArgument | はい | 説明なし |
+String
+| `loginText` | はい | 説明なし |
 
 ## looking
 
@@ -1028,7 +1141,9 @@ linkコマンドはjMS Gamers Clubで実行するのだ。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `target` | PlayerArgument | はい | 説明なし |
+Static
+Player
+| `target` | はい | 説明なし |
 
 ### `/looking off`
 
@@ -1037,6 +1152,10 @@ linkコマンドはjMS Gamers Clubで実行するのだ。
 </aside>
 
 プレイヤーを見続けるのをやめます。
+
+| 引数名 | 種類 | 必須か | 説明 |
+| - | - | - | - |
+Static
 
 ## makecmd
 
@@ -1072,6 +1191,10 @@ MyMaid4基本コマンド
 
 MyMaid4基本コマンド
 
+| 引数名 | 種類 | 必須か | 説明 |
+| - | - | - | - |
+Static
+
 ## pigeon
 
 ```plaintext
@@ -1096,7 +1219,10 @@ MyMaid4基本コマンド
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `speaker` | StringArgument | はい | 説明なし |
+Static
+Static
+String
+| `speaker` | はい | 説明なし |
 
 ### `/pigeon messages add <message>`
 
@@ -1104,7 +1230,10 @@ MyMaid4基本コマンド
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `message` | StringArgument | はい | 説明なし |
+Static
+Static
+String
+| `message` | はい | 説明なし |
 
 ### `/pigeon speaker remove [speaker]`
 
@@ -1112,7 +1241,10 @@ MyMaid4基本コマンド
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `speaker` | StringArgument | いいえ | 説明なし |
+Static
+Static
+String
+| `speaker` | いいえ | 説明なし |
 
 ### `/pigeon messages remove [message]`
 
@@ -1120,15 +1252,28 @@ MyMaid4基本コマンド
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `message` | StringArgument | いいえ | 説明なし |
+Static
+Static
+String
+| `message` | いいえ | 説明なし |
 
 ### `/pigeon speaker list`
 
 伝書鳩ちゃんにスピーカーが誰がいるか聞きます。
 
+| 引数名 | 種類 | 必須か | 説明 |
+| - | - | - | - |
+Static
+Static
+
 ### `/pigeon messages list`
 
 伝書鳩ちゃんにメッセージが何があるか聞きます。
+
+| 引数名 | 種類 | 必須か | 説明 |
+| - | - | - | - |
+Static
+Static
 
 ### `/pigeon broadcast [messageId]`
 
@@ -1136,7 +1281,9 @@ MyMaid4基本コマンド
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `messageId` | IntegerArgument | いいえ | 説明なし |
+Static
+Integer
+| `messageId` | いいえ | 説明なし |
 
 ## player
 
@@ -1165,7 +1312,8 @@ MyMaid4基本コマンド
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `player` | StringArgument | はい | 説明なし |
+String
+| `player` | はい | 説明なし |
 
 ## respawn
 
@@ -1184,7 +1332,8 @@ MyMaid4基本コマンド
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `player` | PlayerArgument | はい | リスポーンさせるプレイヤー |
+Player
+| `player` | はい | リスポーンさせるプレイヤー |
 
 ### `/respawn <player> <delay>`
 
@@ -1192,8 +1341,10 @@ MyMaid4基本コマンド
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `player` | PlayerArgument | はい | リスポーンさせるプレイヤー |
-| `delay` | LongArgument | はい | 遅延させる秒数 |
+Player
+| `player` | はい | リスポーンさせるプレイヤー |
+Long
+| `delay` | はい | 遅延させる秒数 |
 
 ## rider
 
@@ -1217,7 +1368,8 @@ MyMaid4基本コマンド
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `target` | SingleEntitySelectorArgument | いいえ | 対象のプレイヤー・エンティティ。指定しない場合見ているプレイヤー |
+SingleEntitySelector
+| `target` | いいえ | 対象のプレイヤー・エンティティ。指定しない場合見ているプレイヤー |
 
 ### `/rider ride <from> <to>`
 
@@ -1225,8 +1377,11 @@ MyMaid4基本コマンド
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `from` | SingleEntitySelectorArgument | はい | 乗せるプレイヤー・エンティティ |
-| `to` | SingleEntitySelectorArgument | はい | 乗せられるプレイヤー・エンティティ |
+Static
+SingleEntitySelector
+| `from` | はい | 乗せるプレイヤー・エンティティ |
+SingleEntitySelector
+| `to` | はい | 乗せられるプレイヤー・エンティティ |
 
 ### `/rider leave [target]`
 
@@ -1234,7 +1389,9 @@ MyMaid4基本コマンド
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `target` | SingleEntitySelectorArgument | いいえ | 対象のプレイヤー・エンティティ。指定しない場合実行者 |
+Static
+SingleEntitySelector
+| `target` | いいえ | 対象のプレイヤー・エンティティ。指定しない場合実行者 |
 
 ## selclick
 
@@ -1285,7 +1442,8 @@ SelClickの有効/無効を切り替えます。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `name` | StringArgument | いいえ | 説明なし |
+String
+| `name` | いいえ | 説明なし |
 
 ## show
 
@@ -1326,7 +1484,9 @@ Hide状態を解除します。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `changeTo` | BooleanArgument | いいえ | オン・オフのいずれか (未指定の場合トグル) |
+Static
+Boolean
+| `changeTo` | いいえ | オン・オフのいずれか (未指定の場合トグル) |
 
 ### `/sign set <line> <text>`
 
@@ -1338,8 +1498,11 @@ Hide状態を解除します。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `line` | IntegerArgument | はい | 編集する行 |
-| `text` | StringArgument | はい | 置き換えるテキスト |
+Static
+Integer
+| `line` | はい | 編集する行 |
+String
+| `text` | はい | 置き換えるテキスト |
 
 ## skkcolor
 
@@ -1370,7 +1533,8 @@ Hide状態を解除します。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `color` | StringArgument | はい | 説明なし |
+String
+| `color` | はい | 説明なし |
 
 ## spawn
 
@@ -1399,6 +1563,10 @@ Hide状態を解除します。
 
 あなたのスポーン地点にテレポートします。
 
+| 引数名 | 種類 | 必須か | 説明 |
+| - | - | - | - |
+Static
+
 ## tempmute
 
 ```plaintext
@@ -1419,7 +1587,8 @@ TempMuteをオン・オフします。指定しない場合、トグルで変更
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `changeTo` | BooleanArgument | いいえ | 説明なし |
+Boolean
+| `changeTo` | いいえ | 説明なし |
 
 ## test
 
@@ -1437,13 +1606,25 @@ MyMaidテストコマンド
 
 MyMaidテストコマンド
 
+| 引数名 | 種類 | 必須か | 説明 |
+| - | - | - | - |
+Static
+
 ### `/test database`
 
 MyMaidテストコマンド
 
+| 引数名 | 種類 | 必須か | 説明 |
+| - | - | - | - |
+Static
+
 ### `/test nbt`
 
 MyMaidテストコマンド
+
+| 引数名 | 種類 | 必須か | 説明 |
+| - | - | - | - |
+Static
 
 ## testment
 
@@ -1465,7 +1646,8 @@ Jailの遺言を残します。jail testmentのエイリアスです。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `message` | StringArgument | はい | 説明なし |
+String
+| `message` | はい | 説明なし |
 
 ## time
 
@@ -1488,8 +1670,11 @@ Jailの遺言を残します。jail testmentのエイリアスです。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `timeName` | StringArgument | はい | 説明なし |
-| `isRelative` | BooleanArgument | いいえ | 説明なし |
+Static
+String
+| `timeName` | はい | 説明なし |
+Boolean
+| `isRelative` | いいえ | 説明なし |
 
 ### `/time add <timeInt> [isRelative]`
 
@@ -1501,8 +1686,11 @@ Jailの遺言を残します。jail testmentのエイリアスです。
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `timeInt` | IntegerArgument | はい | 説明なし |
-| `isRelative` | BooleanArgument | いいえ | 説明なし |
+Static
+Integer
+| `timeInt` | はい | 説明なし |
+Boolean
+| `isRelative` | いいえ | 説明なし |
 
 ## tpdeny
 
@@ -1527,7 +1715,9 @@ TpDenyにプレイヤーを追加し、以降のテレポートを拒否しま�
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `target` | OfflinePlayerArgument | はい | 拒否する対象プレイヤー |
+Static
+OfflinePlayer
+| `target` | はい | 拒否する対象プレイヤー |
 
 ### `/tpdeny remove <target>`
 
@@ -1539,7 +1729,9 @@ TpDenyからプレイヤーを解除し、以降のテレポートを許可し�
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `target` | OfflinePlayerArgument | はい | 解除する対象プレイヤー |
+Static
+OfflinePlayer
+| `target` | はい | 解除する対象プレイヤー |
 
 ### `/tpdeny notify <target> <changeTo>`
 
@@ -1551,8 +1743,11 @@ TpDenyからプレイヤーを解除し、以降のテレポートを許可し�
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `target` | OfflinePlayerArgument | はい | 通知設定する対象プレイヤー |
-| `changeTo` | EnumArgument | はい | 通知をするか |
+Static
+OfflinePlayer
+| `target` | はい | 通知設定する対象プレイヤー |
+Enum
+| `changeTo` | はい | 通知をするか |
 
 ### `/tpdeny list`
 
@@ -1561,6 +1756,10 @@ TpDenyからプレイヤーを解除し、以降のテレポートを許可し�
 </aside>
 
 現在TpDenyに追加されている(テレポートを拒否されている)プレイヤーの一覧を表示します。
+
+| 引数名 | 種類 | 必須か | 説明 |
+| - | - | - | - |
+Static
 
 ## var
 
@@ -1586,8 +1785,11 @@ TpDenyからプレイヤーを解除し、以降のテレポートを許可し�
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `key` | StringArgument | はい | 説明なし |
-| `value` | StringArgument | はい | 説明なし |
+Static
+String
+| `key` | はい | 説明なし |
+String
+| `value` | はい | 説明なし |
 
 ### `/var plus <setToKey> <keyOrValue1> <keyOrValue2>`
 
@@ -1595,9 +1797,13 @@ TpDenyからプレイヤーを解除し、以降のテレポートを許可し�
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `setToKey` | StringArgument | はい | 説明なし |
-| `keyOrValue1` | StringArgument | はい | 説明なし |
-| `keyOrValue2` | StringArgument | はい | 説明なし |
+Static
+String
+| `setToKey` | はい | 説明なし |
+String
+| `keyOrValue1` | はい | 説明なし |
+String
+| `keyOrValue2` | はい | 説明なし |
 
 ### `/var minus <setToKey> <keyOrValue1> <keyOrValue2>`
 
@@ -1605,9 +1811,13 @@ TpDenyからプレイヤーを解除し、以降のテレポートを許可し�
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `setToKey` | StringArgument | はい | 説明なし |
-| `keyOrValue1` | StringArgument | はい | 説明なし |
-| `keyOrValue2` | StringArgument | はい | 説明なし |
+Static
+String
+| `setToKey` | はい | 説明なし |
+String
+| `keyOrValue1` | はい | 説明なし |
+String
+| `keyOrValue2` | はい | 説明なし |
 
 ### `/var multiply <setToKey> <keyOrValue1> <keyOrValue2>`
 
@@ -1615,9 +1825,13 @@ TpDenyからプレイヤーを解除し、以降のテレポートを許可し�
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `setToKey` | StringArgument | はい | 説明なし |
-| `keyOrValue1` | StringArgument | はい | 説明なし |
-| `keyOrValue2` | StringArgument | はい | 説明なし |
+Static
+String
+| `setToKey` | はい | 説明なし |
+String
+| `keyOrValue1` | はい | 説明なし |
+String
+| `keyOrValue2` | はい | 説明なし |
 
 ### `/var division <setToKey> <keyOrValue1> <keyOrValue2>`
 
@@ -1625,9 +1839,13 @@ TpDenyからプレイヤーを解除し、以降のテレポートを許可し�
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `setToKey` | StringArgument | はい | 説明なし |
-| `keyOrValue1` | StringArgument | はい | 説明なし |
-| `keyOrValue2` | StringArgument | はい | 説明なし |
+Static
+String
+| `setToKey` | はい | 説明なし |
+String
+| `keyOrValue1` | はい | 説明なし |
+String
+| `keyOrValue2` | はい | 説明なし |
 
 ### `/var calc <setToKey> <keyOrValue1> <unit> <keyOrValue2>`
 
@@ -1635,10 +1853,15 @@ TpDenyからプレイヤーを解除し、以降のテレポートを許可し�
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `setToKey` | StringArgument | はい | 説明なし |
-| `keyOrValue1` | StringArgument | はい | 説明なし |
-| `unit` | StringArgument | はい | 説明なし |
-| `keyOrValue2` | StringArgument | はい | 説明なし |
+Static
+String
+| `setToKey` | はい | 説明なし |
+String
+| `keyOrValue1` | はい | 説明なし |
+String
+| `unit` | はい | 説明なし |
+String
+| `keyOrValue2` | はい | 説明なし |
 
 ### `/var output <key>`
 
@@ -1646,7 +1869,9 @@ TpDenyからプレイヤーを解除し、以降のテレポートを許可し�
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `key` | StringArgument | はい | 説明なし |
+Static
+String
+| `key` | はい | 説明なし |
 
 ### `/var list [page]`
 
@@ -1654,7 +1879,9 @@ TpDenyからプレイヤーを解除し、以降のテレポートを許可し�
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `page` | IntegerArgument | いいえ | 説明なし |
+Static
+Integer
+| `page` | いいえ | 説明なし |
 
 ### `/var clear <key>`
 
@@ -1662,7 +1889,9 @@ TpDenyからプレイヤーを解除し、以降のテレポートを許可し�
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `key` | StringArgument | はい | 説明なし |
+Static
+String
+| `key` | はい | 説明なし |
 
 ## varcmd
 
@@ -1680,7 +1909,8 @@ TpDenyからプレイヤーを解除し、以降のテレポートを許可し�
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `command` | StringArgument | はい | 説明なし |
+String
+| `command` | はい | 説明なし |
 
 ## walkspeed
 
@@ -1699,7 +1929,8 @@ TpDenyからプレイヤーを解除し、以降のテレポートを許可し�
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `target` | PlayerArgument | いいえ | ターゲットプレイヤー |
+Player
+| `target` | いいえ | ターゲットプレイヤー |
 
 ### `/walkspeed set <percent>`
 
@@ -1711,7 +1942,9 @@ TpDenyからプレイヤーを解除し、以降のテレポートを許可し�
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `percent` | FloatArgument | はい | 移動速度(通常100%) |
+Static
+Float
+| `percent` | はい | 移動速度(通常100%) |
 
 ## weather
 
@@ -1733,7 +1966,9 @@ TpDenyからプレイヤーを解除し、以降のテレポートを許可し�
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `weatherName` | StringArgument | はい | 説明なし |
+Static
+String
+| `weatherName` | はい | 説明なし |
 
 ## wire
 
@@ -1760,8 +1995,11 @@ TpDenyからプレイヤーを解除し、以降のテレポートを許可し�
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `pos1` | ArgumentTriplet | はい | 1つ目のx・y・z座標。リードを付けられている側。 |
-| `pos2` | ArgumentTriplet | はい | 2つ目のx・y・z座標。リードを持っている側。 |
+Static
+ArgumentTriplet
+| `pos1` | はい | 1つ目のx・y・z座標。リードを付けられている側。 |
+ArgumentTriplet
+| `pos2` | はい | 2つ目のx・y・z座標。リードを持っている側。 |
 
 ### `/wire setwe`
 
@@ -1770,6 +2008,10 @@ TpDenyからプレイヤーを解除し、以降のテレポートを許可し�
 </aside>
 
 WorldEditで選択した地点間にリードを張ります。3地点以上を選択した場合、1-2,2-3,3-4地点間のようにリードが張られますが、選択した地点は全て同じ高さである必要があります。
+
+| 引数名 | 種類 | 必須か | 説明 |
+| - | - | - | - |
+Static
 
 ### `/wire del <pos1> <pos2>`
 
@@ -1781,8 +2023,11 @@ WorldEditで選択した地点間にリードを張ります。3地点以上を�
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `pos1` | ArgumentTriplet | はい | 1つ目のx・y・z座標。どちら側でも良いです。 |
-| `pos2` | ArgumentTriplet | はい | 2つ目のx・y・z座標。どちら側でも良いです。 |
+Static
+ArgumentTriplet
+| `pos1` | はい | 1つ目のx・y・z座標。どちら側でも良いです。 |
+ArgumentTriplet
+| `pos2` | はい | 2つ目のx・y・z座標。どちら側でも良いです。 |
 
 ### `/wire delwe`
 
@@ -1791,6 +2036,10 @@ WorldEditで選択した地点間にリードを張ります。3地点以上を�
 </aside>
 
 WorldEditで選択した地点間のリードを撤去します。3地点以上を選択した場合、1-2,2-3,3-4地点間のようにリードが撤去されますが、選択した地点は全て同じ高さである必要があります。
+
+| 引数名 | 種類 | 必須か | 説明 |
+| - | - | - | - |
+Static
 
 ## wt
 
@@ -1813,7 +2062,8 @@ WorldEditで選択した地点間のリードを撤去します。3地点以上�
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `worldName` | StringArgument | はい | 説明なし |
+String
+| `worldName` | はい | 説明なし |
 
 ### `/wt <worldName> <player>`
 
@@ -1821,5 +2071,7 @@ WorldEditで選択した地点間のリードを撤去します。3地点以上�
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `worldName` | StringArgument | はい | 説明なし |
-| `player` | PlayerArgument | はい | 説明なし |
+String
+| `worldName` | はい | 説明なし |
+Player
+| `player` | はい | 説明なし |
