@@ -1562,6 +1562,126 @@ TpDenyからプレイヤーを解除し、以降のテレポートを許可し�
 
 現在TpDenyに追加されている(テレポートを拒否されている)プレイヤーの一覧を表示します。
 
+## var
+
+```plaintext
+/var text <key> <value>
+/var plus <setToKey> <keyOrValue1> <keyOrValue2>
+/var minus <setToKey> <keyOrValue1> <keyOrValue2>
+/var multiply <setToKey> <keyOrValue1> <keyOrValue2>
+/var division <setToKey> <keyOrValue1> <keyOrValue2>
+/var calc <setToKey> <keyOrValue1> <unit> <keyOrValue2>
+/var output <key>
+/var list [page]
+/var clear <key>
+```
+
+> ソースコード: [com.jaoafa.mymaid4.command.Cmd_Var](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/command/Cmd_Var.java)
+
+変数に関することを利用できます。
+
+### `/var text <key> <value>`
+
+変数を設定(代入)します。
+
+| 引数名 | 種類 | 必須か | 説明 |
+| - | - | - | - |
+| `key` | StringArgument | はい | 説明なし |
+| `value` | StringArgument | はい | 説明なし |
+
+### `/var plus <setToKey> <keyOrValue1> <keyOrValue2>`
+
+加算し、結果を変数に代入します。
+
+| 引数名 | 種類 | 必須か | 説明 |
+| - | - | - | - |
+| `setToKey` | StringArgument | はい | 説明なし |
+| `keyOrValue1` | StringArgument | はい | 説明なし |
+| `keyOrValue2` | StringArgument | はい | 説明なし |
+
+### `/var minus <setToKey> <keyOrValue1> <keyOrValue2>`
+
+減算し、結果を変数に代入します。
+
+| 引数名 | 種類 | 必須か | 説明 |
+| - | - | - | - |
+| `setToKey` | StringArgument | はい | 説明なし |
+| `keyOrValue1` | StringArgument | はい | 説明なし |
+| `keyOrValue2` | StringArgument | はい | 説明なし |
+
+### `/var multiply <setToKey> <keyOrValue1> <keyOrValue2>`
+
+乗算し、結果を変数に代入します。
+
+| 引数名 | 種類 | 必須か | 説明 |
+| - | - | - | - |
+| `setToKey` | StringArgument | はい | 説明なし |
+| `keyOrValue1` | StringArgument | はい | 説明なし |
+| `keyOrValue2` | StringArgument | はい | 説明なし |
+
+### `/var division <setToKey> <keyOrValue1> <keyOrValue2>`
+
+除算し、結果を変数に代入します。
+
+| 引数名 | 種類 | 必須か | 説明 |
+| - | - | - | - |
+| `setToKey` | StringArgument | はい | 説明なし |
+| `keyOrValue1` | StringArgument | はい | 説明なし |
+| `keyOrValue2` | StringArgument | はい | 説明なし |
+
+### `/var calc <setToKey> <keyOrValue1> <unit> <keyOrValue2>`
+
+計算し、結果を変数に代入します。
+
+| 引数名 | 種類 | 必須か | 説明 |
+| - | - | - | - |
+| `setToKey` | StringArgument | はい | 説明なし |
+| `keyOrValue1` | StringArgument | はい | 説明なし |
+| `unit` | StringArgument | はい | 説明なし |
+| `keyOrValue2` | StringArgument | はい | 説明なし |
+
+### `/var output <key>`
+
+指定されたキーの値を出力します。
+
+| 引数名 | 種類 | 必須か | 説明 |
+| - | - | - | - |
+| `key` | StringArgument | はい | 説明なし |
+
+### `/var list [page]`
+
+キーの一覧を表示します。
+
+| 引数名 | 種類 | 必須か | 説明 |
+| - | - | - | - |
+| `page` | IntegerArgument | いいえ | 説明なし |
+
+### `/var clear <key>`
+
+キーを削除します。
+
+| 引数名 | 種類 | 必須か | 説明 |
+| - | - | - | - |
+| `key` | StringArgument | はい | 説明なし |
+
+## varcmd
+
+```plaintext
+/varcmd <command>
+```
+
+> ソースコード: [com.jaoafa.mymaid4.command.Cmd_VarCmd](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/command/Cmd_VarCmd.java)
+
+変数を含むコマンドの変数を置き換え、実行します。
+
+### `/varcmd <command>`
+
+変数を含むコマンドの変数を置き換え、実行します。
+
+| 引数名 | 種類 | 必須か | 説明 |
+| - | - | - | - |
+| `command` | StringArgument | はい | 説明なし |
+
 ## walkspeed
 
 ```plaintext
