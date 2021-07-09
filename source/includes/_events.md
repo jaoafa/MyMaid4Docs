@@ -1,3 +1,12 @@
+### Event_AdvancementDiscordNotify
+
+エンドポータルの作成を制限します。
+
+| メソッド名 | イベント |
+| - | - |
+| onDone | PlayerAdvancementDoneEvent |
+> ソースコード: [com.jaoafa.mymaid4.event.Event_AdvancementDiscordNotify](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_AdvancementDiscordNotify.java)
+
 ### Event_AntiEndPortal
 
 エンドポータルの作成を制限します。
