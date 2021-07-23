@@ -125,26 +125,6 @@ jaoium制限に関する処理を行います。
 | ByCommandBlock | ServerCommandEvent |
 > ソースコード: [com.jaoafa.mymaid4.event.Event_Antijaoium](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_Antijaoium.java)
 
-### Event_BlackList
-
-アイテム・ブロックブラックリストに関する処理を行います。
-
-| メソッド名 | イベント |
-| - | - |
-| onUseItem | UseItemEvent |
-| onUseBlock | UseBlockEvent |
-| onSpawnEntity | SpawnEntityEvent |
-| onPlayerItemHeld | PlayerItemHeldEvent |
-| onPlayerDropItem | PlayerDropItemEvent |
-| onPlaceBlock | PlaceBlockEvent |
-| onInventoryDrag | InventoryDragEvent |
-| onInventoryCreative | InventoryCreativeEvent |
-| onInventoryClick | InventoryClickEvent |
-| onDestroyEntity | DestroyEntityEvent |
-| onBreakBlock | BreakBlockEvent |
-| onBlockDispenseArmor | BlockDispenseArmorEvent |
-> ソースコード: [com.jaoafa.mymaid4.event.Event_BlackList](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_BlackList.java)
-
 ### Event_Bug
 
 bugコマンドに関する処理を行います。
@@ -631,15 +611,6 @@ tpdenyコマンドに関する処理を行います。
 | - | - |
 | OnPlayerJoin | PlayerJoinEvent |
 > ソースコード: [com.jaoafa.mymaid4.event.Event_ViaVerCheck](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_ViaVerCheck.java)
-
-### Event_Vote
-
-各サーバリストサイトからの投票通知を受け取り、処理します。
-
-| メソッド名 | イベント |
-| - | - |
-| onVotifierEvent | VotifierEvent |
-> ソースコード: [com.jaoafa.mymaid4.event.Event_Vote](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_Vote.java)
 
 ### Event_WorldEditAutoFacing
 
