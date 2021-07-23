@@ -528,9 +528,6 @@
                     <a href="#events-wt-event_antijaoium" class="toc-h2 toc-link" data-title="Event_Antijaoium">Event_Antijaoium</a>
                   </li>
                   <li>
-                    <a href="#events-wt-event_blacklist" class="toc-h2 toc-link" data-title="Event_BlackList">Event_BlackList</a>
-                  </li>
-                  <li>
                     <a href="#events-wt-event_bug" class="toc-h2 toc-link" data-title="Event_Bug">Event_Bug</a>
                   </li>
                   <li>
@@ -673,9 +670,6 @@
                   </li>
                   <li>
                     <a href="#events-wt-event_viavercheck" class="toc-h2 toc-link" data-title="Event_ViaVerCheck">Event_ViaVerCheck</a>
-                  </li>
-                  <li>
-                    <a href="#events-wt-event_vote" class="toc-h2 toc-link" data-title="Event_Vote">Event_Vote</a>
                   </li>
                   <li>
                     <a href="#events-wt-event_worldeditautofacing" class="toc-h2 toc-link" data-title="Event_WorldEditAutoFacing">Event_WorldEditAutoFacing</a>
@@ -3657,68 +3651,6 @@
 <blockquote>
 <p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_Antijaoium.java">com.jaoafa.mymaid4.event.Event_Antijaoium</a></p>
 </blockquote>
-<h3 id='events-wt-event_blacklist'>Event_BlackList</h3>
-<p>アイテム・ブロックブラックリストに関する処理を行います。</p>
-
-<table><thead>
-<tr>
-<th>メソッド名</th>
-<th>イベント</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>onUseItem</td>
-<td>UseItemEvent</td>
-</tr>
-<tr>
-<td>onUseBlock</td>
-<td>UseBlockEvent</td>
-</tr>
-<tr>
-<td>onSpawnEntity</td>
-<td>SpawnEntityEvent</td>
-</tr>
-<tr>
-<td>onPlayerItemHeld</td>
-<td>PlayerItemHeldEvent</td>
-</tr>
-<tr>
-<td>onPlayerDropItem</td>
-<td>PlayerDropItemEvent</td>
-</tr>
-<tr>
-<td>onPlaceBlock</td>
-<td>PlaceBlockEvent</td>
-</tr>
-<tr>
-<td>onInventoryDrag</td>
-<td>InventoryDragEvent</td>
-</tr>
-<tr>
-<td>onInventoryCreative</td>
-<td>InventoryCreativeEvent</td>
-</tr>
-<tr>
-<td>onInventoryClick</td>
-<td>InventoryClickEvent</td>
-</tr>
-<tr>
-<td>onDestroyEntity</td>
-<td>DestroyEntityEvent</td>
-</tr>
-<tr>
-<td>onBreakBlock</td>
-<td>BreakBlockEvent</td>
-</tr>
-<tr>
-<td>onBlockDispenseArmor</td>
-<td>BlockDispenseArmorEvent</td>
-</tr>
-</tbody></table>
-
-<blockquote>
-<p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_BlackList.java">com.jaoafa.mymaid4.event.Event_BlackList</a></p>
-</blockquote>
 <h3 id='events-wt-event_bug'>Event_Bug</h3>
 <p>bugコマンドに関する処理を行います。</p>
 
@@ -4802,24 +4734,6 @@
 
 <blockquote>
 <p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_ViaVerCheck.java">com.jaoafa.mymaid4.event.Event_ViaVerCheck</a></p>
-</blockquote>
-<h3 id='events-wt-event_vote'>Event_Vote</h3>
-<p>各サーバリストサイトからの投票通知を受け取り、処理します。</p>
-
-<table><thead>
-<tr>
-<th>メソッド名</th>
-<th>イベント</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>onVotifierEvent</td>
-<td>VotifierEvent</td>
-</tr>
-</tbody></table>
-
-<blockquote>
-<p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_Vote.java">com.jaoafa.mymaid4.event.Event_Vote</a></p>
 </blockquote>
 <h3 id='events-wt-event_worldeditautofacing'>Event_WorldEditAutoFacing</h3>
 <p>「[facing=look]」が含まれるコマンドが実行された際に自動で向いている方向に置き換えます。</p>
