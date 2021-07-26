@@ -597,6 +597,9 @@
                     <a href="#events-wt-event_jail" class="toc-h2 toc-link" data-title="Event_Jail">Event_Jail</a>
                   </li>
                   <li>
+                    <a href="#events-wt-event_joinwarnusers" class="toc-h2 toc-link" data-title="Event_JoinWarnUsers">Event_JoinWarnUsers</a>
+                  </li>
+                  <li>
                     <a href="#events-wt-event_killafterrespawn" class="toc-h2 toc-link" data-title="Event_KillAfterRespawn">Event_KillAfterRespawn</a>
                   </li>
                   <li>
@@ -699,7 +702,7 @@
 
 <p>Minecraft サーバ内での MyMaid4 のコマンドヘルプは <code>/mymaidhelp</code> から利用できます。</p>
 <ul>
-<li>Version: <code>2021.07.18_00.19_b4acb4e</code></li>
+<li>Version: <code>2021.07.26_17.24_30c0dd2</code></li>
 </ul>
 <h1 id='commands'>Commands</h1>
 <p>MyMaid4 で実装されているコマンドの一覧です。</p>
@@ -4250,6 +4253,24 @@
 
 <blockquote>
 <p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_Jail.java">com.jaoafa.mymaid4.event.Event_Jail</a></p>
+</blockquote>
+<h3 id='events-wt-event_joinwarnusers'>Event_JoinWarnUsers</h3>
+<p>ログイン時、注意する必要のあるプレイヤーが参加したときに警告します。</p>
+
+<table><thead>
+<tr>
+<th>メソッド名</th>
+<th>イベント</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>OnJoin</td>
+<td>PlayerJoinEvent</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_JoinWarnUsers.java">com.jaoafa.mymaid4.event.Event_JoinWarnUsers</a></p>
 </blockquote>
 <h3 id='events-wt-event_killafterrespawn'>Event_KillAfterRespawn</h3>
 <p>死亡してから3分後に自動的にリスポーンします。</p>
