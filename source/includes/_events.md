@@ -377,6 +377,15 @@ Jailに関する各種処理を行います。
 | OnEvent_LoginJailCheck | PlayerJoinEvent |
 > ソースコード: [com.jaoafa.mymaid4.event.Event_Jail](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_Jail.java)
 
+### Event_JoinWarnUsers
+
+ログイン時、注意する必要のあるプレイヤーが参加したときに警告します。
+
+| メソッド名 | イベント |
+| - | - |
+| OnJoin | PlayerJoinEvent |
+> ソースコード: [com.jaoafa.mymaid4.event.Event_JoinWarnUsers](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_JoinWarnUsers.java)
+
 ### Event_KillAfterRespawn
 
 死亡してから3分後に自動的にリスポーンします。
