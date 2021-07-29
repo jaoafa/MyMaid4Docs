@@ -1255,6 +1255,24 @@ MyMaid4基本コマンド
 | - | - | - | - |
 | `target` | SingleEntitySelector | いいえ | 対象のプレイヤー・エンティティ。指定しない場合実行者 |
 
+## secrettp
+
+```plaintext
+/secrettp <player>
+```
+
+> ソースコード: [com.jaoafa.mymaid4.command.Cmd_SecretTP](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/command/Cmd_SecretTP.java)
+
+スペクテイターでテレポートします。
+
+### `/secrettp <player>`
+
+スペクテイターで特定のプレイヤーにテレポートします。
+
+| 引数名 | 種類 | 必須か | 説明 |
+| - | - | - | - |
+| `player` | Player | はい | テレポートするプレイヤー名 |
+
 ## selclick
 
 ```plaintext
