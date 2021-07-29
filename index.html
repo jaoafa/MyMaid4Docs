@@ -433,6 +433,9 @@
                     <a href="#commands-rider" class="toc-h2 toc-link" data-title="rider">rider</a>
                   </li>
                   <li>
+                    <a href="#commands-secrettp" class="toc-h2 toc-link" data-title="secrettp">secrettp</a>
+                  </li>
+                  <li>
                     <a href="#commands-selclick" class="toc-h2 toc-link" data-title="selclick">selclick</a>
                   </li>
                   <li>
@@ -544,6 +547,9 @@
                   </li>
                   <li>
                     <a href="#events-wt-event_commandsendam" class="toc-h2 toc-link" data-title="Event_CommandSendAM">Event_CommandSendAM</a>
+                  </li>
+                  <li>
+                    <a href="#events-wt-event_commandsendr" class="toc-h2 toc-link" data-title="Event_CommandSendR">Event_CommandSendR</a>
                   </li>
                   <li>
                     <a href="#events-wt-event_customjoinmessage" class="toc-h2 toc-link" data-title="Event_CustomJoinMessage">Event_CustomJoinMessage</a>
@@ -702,7 +708,7 @@
 
 <p>Minecraft サーバ内での MyMaid4 のコマンドヘルプは <code>/mymaidhelp</code> から利用できます。</p>
 <ul>
-<li>Version: <code>2021.07.26_17.44_47182a2</code></li>
+<li>Version: <code>2021.07.29_18.06_15368cf</code></li>
 </ul>
 <h1 id='commands'>Commands</h1>
 <p>MyMaid4 で実装されているコマンドの一覧です。</p>
@@ -2473,6 +2479,31 @@
 <td>対象のプレイヤー・エンティティ。指定しない場合実行者</td>
 </tr>
 </tbody></table>
+<h2 id='commands-secrettp'>secrettp</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/secrettp &lt;player&gt;
+</code></pre></div>
+<blockquote>
+<p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/command/Cmd_SecretTP.java">com.jaoafa.mymaid4.command.Cmd_SecretTP</a></p>
+</blockquote>
+
+<p>スペクテイターでテレポートします。</p>
+<h3 id='commands-secrettp-secrettp-lt-player-gt'><code>/secrettp &lt;player&gt;</code></h3>
+<p>スペクテイターで特定のプレイヤーにテレポートします。</p>
+
+<table><thead>
+<tr>
+<th>引数名</th>
+<th>種類</th>
+<th>必須か</th>
+<th>説明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>player</code></td>
+<td>Player</td>
+<td>はい</td>
+<td>テレポートするプレイヤー名</td>
+</tr>
+</tbody></table>
 <h2 id='commands-selclick'>selclick</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/selclick
 </code></pre></div>
 <blockquote>
@@ -3827,6 +3858,24 @@
 
 <blockquote>
 <p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_CommandSendAM.java">com.jaoafa.mymaid4.event.Event_CommandSendAM</a></p>
+</blockquote>
+<h3 id='events-wt-event_commandsendr'>Event_CommandSendR</h3>
+<p>実行されたコマンドをRegularに通知します。</p>
+
+<table><thead>
+<tr>
+<th>メソッド名</th>
+<th>イベント</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>onCommand</td>
+<td>PlayerCommandPreprocessEvent</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_CommandSendR.java">com.jaoafa.mymaid4.event.Event_CommandSendR</a></p>
 </blockquote>
 <h3 id='events-wt-event_customjoinmessage'>Event_CustomJoinMessage</h3>
 <p>独自のログインメッセージを表示するように制御します。</p>
