@@ -546,10 +546,7 @@
                     <a href="#events-wt-event_cmdlengthlimiter" class="toc-h2 toc-link" data-title="Event_CmdLengthLimiter">Event_CmdLengthLimiter</a>
                   </li>
                   <li>
-                    <a href="#events-wt-event_commandsendam" class="toc-h2 toc-link" data-title="Event_CommandSendAM">Event_CommandSendAM</a>
-                  </li>
-                  <li>
-                    <a href="#events-wt-event_commandsendr" class="toc-h2 toc-link" data-title="Event_CommandSendR">Event_CommandSendR</a>
+                    <a href="#events-wt-event_commandsender" class="toc-h2 toc-link" data-title="Event_CommandSender">Event_CommandSender</a>
                   </li>
                   <li>
                     <a href="#events-wt-event_customjoinmessage" class="toc-h2 toc-link" data-title="Event_CustomJoinMessage">Event_CustomJoinMessage</a>
@@ -708,7 +705,7 @@
 
 <p>Minecraft サーバ内での MyMaid4 のコマンドヘルプは <code>/mymaidhelp</code> から利用できます。</p>
 <ul>
-<li>Version: <code>2021.07.29_18.06_15368cf</code></li>
+<li>Version: <code>2021.08.02_20.37_0011520</code></li>
 </ul>
 <h1 id='commands'>Commands</h1>
 <p>MyMaid4 で実装されているコマンドの一覧です。</p>
@@ -3841,8 +3838,8 @@
 <blockquote>
 <p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_CmdLengthLimiter.java">com.jaoafa.mymaid4.event.Event_CmdLengthLimiter</a></p>
 </blockquote>
-<h3 id='events-wt-event_commandsendam'>Event_CommandSendAM</h3>
-<p>実行されたコマンドをAdminとModeratorに通知します。</p>
+<h3 id='events-wt-event_commandsender'>Event_CommandSender</h3>
+<p>実行されたコマンドを特定権限に通知します。</p>
 
 <table><thead>
 <tr>
@@ -3857,25 +3854,7 @@
 </tbody></table>
 
 <blockquote>
-<p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_CommandSendAM.java">com.jaoafa.mymaid4.event.Event_CommandSendAM</a></p>
-</blockquote>
-<h3 id='events-wt-event_commandsendr'>Event_CommandSendR</h3>
-<p>実行されたコマンドをRegularに通知します。</p>
-
-<table><thead>
-<tr>
-<th>メソッド名</th>
-<th>イベント</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>onCommand</td>
-<td>PlayerCommandPreprocessEvent</td>
-</tr>
-</tbody></table>
-
-<blockquote>
-<p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_CommandSendR.java">com.jaoafa.mymaid4.event.Event_CommandSendR</a></p>
+<p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_CommandSender.java">com.jaoafa.mymaid4.event.Event_CommandSender</a></p>
 </blockquote>
 <h3 id='events-wt-event_customjoinmessage'>Event_CustomJoinMessage</h3>
 <p>独自のログインメッセージを表示するように制御します。</p>
