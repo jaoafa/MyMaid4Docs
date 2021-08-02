@@ -185,23 +185,14 @@ Default権限グループのプレイヤーによる100文字を超えるコマ�
 | onCommand | PlayerCommandPreprocessEvent |
 > ソースコード: [com.jaoafa.mymaid4.event.Event_CmdLengthLimiter](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_CmdLengthLimiter.java)
 
-### Event_CommandSendAM
+### Event_CommandSender
 
-実行されたコマンドをAdminとModeratorに通知します。
-
-| メソッド名 | イベント |
-| - | - |
-| onCommand | PlayerCommandPreprocessEvent |
-> ソースコード: [com.jaoafa.mymaid4.event.Event_CommandSendAM](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_CommandSendAM.java)
-
-### Event_CommandSendR
-
-実行されたコマンドをRegularに通知します。
+実行されたコマンドを特定権限に通知します。
 
 | メソッド名 | イベント |
 | - | - |
 | onCommand | PlayerCommandPreprocessEvent |
-> ソースコード: [com.jaoafa.mymaid4.event.Event_CommandSendR](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_CommandSendR.java)
+> ソースコード: [com.jaoafa.mymaid4.event.Event_CommandSender](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_CommandSender.java)
 
 ### Event_CustomJoinMessage
 
