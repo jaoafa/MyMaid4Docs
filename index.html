@@ -495,6 +495,9 @@
                     <a href="#events-wt-event_advancementdiscordnotify" class="toc-h2 toc-link" data-title="Event_AdvancementDiscordNotify">Event_AdvancementDiscordNotify</a>
                   </li>
                   <li>
+                    <a href="#events-wt-event_antiduplicateentity" class="toc-h2 toc-link" data-title="Event_AntiDuplicateEntity">Event_AntiDuplicateEntity</a>
+                  </li>
+                  <li>
                     <a href="#events-wt-event_antiendportal" class="toc-h2 toc-link" data-title="Event_AntiEndPortal">Event_AntiEndPortal</a>
                   </li>
                   <li>
@@ -708,7 +711,7 @@
 
 <p>Minecraft サーバ内での MyMaid4 のコマンドヘルプは <code>/mymaidhelp</code> から利用できます。</p>
 <ul>
-<li>Version: <code>2021.08.31_20.08_fe248e0</code></li>
+<li>Version: <code>2021.09.03_22.14_84f0fee</code></li>
 </ul>
 <h1 id='commands'>Commands</h1>
 <p>MyMaid4 で実装されているコマンドの一覧です。</p>
@@ -3434,6 +3437,24 @@
 
 <blockquote>
 <p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_AdvancementDiscordNotify.java">com.jaoafa.mymaid4.event.Event_AdvancementDiscordNotify</a></p>
+</blockquote>
+<h3 id='events-wt-event_antiduplicateentity'>Event_AntiDuplicateEntity</h3>
+<p>Default・Verified権限グループのプレイヤーによるエンティティのコピーを制限します。</p>
+
+<table><thead>
+<tr>
+<th>メソッド名</th>
+<th>イベント</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>onCommand</td>
+<td>PlayerCommandPreprocessEvent</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_AntiDuplicateEntity.java">com.jaoafa.mymaid4.event.Event_AntiDuplicateEntity</a></p>
 </blockquote>
 <h3 id='events-wt-event_antiendportal'>Event_AntiEndPortal</h3>
 <p>エンドポータルの作成を制限します。</p>
