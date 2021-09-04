@@ -15,8 +15,6 @@ if (!file_exists("source/includes")) {
     exit(1);
 }
 
-file_put_contents("source/includes/_version.md", "- Version: `$version`");
-
 // Commands ---------------------------------- //
 
 $markdown = [];
@@ -28,6 +26,12 @@ uasort($commands, function ($a, $b) {
     }
     return ($a["name"] < $b["name"]) ? -1 : 1;
 });
+
+if (count($commands) == 0) {
+    echo "多分一覧の取得に失敗しました\n";
+    exit(1);
+}
+
 
 foreach ($commands as $command) {
     $markdown[] = "## " . $command["name"];
@@ -164,3 +168,8 @@ foreach ($events as $event) {
     $markdown[] = "";
 }
 file_put_contents("source/includes/_events.md", implode("\n", $markdown));
+
+$ver_sha = end(explode($version));
+$github_ver_url = "https://github.com/jaoafa/MyMaid4/commit/" . $ver_sha;
+
+file_put_contents("source/includes/_version.md", "- Version: [`$version`]($github_ver_url)");
