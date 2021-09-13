@@ -836,6 +836,28 @@ jaoHistoryに関する操作を行います。
 | - | - | - | - |
 | `name` | String | いいえ | ページ |
 
+## invedit
+
+```plaintext
+/invedit <target>
+```
+
+> ソースコード: [com.jaoafa.mymaid4.command.Cmd_InvEdit](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/command/Cmd_InvEdit.java)
+
+プレイヤーのインベントリを編集します。
+
+### `/invedit <target>`
+
+<aside class="notice">
+このコマンドはプレイヤーからの実行のみに制限されています。
+</aside>
+
+指定したプレイヤーのインベントリを編集します。
+
+| 引数名 | 種類 | 必須か | 説明 |
+| - | - | - | - |
+| `target` | Player | はい | 対象のプレイヤー |
+
 ## invload
 
 ```plaintext
@@ -874,6 +896,28 @@ jaoHistoryに関する操作を行います。
 | - | - | - | - |
 | `target` | SinglePlayerSelector | はい | インベントリを保存するプレイヤー |
 | `saveName` | String | いいえ | 保存名 |
+
+## invshow
+
+```plaintext
+/invshow <target>
+```
+
+> ソースコード: [com.jaoafa.mymaid4.command.Cmd_InvShow](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/command/Cmd_InvShow.java)
+
+プレイヤーのインベントリを閲覧します。
+
+### `/invshow <target>`
+
+<aside class="notice">
+このコマンドはプレイヤーからの実行のみに制限されています。
+</aside>
+
+指定したプレイヤーのインベントリを閲覧します。
+
+| 引数名 | 種類 | 必須か | 説明 |
+| - | - | - | - |
+| `target` | Player | はい | 対象のプレイヤー |
 
 ## jail
 
