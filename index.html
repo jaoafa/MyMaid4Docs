@@ -394,10 +394,16 @@
                     <a href="#commands-home" class="toc-h2 toc-link" data-title="home">home</a>
                   </li>
                   <li>
+                    <a href="#commands-invedit" class="toc-h2 toc-link" data-title="invedit">invedit</a>
+                  </li>
+                  <li>
                     <a href="#commands-invload" class="toc-h2 toc-link" data-title="invload">invload</a>
                   </li>
                   <li>
                     <a href="#commands-invsave" class="toc-h2 toc-link" data-title="invsave">invsave</a>
+                  </li>
+                  <li>
+                    <a href="#commands-invshow" class="toc-h2 toc-link" data-title="invshow">invshow</a>
                   </li>
                   <li>
                     <a href="#commands-jail" class="toc-h2 toc-link" data-title="jail">jail</a>
@@ -711,7 +717,7 @@
 
 <p>Minecraft サーバ内での MyMaid4 のコマンドヘルプは <code>/mymaidhelp</code> から利用できます。</p>
 <ul>
-<li>Version: <a href="https://github.com/jaoafa/MyMaid4/commit/3693104"><code>2021.09.12_18.17_3693104</code></a></li>
+<li>Version: <a href="https://github.com/jaoafa/MyMaid4/commit/3367b95"><code>2021.09.14_00.51_3367b95</code></a></li>
 </ul>
 <h1 id='commands'>Commands</h1>
 <p>MyMaid4 で実装されているコマンドの一覧です。</p>
@@ -1857,6 +1863,35 @@
 <td>ページ</td>
 </tr>
 </tbody></table>
+<h2 id='commands-invedit'>invedit</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/invedit &lt;target&gt;
+</code></pre></div>
+<blockquote>
+<p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/command/Cmd_InvEdit.java">com.jaoafa.mymaid4.command.Cmd_InvEdit</a></p>
+</blockquote>
+
+<p>プレイヤーのインベントリを編集します。</p>
+<h3 id='commands-invedit-invedit-lt-target-gt'><code>/invedit &lt;target&gt;</code></h3>
+<aside class="notice">
+このコマンドはプレイヤーからの実行のみに制限されています。
+</aside>
+
+<p>指定したプレイヤーのインベントリを編集します。</p>
+
+<table><thead>
+<tr>
+<th>引数名</th>
+<th>種類</th>
+<th>必須か</th>
+<th>説明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>target</code></td>
+<td>Player</td>
+<td>はい</td>
+<td>対象のプレイヤー</td>
+</tr>
+</tbody></table>
 <h2 id='commands-invload'>invload</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/invload &lt;target&gt; [saveName] [player]
 </code></pre></div>
 <blockquote>
@@ -1923,6 +1958,35 @@
 <td>String</td>
 <td>いいえ</td>
 <td>保存名</td>
+</tr>
+</tbody></table>
+<h2 id='commands-invshow'>invshow</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/invshow &lt;target&gt;
+</code></pre></div>
+<blockquote>
+<p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/command/Cmd_InvShow.java">com.jaoafa.mymaid4.command.Cmd_InvShow</a></p>
+</blockquote>
+
+<p>プレイヤーのインベントリを閲覧します。</p>
+<h3 id='commands-invshow-invshow-lt-target-gt'><code>/invshow &lt;target&gt;</code></h3>
+<aside class="notice">
+このコマンドはプレイヤーからの実行のみに制限されています。
+</aside>
+
+<p>指定したプレイヤーのインベントリを閲覧します。</p>
+
+<table><thead>
+<tr>
+<th>引数名</th>
+<th>種類</th>
+<th>必須か</th>
+<th>説明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>target</code></td>
+<td>Player</td>
+<td>はい</td>
+<td>対象のプレイヤー</td>
 </tr>
 </tbody></table>
 <h2 id='commands-jail'>jail</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/jail add &lt;player&gt; &lt;reason&gt;
