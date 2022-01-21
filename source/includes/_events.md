@@ -163,6 +163,15 @@ bugコマンドに関する処理を行います。
 | onEditedBook | PlayerEditBookEvent |
 > ソースコード: [com.jaoafa.mymaid4.event.Event_Bug](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_Bug.java)
 
+### Event_CVE_2021_44228
+
+ログイン時にクライアントがJavaライブラリ「log4j 2」にあった脆弱性 CVE-2021-44228 に対策されているかを確認します。
+
+| メソッド名 | イベント |
+| - | - |
+| OnJoin | PlayerJoinEvent |
+> ソースコード: [com.jaoafa.mymaid4.event.Event_CVE_2021_44228](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_CVE_2021_44228.java)
+
 ### Event_ChatBan
 
 ChatBanに関する各種処理を行います。

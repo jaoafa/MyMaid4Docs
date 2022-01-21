@@ -1,1 +1,1 @@
-- Version: [`2022.01.01_21.40_0d2f663`](https://github.com/jaoafa/MyMaid4/commit/0d2f663)
+- Version: [`4.3.1`](https://github.com/jaoafa/MyMaid4/commit/4.3.1)
