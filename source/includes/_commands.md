@@ -1,3 +1,31 @@
+## body
+
+```plaintext
+/body
+```
+
+> ソースコード: [com.jaoafa.mymaid4.command.Cmd_Body](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/command/Cmd_Body.java)
+
+手に持っているアイテムを背中に付けます。
+
+### `/body`
+
+手に持っているアイテムを背中に付けます。
+
+## boots
+
+```plaintext
+/boots
+```
+
+> ソースコード: [com.jaoafa.mymaid4.command.Cmd_Boots](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/command/Cmd_Boots.java)
+
+手に持っているアイテムを足に付けます。
+
+### `/boots`
+
+手に持っているアイテムを足に付けます。
+
 ## brb
 
 ```plaintext
@@ -1010,6 +1038,20 @@ Mob（またはプレイヤー）にリードを付けます。
 | - | - | - | - |
 | `target` | SingleEntitySelector | いいえ | 対象のMob（または実行者）。対象を指定しない場合見ているMob、何も見ていない場合実行者 |
 
+## legs
+
+```plaintext
+/legs
+```
+
+> ソースコード: [com.jaoafa.mymaid4.command.Cmd_Legs](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/command/Cmd_Legs.java)
+
+手に持っているアイテムを背中に付けます。
+
+### `/legs`
+
+手に持っているアイテムを足首に付けます。
+
 ## link
 
 ```plaintext
@@ -1593,6 +1635,39 @@ Jailの遺言を残します。jail testmentのエイリアスです。
 | - | - | - | - |
 | `timeInt` | Integer | はい | 時間 |
 | `isRelative` | Boolean | いいえ | ワールド時間と相対的に保つか |
+
+## tpalias
+
+```plaintext
+/tpalias set <target> <replacement>
+/tpalias remove <target>
+/tpalias list
+```
+
+> ソースコード: [com.jaoafa.mymaid4.command.Cmd_TpAlias](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/command/Cmd_TpAlias.java)
+
+テレポートエイリアスに関する操作を行います。
+
+### `/tpalias set <target> <replacement>`
+
+tpコマンド実行時、プレイヤー名を置き換えるように設定します。
+
+| 引数名 | 種類 | 必須か | 説明 |
+| - | - | - | - |
+| `target` | String | はい | 置き換える対象のエイリアス名 |
+| `replacement` | String | はい | 置き換えるエイリアス名 |
+
+### `/tpalias remove <target>`
+
+tpコマンド実行時の置き換え設定を削除します。
+
+| 引数名 | 種類 | 必須か | 説明 |
+| - | - | - | - |
+| `target` | String | はい | 置き換える対象のエイリアス名 |
+
+### `/tpalias list`
+
+tpコマンド実行時の置き換え設定一覧を表示します。
 
 ## tpdeny
 

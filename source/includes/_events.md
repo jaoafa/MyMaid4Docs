@@ -7,6 +7,15 @@
 | onDone | PlayerAdvancementDoneEvent |
 > ソースコード: [com.jaoafa.mymaid4.event.Event_AdvancementDiscordNotify](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_AdvancementDiscordNotify.java)
 
+### Event_AntiBigSlime
+
+極端に大きいスライム・マグマキューブを召喚できないようにします。
+
+| メソッド名 | イベント |
+| - | - |
+| onCreatureSpawn | CreatureSpawnEvent |
+> ソースコード: [com.jaoafa.mymaid4.event.Event_AntiBigSlime](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_AntiBigSlime.java)
+
 ### Event_AntiDuplicateEntity
 
 Default・Verified権限グループのプレイヤーによるエンティティのコピーを制限します。
@@ -649,6 +658,15 @@ tempmuteコマンドに関する処理を行います。
 | - | - |
 | onChat | AsyncChatEvent |
 > ソースコード: [com.jaoafa.mymaid4.event.Event_TempMute](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_TempMute.java)
+
+### Event_TpAlias
+
+テレポートエイリアスを処理します。
+
+| メソッド名 | イベント |
+| - | - |
+| onTeleportCommand | PlayerCommandPreprocessEvent |
+> ソースコード: [com.jaoafa.mymaid4.event.Event_TpAlias](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_TpAlias.java)
 
 ### Event_TpDeny
 
