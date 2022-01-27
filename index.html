@@ -316,6 +316,12 @@
             <a href="#commands" class="toc-h1 toc-link" data-title="Commands">Commands</a>
               <ul class="toc-list-h2">
                   <li>
+                    <a href="#commands-body" class="toc-h2 toc-link" data-title="body">body</a>
+                  </li>
+                  <li>
+                    <a href="#commands-boots" class="toc-h2 toc-link" data-title="boots">boots</a>
+                  </li>
+                  <li>
                     <a href="#commands-brb" class="toc-h2 toc-link" data-title="brb">brb</a>
                   </li>
                   <li>
@@ -412,6 +418,9 @@
                     <a href="#commands-lead" class="toc-h2 toc-link" data-title="lead">lead</a>
                   </li>
                   <li>
+                    <a href="#commands-legs" class="toc-h2 toc-link" data-title="legs">legs</a>
+                  </li>
+                  <li>
                     <a href="#commands-link" class="toc-h2 toc-link" data-title="link">link</a>
                   </li>
                   <li>
@@ -472,6 +481,9 @@
                     <a href="#commands-time" class="toc-h2 toc-link" data-title="time">time</a>
                   </li>
                   <li>
+                    <a href="#commands-tpalias" class="toc-h2 toc-link" data-title="tpalias">tpalias</a>
+                  </li>
+                  <li>
                     <a href="#commands-tpdeny" class="toc-h2 toc-link" data-title="tpdeny">tpdeny</a>
                   </li>
                   <li>
@@ -499,6 +511,9 @@
               <ul class="toc-list-h2">
                   <li>
                     <a href="#events-wt-event_advancementdiscordnotify" class="toc-h2 toc-link" data-title="Event_AdvancementDiscordNotify">Event_AdvancementDiscordNotify</a>
+                  </li>
+                  <li>
+                    <a href="#events-wt-event_antibigslime" class="toc-h2 toc-link" data-title="Event_AntiBigSlime">Event_AntiBigSlime</a>
                   </li>
                   <li>
                     <a href="#events-wt-event_antiduplicateentity" class="toc-h2 toc-link" data-title="Event_AntiDuplicateEntity">Event_AntiDuplicateEntity</a>
@@ -690,6 +705,9 @@
                     <a href="#events-wt-event_tempmute" class="toc-h2 toc-link" data-title="Event_TempMute">Event_TempMute</a>
                   </li>
                   <li>
+                    <a href="#events-wt-event_tpalias" class="toc-h2 toc-link" data-title="Event_TpAlias">Event_TpAlias</a>
+                  </li>
+                  <li>
                     <a href="#events-wt-event_tpdeny" class="toc-h2 toc-link" data-title="Event_TpDeny">Event_TpDeny</a>
                   </li>
                   <li>
@@ -720,7 +738,7 @@
 
 <p>Minecraft サーバ内での MyMaid4 のコマンドヘルプは <code>/mymaidhelp</code> から利用できます。</p>
 <ul>
-<li>Version: <a href="https://github.com/jaoafa/MyMaid4/commit/4.9.9"><code>4.9.9</code></a></li>
+<li>Version: <a href="https://github.com/jaoafa/MyMaid4/commit/4.10.0"><code>4.10.0</code></a></li>
 </ul>
 <h1 id='commands'>Commands</h1>
 <p>MyMaid4 で実装されているコマンドの一覧です。</p>
@@ -731,6 +749,24 @@
 </ul>
 
 <p>例: <code>/g &lt;gamemode&gt; [player]</code> の場合、<code>/g 1</code> と <code>/g 1 X4Z</code> が利用できます。</p>
+<h2 id='commands-body'>body</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/body
+</code></pre></div>
+<blockquote>
+<p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/command/Cmd_Body.java">com.jaoafa.mymaid4.command.Cmd_Body</a></p>
+</blockquote>
+
+<p>手に持っているアイテムを背中に付けます。</p>
+<h3 id='commands-body-body'><code>/body</code></h3>
+<p>手に持っているアイテムを背中に付けます。</p>
+<h2 id='commands-boots'>boots</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/boots
+</code></pre></div>
+<blockquote>
+<p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/command/Cmd_Boots.java">com.jaoafa.mymaid4.command.Cmd_Boots</a></p>
+</blockquote>
+
+<p>手に持っているアイテムを足に付けます。</p>
+<h3 id='commands-boots-boots'><code>/boots</code></h3>
+<p>手に持っているアイテムを足に付けます。</p>
 <h2 id='commands-brb'>brb</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/brb
 /brb &lt;player&gt;
 </code></pre></div>
@@ -2157,6 +2193,15 @@
 <td>対象のMob（または実行者）。対象を指定しない場合見ているMob、何も見ていない場合実行者</td>
 </tr>
 </tbody></table>
+<h2 id='commands-legs'>legs</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/legs
+</code></pre></div>
+<blockquote>
+<p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/command/Cmd_Legs.java">com.jaoafa.mymaid4.command.Cmd_Legs</a></p>
+</blockquote>
+
+<p>手に持っているアイテムを背中に付けます。</p>
+<h3 id='commands-legs-legs'><code>/legs</code></h3>
+<p>手に持っているアイテムを足首に付けます。</p>
 <h2 id='commands-link'>link</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/link
 </code></pre></div>
 <blockquote>
@@ -2910,6 +2955,59 @@
 <td>ワールド時間と相対的に保つか</td>
 </tr>
 </tbody></table>
+<h2 id='commands-tpalias'>tpalias</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/tpalias set &lt;target&gt; &lt;replacement&gt;
+/tpalias remove &lt;target&gt;
+/tpalias list
+</code></pre></div>
+<blockquote>
+<p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/command/Cmd_TpAlias.java">com.jaoafa.mymaid4.command.Cmd_TpAlias</a></p>
+</blockquote>
+
+<p>テレポートエイリアスに関する操作を行います。</p>
+<h3 id='commands-tpalias-tpalias-set-lt-target-gt-lt-replacement-gt'><code>/tpalias set &lt;target&gt; &lt;replacement&gt;</code></h3>
+<p>tpコマンド実行時、プレイヤー名を置き換えるように設定します。</p>
+
+<table><thead>
+<tr>
+<th>引数名</th>
+<th>種類</th>
+<th>必須か</th>
+<th>説明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>target</code></td>
+<td>String</td>
+<td>はい</td>
+<td>置き換える対象のエイリアス名</td>
+</tr>
+<tr>
+<td><code>replacement</code></td>
+<td>String</td>
+<td>はい</td>
+<td>置き換えるエイリアス名</td>
+</tr>
+</tbody></table>
+<h3 id='commands-tpalias-tpalias-remove-lt-target-gt'><code>/tpalias remove &lt;target&gt;</code></h3>
+<p>tpコマンド実行時の置き換え設定を削除します。</p>
+
+<table><thead>
+<tr>
+<th>引数名</th>
+<th>種類</th>
+<th>必須か</th>
+<th>説明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>target</code></td>
+<td>String</td>
+<td>はい</td>
+<td>置き換える対象のエイリアス名</td>
+</tr>
+</tbody></table>
+<h3 id='commands-tpalias-tpalias-list'><code>/tpalias list</code></h3>
+<p>tpコマンド実行時の置き換え設定一覧を表示します。</p>
 <h2 id='commands-tpdeny'>tpdeny</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/tpdeny add &lt;target&gt;
 /tpdeny remove &lt;target&gt;
 /tpdeny notify &lt;target&gt; &lt;changeTo&gt;
@@ -3504,6 +3602,24 @@
 
 <blockquote>
 <p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_AdvancementDiscordNotify.java">com.jaoafa.mymaid4.event.Event_AdvancementDiscordNotify</a></p>
+</blockquote>
+<h3 id='events-wt-event_antibigslime'>Event_AntiBigSlime</h3>
+<p>極端に大きいスライム・マグマキューブを召喚できないようにします。</p>
+
+<table><thead>
+<tr>
+<th>メソッド名</th>
+<th>イベント</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>onCreatureSpawn</td>
+<td>CreatureSpawnEvent</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_AntiBigSlime.java">com.jaoafa.mymaid4.event.Event_AntiBigSlime</a></p>
 </blockquote>
 <h3 id='events-wt-event_antiduplicateentity'>Event_AntiDuplicateEntity</h3>
 <p>Default・Verified権限グループのプレイヤーによるエンティティのコピーを制限します。</p>
@@ -4942,6 +5058,24 @@
 
 <blockquote>
 <p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_TempMute.java">com.jaoafa.mymaid4.event.Event_TempMute</a></p>
+</blockquote>
+<h3 id='events-wt-event_tpalias'>Event_TpAlias</h3>
+<p>テレポートエイリアスを処理します。</p>
+
+<table><thead>
+<tr>
+<th>メソッド名</th>
+<th>イベント</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>onTeleportCommand</td>
+<td>PlayerCommandPreprocessEvent</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_TpAlias.java">com.jaoafa.mymaid4.event.Event_TpAlias</a></p>
 </blockquote>
 <h3 id='events-wt-event_tpdeny'>Event_TpDeny</h3>
 <p>tpdenyコマンドに関する処理を行います。</p>
