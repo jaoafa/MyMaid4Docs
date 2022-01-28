@@ -415,6 +415,9 @@
                     <a href="#commands-jail" class="toc-h2 toc-link" data-title="jail">jail</a>
                   </li>
                   <li>
+                    <a href="#commands-jaobox" class="toc-h2 toc-link" data-title="jaobox">jaobox</a>
+                  </li>
+                  <li>
                     <a href="#commands-lead" class="toc-h2 toc-link" data-title="lead">lead</a>
                   </li>
                   <li>
@@ -719,6 +722,9 @@
                   <li>
                     <a href="#events-wt-event_worldeditautofacing" class="toc-h2 toc-link" data-title="Event_WorldEditAutoFacing">Event_WorldEditAutoFacing</a>
                   </li>
+                  <li>
+                    <a href="#events-wt-event_jaobox" class="toc-h2 toc-link" data-title="Event_jaoBox">Event_jaoBox</a>
+                  </li>
               </ul>
           </li>
       </ul>
@@ -738,7 +744,7 @@
 
 <p>Minecraft サーバ内での MyMaid4 のコマンドヘルプは <code>/mymaidhelp</code> から利用できます。</p>
 <ul>
-<li>Version: <a href="https://github.com/jaoafa/MyMaid4/commit/4.10.0"><code>4.10.0</code></a></li>
+<li>Version: <a href="https://github.com/jaoafa/MyMaid4/commit/4.11.0"><code>4.11.0</code></a></li>
 </ul>
 <h1 id='commands'>Commands</h1>
 <p>MyMaid4 で実装されているコマンドの一覧です。</p>
@@ -2120,6 +2126,26 @@
 <td>遺言</td>
 </tr>
 </tbody></table>
+<h2 id='commands-jaobox'>jaobox</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/jaobox
+/jaobox register
+</code></pre></div>
+<blockquote>
+<p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/command/Cmd_jaoBox.java">com.jaoafa.mymaid4.command.Cmd_jaoBox</a></p>
+</blockquote>
+
+<p>jao Minecraft Serverでの便利アイテムを集めたjaoBoxを開きます。</p>
+<h3 id='commands-jaobox-jaobox'><code>/jaobox</code></h3>
+<aside class="notice">
+このコマンドはプレイヤーからの実行のみに制限されています。
+</aside>
+
+<p>jaoBoxを開きます。</p>
+<h3 id='commands-jaobox-jaobox-register'><code>/jaobox register</code></h3>
+<aside class="notice">
+このコマンドはプレイヤーからの実行のみに制限されています。
+</aside>
+
+<p>jaoBoxを設定します。</p>
 <h2 id='commands-lead'>lead</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/lead set [target]
 /lead connect &lt;from&gt; &lt;to&gt;
 /lead leave [target]
@@ -5148,6 +5174,28 @@
 
 <blockquote>
 <p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_WorldEditAutoFacing.java">com.jaoafa.mymaid4.event.Event_WorldEditAutoFacing</a></p>
+</blockquote>
+<h3 id='events-wt-event_jaobox'>Event_jaoBox</h3>
+<p>jaoBoxに関するイベントを管理します。</p>
+
+<table><thead>
+<tr>
+<th>メソッド名</th>
+<th>イベント</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>onRegisterInventoryClose</td>
+<td>InventoryCloseEvent</td>
+</tr>
+<tr>
+<td>onClickBox</td>
+<td>PlayerInteractEvent</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_jaoBox.java">com.jaoafa.mymaid4.event.Event_jaoBox</a></p>
 </blockquote>
 
       </div>
