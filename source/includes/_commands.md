@@ -997,6 +997,33 @@ Jail一覧を表示します。
 | - | - | - | - |
 | `message` | String | はい | 遺言 |
 
+## jaobox
+
+```plaintext
+/jaobox
+/jaobox register
+```
+
+> ソースコード: [com.jaoafa.mymaid4.command.Cmd_jaoBox](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/command/Cmd_jaoBox.java)
+
+jao Minecraft Serverでの便利アイテムを集めたjaoBoxを開きます。
+
+### `/jaobox`
+
+<aside class="notice">
+このコマンドはプレイヤーからの実行のみに制限されています。
+</aside>
+
+jaoBoxを開きます。
+
+### `/jaobox register`
+
+<aside class="notice">
+このコマンドはプレイヤーからの実行のみに制限されています。
+</aside>
+
+jaoBoxを設定します。
+
 ## lead
 
 ```plaintext

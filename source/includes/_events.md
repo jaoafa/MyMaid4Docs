@@ -703,3 +703,13 @@ tpdenyコマンドに関する処理を行います。
 | - | - |
 | onSetHandFacingCommand | PlayerCommandPreprocessEvent |
 > ソースコード: [com.jaoafa.mymaid4.event.Event_WorldEditAutoFacing](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_WorldEditAutoFacing.java)
+
+### Event_jaoBox
+
+jaoBoxに関するイベントを管理します。
+
+| メソッド名 | イベント |
+| - | - |
+| onRegisterInventoryClose | InventoryCloseEvent |
+| onClickBox | PlayerInteractEvent |
+> ソースコード: [com.jaoafa.mymaid4.event.Event_jaoBox](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_jaoBox.java)
