@@ -594,14 +594,14 @@ SandBoxをRegular権限グループ未満のプレイヤーが編集できない
 | onEvent_ChatSKK | AsyncChatEvent |
 > ソースコード: [com.jaoafa.mymaid4.event.Event_SKKColor](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_SKKColor.java)
 
-### Event_ServerException
+### Event_ServerExceptionCatcher
 
 サーバで例外エラーが発生した場合、報告します。
 
 | メソッド名 | イベント |
 | - | - |
 | onServerException | ServerExceptionEvent |
-> ソースコード: [com.jaoafa.mymaid4.event.Event_ServerException](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_ServerException.java)
+> ソースコード: [com.jaoafa.mymaid4.event.Event_ServerExceptionCatcher](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_ServerExceptionCatcher.java)
 
 ### Event_Set43
 
