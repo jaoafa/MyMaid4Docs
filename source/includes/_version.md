@@ -1,1 +1,1 @@
-- Version: [`4.15.3`](https://github.com/jaoafa/MyMaid4/commit/4.15.3)
+- Version: [`4.16.0`](https://github.com/jaoafa/MyMaid4/commit/4.16.0)
