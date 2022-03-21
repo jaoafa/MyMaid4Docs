@@ -325,6 +325,15 @@ TNTなどの爆発時に額縁や絵画などが壊れないようにします�
 | onHangingDamageByTNT | HangingBreakEvent |
 > ソースコード: [com.jaoafa.mymaid4.event.Event_Explosion](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_Explosion.java)
 
+### Event_FeedBack
+
+feedbackコマンドに関する処理を行います。
+
+| メソッド名 | イベント |
+| - | - |
+| onEditedBook | PlayerEditBookEvent |
+> ソースコード: [com.jaoafa.mymaid4.event.Event_FeedBack](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_FeedBack.java)
+
 ### Event_FirstLogin
 
 初めてログインしたプレイヤーを通知します。

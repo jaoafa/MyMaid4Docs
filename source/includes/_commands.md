@@ -63,7 +63,7 @@
 
 > ソースコード: [com.jaoafa.mymaid4.command.Cmd_Bug](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/command/Cmd_Bug.java)
 
-本によるIssueの作成を行います。
+不具合報告を行います。GitHub jaoafa/MyMaid4にIssueを作成します。
 
 ### `/bug`
 
@@ -71,7 +71,7 @@
 このコマンドはプレイヤーからの実行のみに制限されています。
 </aside>
 
-本によるIssueの作成を行います。
+不具合報告用の本を与えます。
 
 ### `/bug true`
 
@@ -79,7 +79,7 @@
 このコマンドはプレイヤーからの実行のみに制限されています。
 </aside>
 
-本によりIssue作成処理を行います。
+本をもとに不具合報告を行います。
 
 ### `/bug false`
 
@@ -532,6 +532,42 @@ EBan一覧を表示します。
 </aside>
 
 プレイヤーにエリトラと花火を付与します。
+
+## feedback
+
+```plaintext
+/feedback
+/feedback true
+/feedback false
+```
+
+> ソースコード: [com.jaoafa.mymaid4.command.Cmd_Feedback](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/command/Cmd_Feedback.java)
+
+フィードバックを行います。GitHub jaoafa/jao-Minecraft-ServerにIssueを作成します。
+
+### `/feedback`
+
+<aside class="notice">
+このコマンドはプレイヤーからの実行のみに制限されています。
+</aside>
+
+フィードバック用の本を与えます。
+
+### `/feedback true`
+
+<aside class="notice">
+このコマンドはプレイヤーからの実行のみに制限されています。
+</aside>
+
+本をもとにフィードバックを行います。
+
+### `/feedback false`
+
+<aside class="notice">
+このコマンドはプレイヤーからの実行のみに制限されています。
+</aside>
+
+記入済みの本を記入可能な本に戻します。
 
 ## flyspeed
 
