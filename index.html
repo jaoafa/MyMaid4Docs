@@ -427,6 +427,9 @@
                     <a href="#commands-legs" class="toc-h2 toc-link" data-title="legs">legs</a>
                   </li>
                   <li>
+                    <a href="#commands-light" class="toc-h2 toc-link" data-title="light">light</a>
+                  </li>
+                  <li>
                     <a href="#commands-link" class="toc-h2 toc-link" data-title="link">link</a>
                   </li>
                   <li>
@@ -750,7 +753,7 @@
 
 <p>Minecraft サーバ内での MyMaid4 のコマンドヘルプは <code>/mymaidhelp</code> から利用できます。</p>
 <ul>
-<li>Version: <a href="https://github.com/jaoafa/MyMaid4/commit/4.18.0"><code>4.18.0</code></a></li>
+<li>Version: <a href="https://github.com/jaoafa/MyMaid4/commit/4.19.0"><code>4.19.0</code></a></li>
 </ul>
 <h1 id='commands'>Commands</h1>
 <p>MyMaid4 で実装されているコマンドの一覧です。</p>
@@ -2261,6 +2264,38 @@
 <p>手に持っているアイテムを背中に付けます。</p>
 <h3 id='commands-legs-legs'><code>/legs</code></h3>
 <p>手に持っているアイテムを足首に付けます。</p>
+<h2 id='commands-light'>light</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/light
+/light &lt;player&gt;
+</code></pre></div>
+<blockquote>
+<p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/command/Cmd_Light.java">com.jaoafa.mymaid4.command.Cmd_Light</a></p>
+</blockquote>
+
+<p>ライトブロックを入手します。</p>
+<h3 id='commands-light-light'><code>/light</code></h3>
+<aside class="notice">
+このコマンドはプレイヤーからの実行のみに制限されています。
+</aside>
+
+<p>ライトブロックをコマンド実行者のメインハンドのアイテムと置き換えます。</p>
+<h3 id='commands-light-light-lt-player-gt'><code>/light &lt;player&gt;</code></h3>
+<p>ライトブロックを指定したプレイヤーのメインハンドのアイテムと置き換えます。</p>
+
+<table><thead>
+<tr>
+<th>引数名</th>
+<th>種類</th>
+<th>必須か</th>
+<th>説明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>player</code></td>
+<td>Player</td>
+<td>はい</td>
+<td>ライトブロックを付与するプレイヤー名</td>
+</tr>
+</tbody></table>
 <h2 id='commands-link'>link</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/link
 </code></pre></div>
 <blockquote>
