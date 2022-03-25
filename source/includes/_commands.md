@@ -1115,6 +1115,33 @@ Mob（またはプレイヤー）にリードを付けます。
 
 手に持っているアイテムを足首に付けます。
 
+## light
+
+```plaintext
+/light
+/light <player>
+```
+
+> ソースコード: [com.jaoafa.mymaid4.command.Cmd_Light](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/command/Cmd_Light.java)
+
+ライトブロックを入手します。
+
+### `/light`
+
+<aside class="notice">
+このコマンドはプレイヤーからの実行のみに制限されています。
+</aside>
+
+ライトブロックをコマンド実行者のメインハンドのアイテムと置き換えます。
+
+### `/light <player>`
+
+ライトブロックを指定したプレイヤーのメインハンドのアイテムと置き換えます。
+
+| 引数名 | 種類 | 必須か | 説明 |
+| - | - | - | - |
+| `player` | Player | はい | ライトブロックを付与するプレイヤー名 |
+
 ## link
 
 ```plaintext
