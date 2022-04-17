@@ -1,6 +1,6 @@
 ### Event_AdvancementDiscordNotify
 
-エンドポータルの作成を制限します。
+進捗を達成した際にDiscord#server-chatに日本語進捗名で通知します。
 
 | メソッド名 | イベント |
 | - | - |
@@ -354,7 +354,7 @@ flyspeedコマンドに関する処理を行います。
 
 ### Event_GameModeCmd
 
-hideコマンドに関する処理を行います。
+gamemodeコマンドが実行された際に、gコマンドを勧めます。
 
 | メソッド名 | イベント |
 | - | - |
