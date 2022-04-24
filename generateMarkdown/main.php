@@ -169,7 +169,6 @@ foreach ($events as $event) {
 }
 file_put_contents("source/includes/_events.md", implode("\n", $markdown));
 
-$ver_sha = end(explode("_", $version));
-$github_ver_url = "https://github.com/jaoafa/MyMaid4/commit/" . $ver_sha;
+$github_ver_url = "https://github.com/jaoafa/MyMaid4/releases/tag/" . $version;
 
 file_put_contents("source/includes/_version.md", "- Version: [`$version`]($github_ver_url)");
