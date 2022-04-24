@@ -25,6 +25,7 @@ code_clipboard: true
 
 `MyMaid4` のドキュメントへようこそ。`MyMaid4` とは、 [jao Minecraft Server](https://jaoafa.com) 独自の PaperMC プラグインです。
 
-新しいコマンド・機能の要望、不具合の報告などは [開発部リクエストボックス](https://forms.gle/EZGVhKdbryfW5fCm8) か [MyMaid4 の Issue](https://github.com/jaoafa/MyMaid4/issues) へお願いします。
+新しいコマンド・機能の要望、不具合の報告などは [開発部リクエストボックス](https://forms.gle/EZGVhKdbryfW5fCm8) か [MyMaid4 の Issue](https://github.com/jaoafa/MyMaid4/issues) へお願いします。  
+早めに解決してほしい不具合や意見などがある場合は [Issue 優先度アンケートボード](https://dev.jaoafa.com/issue-board/) で優先度評価をお願いします。
 
 Minecraft サーバ内での MyMaid4 のコマンドヘルプは `/mymaidhelp` から利用できます。
