@@ -70,6 +70,16 @@ Verified以下のプレイヤーが他人をテレポートすることを制限
 | onTeleportCommand | TeleportCommandEvent |
 > ソースコード: [com.jaoafa.mymaid4.event.Event_AntiOtherTeleport](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_AntiOtherTeleport.java)
 
+### Event_AntiPotion
+
+ポーション系の規制を行います。
+
+| メソッド名 | イベント |
+| - | - |
+| PotionSplash | PotionSplashEvent |
+| PotionDrink | PlayerItemConsumeEvent |
+> ソースコード: [com.jaoafa.mymaid4.event.Event_AntiPotion](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_AntiPotion.java)
+
 ### Event_AntiProblemCommand
 
 迷惑コマンドの制限を行います。
