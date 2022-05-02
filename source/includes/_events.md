@@ -34,6 +34,15 @@ Default・Verified権限グループのプレイヤーによるエンティテ�
 | onInteract | PlayerInteractEvent |
 > ソースコード: [com.jaoafa.mymaid4.event.Event_AntiEndPortal](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_AntiEndPortal.java)
 
+### Event_AntiFarTeleport
+
+極端に遠い場所へのテレポートを禁止します。
+
+| メソッド名 | イベント |
+| - | - |
+| onPlayerTeleportEvent | PlayerTeleportEvent |
+> ソースコード: [com.jaoafa.mymaid4.event.Event_AntiFarTeleport](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_AntiFarTeleport.java)
+
 ### Event_AntiKillWire
 
 wireコマンドで出現させたコウモリのキルを無効化します。
@@ -52,6 +61,15 @@ wireコマンドで出現させたコウモリのキルを無効化します。
 | onEntityCreatePortalEvent | PortalCreateEvent |
 > ソースコード: [com.jaoafa.mymaid4.event.Event_AntiNetherPortal](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_AntiNetherPortal.java)
 
+### Event_AntiOtherTeleport
+
+Verified以下のプレイヤーが他人をテレポートすることを制限します。
+
+| メソッド名 | イベント |
+| - | - |
+| onTeleportCommand | TeleportCommandEvent |
+> ソースコード: [com.jaoafa.mymaid4.event.Event_AntiOtherTeleport](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_AntiOtherTeleport.java)
+
 ### Event_AntiProblemCommand
 
 迷惑コマンドの制限を行います。
@@ -60,15 +78,6 @@ wireコマンドで出現させたコウモリのキルを無効化します。
 | - | - |
 | onCommand | PlayerCommandPreprocessEvent |
 > ソースコード: [com.jaoafa.mymaid4.event.Event_AntiProblemCommand](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_AntiProblemCommand.java)
-
-### Event_AntiProblemTeleport
-
-極端に遠い場所へのテレポートを禁止します。
-
-| メソッド名 | イベント |
-| - | - |
-| onPlayerTeleportEvent | PlayerTeleportEvent |
-> ソースコード: [com.jaoafa.mymaid4.event.Event_AntiProblemTeleport](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_AntiProblemTeleport.java)
 
 ### Event_AntiTNTCart
 
