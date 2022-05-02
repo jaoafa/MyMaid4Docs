@@ -543,6 +543,9 @@
                     <a href="#events-wt-event_antiotherteleport" class="toc-h2 toc-link" data-title="Event_AntiOtherTeleport">Event_AntiOtherTeleport</a>
                   </li>
                   <li>
+                    <a href="#events-wt-event_antipotion" class="toc-h2 toc-link" data-title="Event_AntiPotion">Event_AntiPotion</a>
+                  </li>
+                  <li>
                     <a href="#events-wt-event_antiproblemcommand" class="toc-h2 toc-link" data-title="Event_AntiProblemCommand">Event_AntiProblemCommand</a>
                   </li>
                   <li>
@@ -757,7 +760,7 @@
 
 <p>Minecraft サーバ内での MyMaid4 のコマンドヘルプは <code>/mymaidhelp</code> から利用できます。</p>
 <ul>
-<li>Version: <a href="https://github.com/jaoafa/MyMaid4/releases/tag/4.20.0"><code>4.20.0</code></a></li>
+<li>Version: <a href="https://github.com/jaoafa/MyMaid4/releases/tag/4.21.0"><code>4.21.0</code></a></li>
 </ul>
 <h1 id='commands'>Commands</h1>
 <p>MyMaid4 で実装されているコマンドの一覧です。</p>
@@ -3826,6 +3829,28 @@
 
 <blockquote>
 <p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_AntiOtherTeleport.java">com.jaoafa.mymaid4.event.Event_AntiOtherTeleport</a></p>
+</blockquote>
+<h3 id='events-wt-event_antipotion'>Event_AntiPotion</h3>
+<p>ポーション系の規制を行います。</p>
+
+<table><thead>
+<tr>
+<th>メソッド名</th>
+<th>イベント</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>PotionSplash</td>
+<td>PotionSplashEvent</td>
+</tr>
+<tr>
+<td>PotionDrink</td>
+<td>PlayerItemConsumeEvent</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_AntiPotion.java">com.jaoafa.mymaid4.event.Event_AntiPotion</a></p>
 </blockquote>
 <h3 id='events-wt-event_antiproblemcommand'>Event_AntiProblemCommand</h3>
 <p>迷惑コマンドの制限を行います。</p>
