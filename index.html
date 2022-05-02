@@ -531,16 +531,19 @@
                     <a href="#events-wt-event_antiendportal" class="toc-h2 toc-link" data-title="Event_AntiEndPortal">Event_AntiEndPortal</a>
                   </li>
                   <li>
+                    <a href="#events-wt-event_antifarteleport" class="toc-h2 toc-link" data-title="Event_AntiFarTeleport">Event_AntiFarTeleport</a>
+                  </li>
+                  <li>
                     <a href="#events-wt-event_antikillwire" class="toc-h2 toc-link" data-title="Event_AntiKillWire">Event_AntiKillWire</a>
                   </li>
                   <li>
                     <a href="#events-wt-event_antinetherportal" class="toc-h2 toc-link" data-title="Event_AntiNetherPortal">Event_AntiNetherPortal</a>
                   </li>
                   <li>
-                    <a href="#events-wt-event_antiproblemcommand" class="toc-h2 toc-link" data-title="Event_AntiProblemCommand">Event_AntiProblemCommand</a>
+                    <a href="#events-wt-event_antiotherteleport" class="toc-h2 toc-link" data-title="Event_AntiOtherTeleport">Event_AntiOtherTeleport</a>
                   </li>
                   <li>
-                    <a href="#events-wt-event_antiproblemteleport" class="toc-h2 toc-link" data-title="Event_AntiProblemTeleport">Event_AntiProblemTeleport</a>
+                    <a href="#events-wt-event_antiproblemcommand" class="toc-h2 toc-link" data-title="Event_AntiProblemCommand">Event_AntiProblemCommand</a>
                   </li>
                   <li>
                     <a href="#events-wt-event_antitntcart" class="toc-h2 toc-link" data-title="Event_AntiTNTCart">Event_AntiTNTCart</a>
@@ -754,7 +757,7 @@
 
 <p>Minecraft サーバ内での MyMaid4 のコマンドヘルプは <code>/mymaidhelp</code> から利用できます。</p>
 <ul>
-<li>Version: <a href="https://github.com/jaoafa/MyMaid4/releases/tag/4.19.5"><code>4.19.5</code></a></li>
+<li>Version: <a href="https://github.com/jaoafa/MyMaid4/releases/tag/4.20.0"><code>4.20.0</code></a></li>
 </ul>
 <h1 id='commands'>Commands</h1>
 <p>MyMaid4 で実装されているコマンドの一覧です。</p>
@@ -3752,6 +3755,24 @@
 <blockquote>
 <p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_AntiEndPortal.java">com.jaoafa.mymaid4.event.Event_AntiEndPortal</a></p>
 </blockquote>
+<h3 id='events-wt-event_antifarteleport'>Event_AntiFarTeleport</h3>
+<p>極端に遠い場所へのテレポートを禁止します。</p>
+
+<table><thead>
+<tr>
+<th>メソッド名</th>
+<th>イベント</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>onPlayerTeleportEvent</td>
+<td>PlayerTeleportEvent</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_AntiFarTeleport.java">com.jaoafa.mymaid4.event.Event_AntiFarTeleport</a></p>
+</blockquote>
 <h3 id='events-wt-event_antikillwire'>Event_AntiKillWire</h3>
 <p>wireコマンドで出現させたコウモリのキルを無効化します。</p>
 
@@ -3788,6 +3809,24 @@
 <blockquote>
 <p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_AntiNetherPortal.java">com.jaoafa.mymaid4.event.Event_AntiNetherPortal</a></p>
 </blockquote>
+<h3 id='events-wt-event_antiotherteleport'>Event_AntiOtherTeleport</h3>
+<p>Verified以下のプレイヤーが他人をテレポートすることを制限します。</p>
+
+<table><thead>
+<tr>
+<th>メソッド名</th>
+<th>イベント</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>onTeleportCommand</td>
+<td>TeleportCommandEvent</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_AntiOtherTeleport.java">com.jaoafa.mymaid4.event.Event_AntiOtherTeleport</a></p>
+</blockquote>
 <h3 id='events-wt-event_antiproblemcommand'>Event_AntiProblemCommand</h3>
 <p>迷惑コマンドの制限を行います。</p>
 
@@ -3805,24 +3844,6 @@
 
 <blockquote>
 <p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_AntiProblemCommand.java">com.jaoafa.mymaid4.event.Event_AntiProblemCommand</a></p>
-</blockquote>
-<h3 id='events-wt-event_antiproblemteleport'>Event_AntiProblemTeleport</h3>
-<p>極端に遠い場所へのテレポートを禁止します。</p>
-
-<table><thead>
-<tr>
-<th>メソッド名</th>
-<th>イベント</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>onPlayerTeleportEvent</td>
-<td>PlayerTeleportEvent</td>
-</tr>
-</tbody></table>
-
-<blockquote>
-<p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_AntiProblemTeleport.java">com.jaoafa.mymaid4.event.Event_AntiProblemTeleport</a></p>
 </blockquote>
 <h3 id='events-wt-event_antitntcart'>Event_AntiTNTCart</h3>
 <p>TNTカートを設置できないようにします。</p>
