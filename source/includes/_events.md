@@ -721,6 +721,7 @@ tpdenyコマンドに関する処理を行います。
 | メソッド名 | イベント |
 | - | - |
 | onVotifierEvent | VotifierEvent |
+| onPlayerJoin | PlayerJoinEvent |
 > ソースコード: [com.jaoafa.mymaid4.event.Event_Vote](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_Vote.java)
 
 ### Event_WorldEditAutoFacing
