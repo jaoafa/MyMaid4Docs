@@ -726,6 +726,15 @@ tpdenyコマンドに関する処理を行います。
 | onPlayerJoin | PlayerJoinEvent |
 > ソースコード: [com.jaoafa.mymaid4.event.Event_Vote](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_Vote.java)
 
+### Event_WhereAreYou
+
+「みんなどこ」に自動返信します。
+
+| メソッド名 | イベント |
+| - | - |
+| onChatWhereAreYou | AsyncChatEvent |
+> ソースコード: [com.jaoafa.mymaid4.event.Event_WhereAreYou](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_WhereAreYou.java)
+
 ### Event_WorldEditAutoFacing
 
 「[facing=look]」が含まれるコマンドが実行された際に自動で向いている方向に置き換えます。
