@@ -545,6 +545,8 @@ EBan一覧を表示します。
 
 フィードバックを行います。GitHub jaoafa/jao-Minecraft-ServerにIssueを作成します。
 
+- エイリアスがあります: `report`
+
 ### `/feedback`
 
 <aside class="notice">
