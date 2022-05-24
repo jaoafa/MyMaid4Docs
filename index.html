@@ -576,9 +576,6 @@
                     <a href="#events-wt-event_bug" class="toc-h2 toc-link" data-title="Event_Bug">Event_Bug</a>
                   </li>
                   <li>
-                    <a href="#events-wt-event_cve_2021_44228" class="toc-h2 toc-link" data-title="Event_CVE_2021_44228">Event_CVE_2021_44228</a>
-                  </li>
-                  <li>
                     <a href="#events-wt-event_chatban" class="toc-h2 toc-link" data-title="Event_ChatBan">Event_ChatBan</a>
                   </li>
                   <li>
@@ -763,7 +760,7 @@
 
 <p>Minecraft サーバ内での MyMaid4 のコマンドヘルプは <code>/mymaidhelp</code> から利用できます。</p>
 <ul>
-<li>Version: <a href="https://github.com/jaoafa/MyMaid4/releases/tag/4.26.4"><code>4.26.4</code></a></li>
+<li>Version: <a href="https://github.com/jaoafa/MyMaid4/releases/tag/4.26.5"><code>4.26.5</code></a></li>
 </ul>
 <h1 id='commands'>Commands</h1>
 <p>MyMaid4 で実装されているコマンドの一覧です。</p>
@@ -4122,24 +4119,6 @@
 
 <blockquote>
 <p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_Bug.java">com.jaoafa.mymaid4.event.Event_Bug</a></p>
-</blockquote>
-<h3 id='events-wt-event_cve_2021_44228'>Event_CVE_2021_44228</h3>
-<p>ログイン時にクライアントがJavaライブラリ「log4j 2」にあった脆弱性 CVE-2021-44228 に対策されているかを確認します。</p>
-
-<table><thead>
-<tr>
-<th>メソッド名</th>
-<th>イベント</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>OnJoin</td>
-<td>PlayerJoinEvent</td>
-</tr>
-</tbody></table>
-
-<blockquote>
-<p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_CVE_2021_44228.java">com.jaoafa.mymaid4.event.Event_CVE_2021_44228</a></p>
 </blockquote>
 <h3 id='events-wt-event_chatban'>Event_ChatBan</h3>
 <p>ChatBanに関する各種処理を行います。</p>
