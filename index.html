@@ -340,6 +340,9 @@
                     <a href="#commands-cmdb" class="toc-h2 toc-link" data-title="cmdb">cmdb</a>
                   </li>
                   <li>
+                    <a href="#commands-convloc" class="toc-h2 toc-link" data-title="convloc">convloc</a>
+                  </li>
+                  <li>
                     <a href="#commands-debstick" class="toc-h2 toc-link" data-title="debstick">debstick</a>
                   </li>
                   <li>
@@ -588,6 +591,9 @@
                     <a href="#events-wt-event_commandsender" class="toc-h2 toc-link" data-title="Event_CommandSender">Event_CommandSender</a>
                   </li>
                   <li>
+                    <a href="#events-wt-event_convloc" class="toc-h2 toc-link" data-title="Event_ConvLoc">Event_ConvLoc</a>
+                  </li>
+                  <li>
                     <a href="#events-wt-event_customjoinmessage" class="toc-h2 toc-link" data-title="Event_CustomJoinMessage">Event_CustomJoinMessage</a>
                   </li>
                   <li>
@@ -760,7 +766,7 @@
 
 <p>Minecraft サーバ内での MyMaid4 のコマンドヘルプは <code>/mymaidhelp</code> から利用できます。</p>
 <ul>
-<li>Version: <a href="https://github.com/jaoafa/MyMaid4/releases/tag/4.26.5"><code>4.26.5</code></a></li>
+<li>Version: <a href="https://github.com/jaoafa/MyMaid4/releases/tag/4.27.1"><code>4.27.1</code></a></li>
 </ul>
 <h1 id='commands'>Commands</h1>
 <p>MyMaid4 で実装されているコマンドの一覧です。</p>
@@ -1009,6 +1015,82 @@
 <td>コマンドブロックを付与するプレイヤー名</td>
 </tr>
 </tbody></table>
+<h2 id='commands-convloc'>convloc</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/convloc
+/convloc relative
+/convloc absolute
+/convloc click [type]
+/convloc select [type]
+/convloc undo
+</code></pre></div>
+<blockquote>
+<p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/command/Cmd_ConvLoc.java">com.jaoafa.mymaid4.command.Cmd_ConvLoc</a></p>
+</blockquote>
+
+<p>コマンドブロックのコマンドの座標指定を「絶対座標」と「相対座標」で相互変換します。</p>
+<h3 id='commands-convloc-convloc'><code>/convloc</code></h3>
+<aside class="notice">
+このコマンドはプレイヤーからの実行のみに制限されています。
+</aside>
+
+<p>見ているコマンドブロックのコマンドを「相対座標」に変換します。</p>
+<h3 id='commands-convloc-convloc-relative'><code>/convloc relative</code></h3>
+<aside class="notice">
+このコマンドはプレイヤーからの実行のみに制限されています。
+</aside>
+
+<p>見ているコマンドブロックのコマンドを「相対座標(relative)」に変換します。relativeは短縮できます。</p>
+<h3 id='commands-convloc-convloc-absolute'><code>/convloc absolute</code></h3>
+<aside class="notice">
+このコマンドはプレイヤーからの実行のみに制限されています。
+</aside>
+
+<p>見ているコマンドブロックのコマンドを「絶対座標(absolute)」に変換します。absoluteは短縮できます。</p>
+<h3 id='commands-convloc-convloc-click-type'><code>/convloc click [type]</code></h3>
+<aside class="notice">
+このコマンドはプレイヤーからの実行のみに制限されています。
+</aside>
+
+<p>叩いたコマンドブロックのコマンドを「相対座標(relative)」か「絶対座標(absolute)」のいずれかに変換する棒を付与します。</p>
+
+<table><thead>
+<tr>
+<th>引数名</th>
+<th>種類</th>
+<th>必須か</th>
+<th>説明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>type</code></td>
+<td>String</td>
+<td>いいえ</td>
+<td>説明なし</td>
+</tr>
+</tbody></table>
+<h3 id='commands-convloc-convloc-select-type'><code>/convloc select [type]</code></h3>
+<aside class="notice">
+このコマンドはプレイヤーからの実行のみに制限されています。
+</aside>
+
+<p>WorldEditで選択した範囲にあるコマンドブロックの座標を「相対座標(relative)」か「絶対座標(absolute)」のいずれかに変換します。</p>
+
+<table><thead>
+<tr>
+<th>引数名</th>
+<th>種類</th>
+<th>必須か</th>
+<th>説明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>type</code></td>
+<td>String</td>
+<td>いいえ</td>
+<td>説明なし</td>
+</tr>
+</tbody></table>
+<h3 id='commands-convloc-convloc-undo'><code>/convloc undo</code></h3>
+<p>変換したコマンドブロックをひとつ戻します。</p>
 <h2 id='commands-debstick'>debstick</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/debstick
 /debstick &lt;player&gt;
 </code></pre></div>
@@ -4207,6 +4289,24 @@
 
 <blockquote>
 <p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_CommandSender.java">com.jaoafa.mymaid4.event.Event_CommandSender</a></p>
+</blockquote>
+<h3 id='events-wt-event_convloc'>Event_ConvLoc</h3>
+<p>convlocコマンドに関する処理を行います。</p>
+
+<table><thead>
+<tr>
+<th>メソッド名</th>
+<th>イベント</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>onInteract</td>
+<td>PlayerInteractEvent</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_ConvLoc.java">com.jaoafa.mymaid4.event.Event_ConvLoc</a></p>
 </blockquote>
 <h3 id='events-wt-event_customjoinmessage'>Event_CustomJoinMessage</h3>
 <p>独自のログインメッセージを表示するように制御します。</p>
