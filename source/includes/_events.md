@@ -231,6 +231,15 @@ Default権限グループのプレイヤーによる100文字を超えるコマ�
 | onCommand | PlayerCommandPreprocessEvent |
 > ソースコード: [com.jaoafa.mymaid4.event.Event_CommandSender](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_CommandSender.java)
 
+### Event_ConvLoc
+
+convlocコマンドに関する処理を行います。
+
+| メソッド名 | イベント |
+| - | - |
+| onInteract | PlayerInteractEvent |
+> ソースコード: [com.jaoafa.mymaid4.event.Event_ConvLoc](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_ConvLoc.java)
+
 ### Event_CustomJoinMessage
 
 独自のログインメッセージを表示するように制御します。

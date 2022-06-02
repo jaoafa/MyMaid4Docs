@@ -1,1 +1,1 @@
-- Version: [`4.26.5`](https://github.com/jaoafa/MyMaid4/releases/tag/4.26.5)
+- Version: [`4.27.1`](https://github.com/jaoafa/MyMaid4/releases/tag/4.27.1)

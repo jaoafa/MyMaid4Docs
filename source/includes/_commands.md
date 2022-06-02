@@ -194,6 +194,73 @@ ChatBan一覧もしくは詳細を表示します。
 | - | - | - | - |
 | `player` | Player | はい | コマンドブロックを付与するプレイヤー名 |
 
+## convloc
+
+```plaintext
+/convloc
+/convloc relative
+/convloc absolute
+/convloc click [type]
+/convloc select [type]
+/convloc undo
+```
+
+> ソースコード: [com.jaoafa.mymaid4.command.Cmd_ConvLoc](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/command/Cmd_ConvLoc.java)
+
+コマンドブロックのコマンドの座標指定を「絶対座標」と「相対座標」で相互変換します。
+
+### `/convloc`
+
+<aside class="notice">
+このコマンドはプレイヤーからの実行のみに制限されています。
+</aside>
+
+見ているコマンドブロックのコマンドを「相対座標」に変換します。
+
+### `/convloc relative`
+
+<aside class="notice">
+このコマンドはプレイヤーからの実行のみに制限されています。
+</aside>
+
+見ているコマンドブロックのコマンドを「相対座標(relative)」に変換します。relativeは短縮できます。
+
+### `/convloc absolute`
+
+<aside class="notice">
+このコマンドはプレイヤーからの実行のみに制限されています。
+</aside>
+
+見ているコマンドブロックのコマンドを「絶対座標(absolute)」に変換します。absoluteは短縮できます。
+
+### `/convloc click [type]`
+
+<aside class="notice">
+このコマンドはプレイヤーからの実行のみに制限されています。
+</aside>
+
+叩いたコマンドブロックのコマンドを「相対座標(relative)」か「絶対座標(absolute)」のいずれかに変換する棒を付与します。
+
+| 引数名 | 種類 | 必須か | 説明 |
+| - | - | - | - |
+| `type` | String | いいえ | 説明なし |
+
+### `/convloc select [type]`
+
+<aside class="notice">
+このコマンドはプレイヤーからの実行のみに制限されています。
+</aside>
+
+WorldEditで選択した範囲にあるコマンドブロックの座標を「相対座標(relative)」か「絶対座標(absolute)」のいずれかに変換します。
+
+| 引数名 | 種類 | 必須か | 説明 |
+| - | - | - | - |
+| `type` | String | いいえ | 説明なし |
+
+### `/convloc undo`
+
+変換したコマンドブロックをひとつ戻します。
+
 ## debstick
 
 ```plaintext
