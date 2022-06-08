@@ -1052,6 +1052,77 @@ jaoHistoryに関する操作を行います。
 | - | - | - | - |
 | `target` | Player | はい | 対象のプレイヤー |
 
+## itemedit
+
+```plaintext
+/itemedit name <name>
+/itemedit lore <lore>
+```
+
+> ソースコード: [com.jaoafa.mymaid4.command.Cmd_ItemEdit](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/command/Cmd_ItemEdit.java)
+
+持っているアイテムの表示名や説明文を変更します。
+
+### `/itemedit name <name>`
+
+<aside class="notice">
+このコマンドはプレイヤーからの実行のみに制限されています。
+</aside>
+
+手に持っているアイテムの表示名を変更します。
+
+| 引数名 | 種類 | 必須か | 説明 |
+| - | - | - | - |
+| `name` | String | はい | 説明なし |
+
+### `/itemedit lore <lore>`
+
+<aside class="notice">
+このコマンドはプレイヤーからの実行のみに制限されています。
+</aside>
+
+手に持っているアイテムの説明文を変更します。
+
+| 引数名 | 種類 | 必須か | 説明 |
+| - | - | - | - |
+| `lore` | StringArray | はい | 説明なし |
+
+## itemframe
+
+```plaintext
+/itemframe invisible
+/itemframe disable-break
+/itemframe tomap
+```
+
+> ソースコード: [com.jaoafa.mymaid4.command.Cmd_ItemFrame](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/command/Cmd_ItemFrame.java)
+
+アイテムフレームに関する操作を行えます。
+
+### `/itemframe invisible`
+
+<aside class="notice">
+このコマンドはプレイヤーからの実行のみに制限されています。
+</aside>
+
+見ているアイテムフレームを透明化します。
+
+### `/itemframe disable-break`
+
+<aside class="notice">
+このコマンドはプレイヤーからの実行のみに制限されています。
+</aside>
+
+見ているアイテムフレームの土台ブロックがなくなってもアイテムフレームが壊れないようにします。
+
+### `/itemframe tomap`
+
+<aside class="notice">
+このコマンドはプレイヤーからの実行のみに制限されています。
+</aside>
+
+tomapで作成し設置した、見ているアイテムフレームを修正します。
+
 ## jail
 
 ```plaintext
@@ -1674,6 +1745,8 @@ SelClickの有効/無効を切り替えます。
 
 スポーン地点にテレポートします。
 
+- エイリアスがあります: `hub, lobby`
+
 ### `/spawn`
 
 <aside class="notice">
@@ -1794,6 +1867,48 @@ Jailの遺言を残します。jail testmentのエイリアスです。
 | - | - | - | - |
 | `timeInt` | Integer | はい | 時間 |
 | `isRelative` | Boolean | いいえ | ワールド時間と相対的に保つか |
+
+## tips
+
+```plaintext
+/tips add <name> <text>
+/tips remove <name>
+/tips list
+/tips broadcast <name>
+```
+
+> ソースコード: [com.jaoafa.mymaid4.command.Cmd_Tips](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/command/Cmd_Tips.java)
+
+Tipsの定型文を投稿・管理します。
+
+### `/tips add <name> <text>`
+
+Tipsを追加します。
+
+| 引数名 | 種類 | 必須か | 説明 |
+| - | - | - | - |
+| `name` | String | はい | Tipsの名前 |
+| `text` | String | はい | Tipsの文章 |
+
+### `/tips remove <name>`
+
+Tipsを削除します。
+
+| 引数名 | 種類 | 必須か | 説明 |
+| - | - | - | - |
+| `name` | String | はい | Tipsの名前 |
+
+### `/tips list`
+
+Tipsを表示します。
+
+### `/tips broadcast <name>`
+
+Tipsを送信・発言します。
+
+| 引数名 | 種類 | 必須か | 説明 |
+| - | - | - | - |
+| `name` | String | はい | Tipsの名前 |
 
 ## tpalias
 
@@ -2147,3 +2262,31 @@ WorldEditで選択した地点間のリードを撤去します。3地点以上�
 | - | - | - | - |
 | `worldName` | String | はい | ワールド名もしくはワールド番号 |
 | `player` | Player | はい | テレポートさせるプレイヤー |
+
+## wtp
+
+```plaintext
+/wtp <worldName> <x> <y> <z> [yaw] [pitch] [player]
+```
+
+> ソースコード: [com.jaoafa.mymaid4.command.Cmd_Wtp](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/command/Cmd_Wtp.java)
+
+他ワールドの特定座標にテレポートします。
+
+### `/wtp <worldName> <x> <y> <z> [yaw] [pitch] [player]`
+
+<aside class="notice">
+このコマンドはプレイヤーからの実行のみに制限されています。
+</aside>
+
+指定したワールドの特定座標にテレポートします。
+
+| 引数名 | 種類 | 必須か | 説明 |
+| - | - | - | - |
+| `worldName` | String | はい | ワールド名もしくはワールド番号 |
+| `x` | Double | はい | X座標 |
+| `y` | Double | はい | Y座標 |
+| `z` | Double | はい | Z座標 |
+| `yaw` | Float | いいえ | Yaw |
+| `pitch` | Float | いいえ | Pitch |
+| `player` | Player | いいえ | テレポートさせるプレイヤー |
