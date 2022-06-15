@@ -240,14 +240,15 @@ convlocコマンドに関する処理を行います。
 | onInteract | PlayerInteractEvent |
 > ソースコード: [com.jaoafa.mymaid4.event.Event_ConvLoc](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_ConvLoc.java)
 
-### Event_CustomJoinMessage
+### Event_CustomJoinLeftMessage
 
-独自のログインメッセージを表示するように制御します。
+独自のログイン・ログアウトメッセージを表示するように制御します。
 
 | メソッド名 | イベント |
 | - | - |
+| onEvent_LeftChangeMessage | PlayerQuitEvent |
 | onEvent_JoinChangeMessage | PlayerJoinEvent |
-> ソースコード: [com.jaoafa.mymaid4.event.Event_CustomJoinMessage](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_CustomJoinMessage.java)
+> ソースコード: [com.jaoafa.mymaid4.event.Event_CustomJoinLeftMessage](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_CustomJoinLeftMessage.java)
 
 ### Event_DVNotSpectator
 
