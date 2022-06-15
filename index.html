@@ -606,7 +606,7 @@
                     <a href="#events-wtp-event_convloc" class="toc-h2 toc-link" data-title="Event_ConvLoc">Event_ConvLoc</a>
                   </li>
                   <li>
-                    <a href="#events-wtp-event_customjoinmessage" class="toc-h2 toc-link" data-title="Event_CustomJoinMessage">Event_CustomJoinMessage</a>
+                    <a href="#events-wtp-event_customjoinleftmessage" class="toc-h2 toc-link" data-title="Event_CustomJoinLeftMessage">Event_CustomJoinLeftMessage</a>
                   </li>
                   <li>
                     <a href="#events-wtp-event_dvnotspectator" class="toc-h2 toc-link" data-title="Event_DVNotSpectator">Event_DVNotSpectator</a>
@@ -778,7 +778,7 @@
 
 <p>Minecraft サーバ内での MyMaid4 のコマンドヘルプは <code>/mymaidhelp</code> から利用できます。</p>
 <ul>
-<li>Version: <a href="https://github.com/jaoafa/MyMaid4/releases/tag/4.35.1"><code>4.35.1</code></a></li>
+<li>Version: <a href="https://github.com/jaoafa/MyMaid4/releases/tag/4.37.1"><code>4.37.1</code></a></li>
 </ul>
 <h1 id='commands'>Commands</h1>
 <p>MyMaid4 で実装されているコマンドの一覧です。</p>
@@ -4540,8 +4540,8 @@
 <blockquote>
 <p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_ConvLoc.java">com.jaoafa.mymaid4.event.Event_ConvLoc</a></p>
 </blockquote>
-<h3 id='events-wtp-event_customjoinmessage'>Event_CustomJoinMessage</h3>
-<p>独自のログインメッセージを表示するように制御します。</p>
+<h3 id='events-wtp-event_customjoinleftmessage'>Event_CustomJoinLeftMessage</h3>
+<p>独自のログイン・ログアウトメッセージを表示するように制御します。</p>
 
 <table><thead>
 <tr>
@@ -4550,13 +4550,17 @@
 </tr>
 </thead><tbody>
 <tr>
+<td>onEvent_LeftChangeMessage</td>
+<td>PlayerQuitEvent</td>
+</tr>
+<tr>
 <td>onEvent_JoinChangeMessage</td>
 <td>PlayerJoinEvent</td>
 </tr>
 </tbody></table>
 
 <blockquote>
-<p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_CustomJoinMessage.java">com.jaoafa.mymaid4.event.Event_CustomJoinMessage</a></p>
+<p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_CustomJoinLeftMessage.java">com.jaoafa.mymaid4.event.Event_CustomJoinLeftMessage</a></p>
 </blockquote>
 <h3 id='events-wtp-event_dvnotspectator'>Event_DVNotSpectator</h3>
 <p>DefaultとVerified権限グループのプレイヤーによるスペクテイター変更を禁止します。</p>
