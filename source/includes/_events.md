@@ -204,6 +204,15 @@ ChatBanに関する各種処理を行います。
 | OnEvent_LoginChatBanCheck | PlayerJoinEvent |
 > ソースコード: [com.jaoafa.mymaid4.event.Event_ChatBan](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_ChatBan.java)
 
+### Event_ChatBot
+
+ChatBotに関する処理を行います。
+
+| メソッド名 | イベント |
+| - | - |
+| onAsyncPlayerChatEvent | AsyncChatEvent |
+> ソースコード: [com.jaoafa.mymaid4.event.Event_ChatBot](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_ChatBot.java)
+
 ### Event_ClearSelection
 
 走りながら空気をクリックして/selを実行します。
@@ -726,15 +735,6 @@ tpdenyコマンドに関する処理を行います。
 | onVotifierEvent | VotifierEvent |
 | onPlayerJoin | PlayerJoinEvent |
 > ソースコード: [com.jaoafa.mymaid4.event.Event_Vote](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_Vote.java)
-
-### Event_WhereAreYou
-
-「みんなどこ」に自動返信します。
-
-| メソッド名 | イベント |
-| - | - |
-| onChatWhereAreYou | AsyncChatEvent |
-> ソースコード: [com.jaoafa.mymaid4.event.Event_WhereAreYou](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_WhereAreYou.java)
 
 ### Event_WorldEditAutoFacing
 

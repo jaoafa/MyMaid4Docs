@@ -167,6 +167,26 @@ ChatBan一覧もしくは詳細を表示します。
 | - | - | - | - |
 | `player` | OfflinePlayer | いいえ | 詳細を表示するプレイヤー |
 
+## chatbot
+
+```plaintext
+/chatbot <text>
+```
+
+> ソースコード: [com.jaoafa.mymaid4.command.Cmd_ChatBot](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/command/Cmd_ChatBot.java)
+
+よくある質問への応対をします。
+
+- エイリアスがあります: `q, question, 質問, しつもん`
+
+### `/chatbot <text>`
+
+よくある質問への応対をします。
+
+| 引数名 | 種類 | 必須か | 説明 |
+| - | - | - | - |
+| `text` | String | はい | 説明なし |
+
 ## cmdb
 
 ```plaintext
