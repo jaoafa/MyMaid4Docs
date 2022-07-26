@@ -337,6 +337,9 @@
                     <a href="#commands-chatban" class="toc-h2 toc-link" data-title="chatban">chatban</a>
                   </li>
                   <li>
+                    <a href="#commands-chatbot" class="toc-h2 toc-link" data-title="chatbot">chatbot</a>
+                  </li>
+                  <li>
                     <a href="#commands-cmdb" class="toc-h2 toc-link" data-title="cmdb">cmdb</a>
                   </li>
                   <li>
@@ -594,6 +597,9 @@
                     <a href="#events-wtp-event_chatban" class="toc-h2 toc-link" data-title="Event_ChatBan">Event_ChatBan</a>
                   </li>
                   <li>
+                    <a href="#events-wtp-event_chatbot" class="toc-h2 toc-link" data-title="Event_ChatBot">Event_ChatBot</a>
+                  </li>
+                  <li>
                     <a href="#events-wtp-event_clearselection" class="toc-h2 toc-link" data-title="Event_ClearSelection">Event_ClearSelection</a>
                   </li>
                   <li>
@@ -750,9 +756,6 @@
                     <a href="#events-wtp-event_vote" class="toc-h2 toc-link" data-title="Event_Vote">Event_Vote</a>
                   </li>
                   <li>
-                    <a href="#events-wtp-event_whereareyou" class="toc-h2 toc-link" data-title="Event_WhereAreYou">Event_WhereAreYou</a>
-                  </li>
-                  <li>
                     <a href="#events-wtp-event_worldeditautofacing" class="toc-h2 toc-link" data-title="Event_WorldEditAutoFacing">Event_WorldEditAutoFacing</a>
                   </li>
                   <li>
@@ -778,7 +781,7 @@
 
 <p>Minecraft サーバ内での MyMaid4 のコマンドヘルプは <code>/mymaidhelp</code> から利用できます。</p>
 <ul>
-<li>Version: <a href="https://github.com/jaoafa/MyMaid4/releases/tag/4.38.4"><code>4.38.4</code></a></li>
+<li>Version: <a href="https://github.com/jaoafa/MyMaid4/releases/tag/4.39.0"><code>4.39.0</code></a></li>
 </ul>
 <h1 id='commands'>Commands</h1>
 <p>MyMaid4 で実装されているコマンドの一覧です。</p>
@@ -993,6 +996,35 @@
 <td>OfflinePlayer</td>
 <td>いいえ</td>
 <td>詳細を表示するプレイヤー</td>
+</tr>
+</tbody></table>
+<h2 id='commands-chatbot'>chatbot</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/chatbot &lt;text&gt;
+</code></pre></div>
+<blockquote>
+<p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/command/Cmd_ChatBot.java">com.jaoafa.mymaid4.command.Cmd_ChatBot</a></p>
+</blockquote>
+
+<p>よくある質問への応対をします。</p>
+
+<ul>
+<li>エイリアスがあります: <code>q, question, 質問, しつもん</code></li>
+</ul>
+<h3 id='commands-chatbot-chatbot-lt-text-gt'><code>/chatbot &lt;text&gt;</code></h3>
+<p>よくある質問への応対をします。</p>
+
+<table><thead>
+<tr>
+<th>引数名</th>
+<th>種類</th>
+<th>必須か</th>
+<th>説明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>text</code></td>
+<td>String</td>
+<td>はい</td>
+<td>説明なし</td>
 </tr>
 </tbody></table>
 <h2 id='commands-cmdb'>cmdb</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/cmdb
@@ -4468,6 +4500,24 @@
 <blockquote>
 <p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_ChatBan.java">com.jaoafa.mymaid4.event.Event_ChatBan</a></p>
 </blockquote>
+<h3 id='events-wtp-event_chatbot'>Event_ChatBot</h3>
+<p>ChatBotに関する処理を行います。</p>
+
+<table><thead>
+<tr>
+<th>メソッド名</th>
+<th>イベント</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>onAsyncPlayerChatEvent</td>
+<td>AsyncChatEvent</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_ChatBot.java">com.jaoafa.mymaid4.event.Event_ChatBot</a></p>
+</blockquote>
 <h3 id='events-wtp-event_clearselection'>Event_ClearSelection</h3>
 <p>走りながら空気をクリックして/selを実行します。</p>
 
@@ -5623,24 +5673,6 @@
 
 <blockquote>
 <p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_Vote.java">com.jaoafa.mymaid4.event.Event_Vote</a></p>
-</blockquote>
-<h3 id='events-wtp-event_whereareyou'>Event_WhereAreYou</h3>
-<p>「みんなどこ」に自動返信します。</p>
-
-<table><thead>
-<tr>
-<th>メソッド名</th>
-<th>イベント</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>onChatWhereAreYou</td>
-<td>AsyncChatEvent</td>
-</tr>
-</tbody></table>
-
-<blockquote>
-<p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_WhereAreYou.java">com.jaoafa.mymaid4.event.Event_WhereAreYou</a></p>
 </blockquote>
 <h3 id='events-wtp-event_worldeditautofacing'>Event_WorldEditAutoFacing</h3>
 <p>「[facing=look]」が含まれるコマンドが実行された際に自動で向いている方向に置き換えます。</p>
