@@ -268,6 +268,18 @@ DefaultとVerified権限グループのプレイヤーによるスペクテイ�
 | onChangeGameMode | PlayerGameModeChangeEvent |
 > ソースコード: [com.jaoafa.mymaid4.event.Event_DVNotSpectator](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_DVNotSpectator.java)
 
+### Event_DailyOnlineTime
+
+日毎のオンライン時間を計算しデータベースに登録します。
+
+| メソッド名 | イベント |
+| - | - |
+| onQuit | PlayerQuitEvent |
+| onJoin | PlayerJoinEvent |
+| onEnable | PluginEnableEvent |
+| onDisable | PluginDisableEvent |
+> ソースコード: [com.jaoafa.mymaid4.event.Event_DailyOnlineTime](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_DailyOnlineTime.java)
+
 ### Event_Ded
 
 dedコマンドに関する処理を行います。
