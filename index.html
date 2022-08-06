@@ -784,7 +784,7 @@
 
 <p>Minecraft サーバ内での MyMaid4 のコマンドヘルプは <code>/mymaidhelp</code> から利用できます。</p>
 <ul>
-<li>Version: <a href="https://github.com/jaoafa/MyMaid4/releases/tag/4.41.0"><code>4.41.0</code></a></li>
+<li>Version: <a href="https://github.com/jaoafa/MyMaid4/releases/tag/4.41.1"><code>4.41.1</code></a></li>
 </ul>
 <h1 id='commands'>Commands</h1>
 <p>MyMaid4 で実装されているコマンドの一覧です。</p>
@@ -1625,6 +1625,7 @@
 <p>記入済みの本を記入可能な本に戻します。</p>
 <h2 id='commands-flyspeed'>flyspeed</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/flyspeed [target]
 /flyspeed set &lt;percent&gt;
+/flyspeed reset
 </code></pre></div>
 <blockquote>
 <p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/command/Cmd_FlySpeed.java">com.jaoafa.mymaid4.command.Cmd_FlySpeed</a></p>
@@ -1671,6 +1672,12 @@
 <td>クリエイティブ飛行速度(通常100%)</td>
 </tr>
 </tbody></table>
+<h3 id='commands-flyspeed-flyspeed-reset'><code>/flyspeed reset</code></h3>
+<aside class="notice">
+このコマンドはプレイヤーからの実行のみに制限されています。
+</aside>
+
+<p>クリエイティブ飛行速度を初期化します。</p>
 <h2 id='commands-g'>g</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/g
 /g &lt;gamemode&gt;
 /g &lt;gamemode&gt; &lt;player&gt;
@@ -3761,6 +3768,7 @@
 </tbody></table>
 <h2 id='commands-walkspeed'>walkspeed</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/walkspeed [target]
 /walkspeed set &lt;percent&gt;
+/walkspeed reset
 </code></pre></div>
 <blockquote>
 <p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/command/Cmd_WalkSpeed.java">com.jaoafa.mymaid4.command.Cmd_WalkSpeed</a></p>
@@ -3804,9 +3812,15 @@
 <td><code>percent</code></td>
 <td>Float</td>
 <td>はい</td>
-<td>移動速度(通常100%)</td>
+<td>移動速度(通常200%)</td>
 </tr>
 </tbody></table>
+<h3 id='commands-walkspeed-walkspeed-reset'><code>/walkspeed reset</code></h3>
+<aside class="notice">
+このコマンドはプレイヤーからの実行のみに制限されています。
+</aside>
+
+<p>移動速度を初期化します。</p>
 <h2 id='commands-weather'>weather</h2><div class="highlight"><pre class="highlight plaintext tab-plaintext"><code>/weather &lt;weatherName&gt;
 </code></pre></div>
 <blockquote>
