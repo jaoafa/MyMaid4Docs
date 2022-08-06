@@ -663,6 +663,7 @@ EBan一覧を表示します。
 ```plaintext
 /flyspeed [target]
 /flyspeed set <percent>
+/flyspeed reset
 ```
 
 > ソースコード: [com.jaoafa.mymaid4.command.Cmd_FlySpeed](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/command/Cmd_FlySpeed.java)
@@ -688,6 +689,14 @@ EBan一覧を表示します。
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
 | `percent` | Float | はい | クリエイティブ飛行速度(通常100%) |
+
+### `/flyspeed reset`
+
+<aside class="notice">
+このコマンドはプレイヤーからの実行のみに制限されています。
+</aside>
+
+クリエイティブ飛行速度を初期化します。
 
 ## g
 
@@ -2146,6 +2155,7 @@ TpDenyからプレイヤーを解除し、以降のテレポートを許可し�
 ```plaintext
 /walkspeed [target]
 /walkspeed set <percent>
+/walkspeed reset
 ```
 
 > ソースコード: [com.jaoafa.mymaid4.command.Cmd_WalkSpeed](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/command/Cmd_WalkSpeed.java)
@@ -2170,7 +2180,15 @@ TpDenyからプレイヤーを解除し、以降のテレポートを許可し�
 
 | 引数名 | 種類 | 必須か | 説明 |
 | - | - | - | - |
-| `percent` | Float | はい | 移動速度(通常100%) |
+| `percent` | Float | はい | 移動速度(通常200%) |
+
+### `/walkspeed reset`
+
+<aside class="notice">
+このコマンドはプレイヤーからの実行のみに制限されています。
+</aside>
+
+移動速度を初期化します。
 
 ## weather
 
