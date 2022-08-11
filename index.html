@@ -606,6 +606,9 @@
                     <a href="#events-wtp-event_cmdlengthlimiter" class="toc-h2 toc-link" data-title="Event_CmdLengthLimiter">Event_CmdLengthLimiter</a>
                   </li>
                   <li>
+                    <a href="#events-wtp-event_commandfeedback" class="toc-h2 toc-link" data-title="Event_CommandFeedback">Event_CommandFeedback</a>
+                  </li>
+                  <li>
                     <a href="#events-wtp-event_commandsender" class="toc-h2 toc-link" data-title="Event_CommandSender">Event_CommandSender</a>
                   </li>
                   <li>
@@ -784,7 +787,7 @@
 
 <p>Minecraft サーバ内での MyMaid4 のコマンドヘルプは <code>/mymaidhelp</code> から利用できます。</p>
 <ul>
-<li>Version: <a href="https://github.com/jaoafa/MyMaid4/releases/tag/4.45.1"><code>4.45.1</code></a></li>
+<li>Version: <a href="https://github.com/jaoafa/MyMaid4/releases/tag/4.46.1"><code>4.46.1</code></a></li>
 </ul>
 <h1 id='commands'>Commands</h1>
 <p>MyMaid4 で実装されているコマンドの一覧です。</p>
@@ -4570,6 +4573,24 @@
 
 <blockquote>
 <p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_CmdLengthLimiter.java">com.jaoafa.mymaid4.event.Event_CmdLengthLimiter</a></p>
+</blockquote>
+<h3 id='events-wtp-event_commandfeedback'>Event_CommandFeedback</h3>
+<p>実行したコマンドを実行者に対して表示します。</p>
+
+<table><thead>
+<tr>
+<th>メソッド名</th>
+<th>イベント</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>onCommand</td>
+<td>PlayerCommandPreprocessEvent</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_CommandFeedback.java">com.jaoafa.mymaid4.event.Event_CommandFeedback</a></p>
 </blockquote>
 <h3 id='events-wtp-event_commandsender'>Event_CommandSender</h3>
 <p>実行されたコマンドを特定権限に通知します。</p>
