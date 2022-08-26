@@ -691,6 +691,15 @@ signコマンドに関する処理を行います。
 | onChangedGameMode | PlayerGameModeChangeEvent |
 > ソースコード: [com.jaoafa.mymaid4.event.Event_SpectatorDynmapHide](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_SpectatorDynmapHide.java)
 
+### Event_SurvivalSitLay
+
+サバイバルモードなどでsitやlayコマンドを使えないようにします。
+
+| メソッド名 | イベント |
+| - | - |
+| onCommand | PlayerCommandPreprocessEvent |
+> ソースコード: [com.jaoafa.mymaid4.event.Event_SurvivalSitLay](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_SurvivalSitLay.java)
+
 ### Event_TabList
 
 Tabで表示されるヘッダー・フッターに関する処理を行います。
