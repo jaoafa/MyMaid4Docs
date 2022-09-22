@@ -222,6 +222,15 @@ ChatBotに関する処理を行います。
 | onAirClick | PlayerInteractEvent |
 > ソースコード: [com.jaoafa.mymaid4.event.Event_ClearSelection](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_ClearSelection.java)
 
+### Event_ClosedIssueNotifier
+
+ログイン時、bugコマンドやfeedbackコマンドによって作成されたissueがクローズされていたら通知します。
+
+| メソッド名 | イベント |
+| - | - |
+| onJoinClearCache | PlayerJoinEvent |
+> ソースコード: [com.jaoafa.mymaid4.event.Event_ClosedIssueNotifier](https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_ClosedIssueNotifier.java)
+
 ### Event_CmdLengthLimiter
 
 Default権限グループのプレイヤーによる100文字を超えるコマンドの実行を制限します。
