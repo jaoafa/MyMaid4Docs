@@ -603,6 +603,9 @@
                     <a href="#events-wtp-event_clearselection" class="toc-h2 toc-link" data-title="Event_ClearSelection">Event_ClearSelection</a>
                   </li>
                   <li>
+                    <a href="#events-wtp-event_closedissuenotifier" class="toc-h2 toc-link" data-title="Event_ClosedIssueNotifier">Event_ClosedIssueNotifier</a>
+                  </li>
+                  <li>
                     <a href="#events-wtp-event_cmdlengthlimiter" class="toc-h2 toc-link" data-title="Event_CmdLengthLimiter">Event_CmdLengthLimiter</a>
                   </li>
                   <li>
@@ -790,7 +793,7 @@
 
 <p>Minecraft サーバ内での MyMaid4 のコマンドヘルプは <code>/mymaidhelp</code> から利用できます。</p>
 <ul>
-<li>Version: <a href="https://github.com/jaoafa/MyMaid4/releases/tag/v4.48.1"><code>4.48.1</code></a></li>
+<li>Version: <a href="https://github.com/jaoafa/MyMaid4/releases/tag/v4.49.0"><code>4.49.0</code></a></li>
 </ul>
 <h1 id='commands'>Commands</h1>
 <p>MyMaid4 で実装されているコマンドの一覧です。</p>
@@ -4558,6 +4561,24 @@
 
 <blockquote>
 <p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_ClearSelection.java">com.jaoafa.mymaid4.event.Event_ClearSelection</a></p>
+</blockquote>
+<h3 id='events-wtp-event_closedissuenotifier'>Event_ClosedIssueNotifier</h3>
+<p>ログイン時、bugコマンドやfeedbackコマンドによって作成されたissueがクローズされていたら通知します。</p>
+
+<table><thead>
+<tr>
+<th>メソッド名</th>
+<th>イベント</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>onJoinClearCache</td>
+<td>PlayerJoinEvent</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>ソースコード: <a href="https://github.com/jaoafa/MyMaid4/blob/master/src/main/java/com/jaoafa/mymaid4/event/Event_ClosedIssueNotifier.java">com.jaoafa.mymaid4.event.Event_ClosedIssueNotifier</a></p>
 </blockquote>
 <h3 id='events-wtp-event_cmdlengthlimiter'>Event_CmdLengthLimiter</h3>
 <p>Default権限グループのプレイヤーによる100文字を超えるコマンドの実行を制限します。</p>
