@@ -414,7 +414,7 @@ flyspeedコマンドに関する処理を行います。
 
 ### Event_GameModeCmd
 
-gamemodeコマンドが実行された際に、gコマンドを勧めます。
+minecraft:gamemodeコマンドが実行された際に、gコマンドを勧めます。
 
 | メソッド名 | イベント |
 | - | - |
